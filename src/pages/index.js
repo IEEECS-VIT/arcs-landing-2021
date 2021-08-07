@@ -1,9 +1,14 @@
 import * as React from "react"
+import Navbar from './../components/Navbar/navbar'
 
 
 const IndexPage = () => {
   return (
-    <h1>Landing Page</h1>
+    <>
+    <Navbar
+    arcs={false}
+    />
+    </>
   )
 }
 
