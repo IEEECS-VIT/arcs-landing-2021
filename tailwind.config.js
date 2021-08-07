@@ -11,8 +11,14 @@ module.exports = {
     backgroundColor:theme=>({
       ...theme('colors'),
       'nav':'#FDA445',
-      'nav-hover':'#FFC587'
-    })
+      'nav-hover':'#FFC587',
+      
+    }),
+    textColor: theme => theme('colors'),
+     textColor: {
+       'orange': '#FFA53b',
+       
+     }
   },
   variants: {
     extend: {},
