@@ -1,14 +1,54 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 
-.font{
-    font-family: 'Montserrat','san-serif';
-    
+.font {
+  font-family: "Montserrat", "san-serif";
 }
-.line
-{
-    
-    letter-spacing: 2px;
+.line {
+  letter-spacing: 2px;
+}
+
+.grad {
+  border-image-slice: 1;
+  border-image-source: linear-gradient(to left, #9a54ad, #ef757c, #f9af61);
+}
+.box {
+  animation-name: animate;
+  animation-duration: 0.5s;
+}
+.circle {
+  animation-name: animate-circle;
+  animation-duration: 0.5s;
+}
+.arcs {
+  animation-name: animate-arcs;
+  animation-duration: 1s;
+}
+@keyframes animate {
+  0% {
+    margin-left: -20px;
+  }
+  100% {
+    margin-left: 16rem;
+  }
+}
+
+@keyframes animate-circle {
+  0% {
+    margin-left: -20px;
+  }
+  100% {
+    margin-left: 18rem;
+  }
+}
+
+@keyframes animate-arcs {
+  0% {
+    margin-top: -100px;
+  }
+  100% {
+    margin-top: 3.5rem;
+  }
 }
