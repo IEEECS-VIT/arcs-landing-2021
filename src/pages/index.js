@@ -1,6 +1,7 @@
 import * as React from "react";
 import Navbar from "./../components/Navbar/navbar";
 import Box from "./../images/arcsBox.png";
+import Rect from "./../images/arcsRect.png";
 import ArcsHome from "./../images/arcsHome.png";
 import Circle from "./../images/circle.png";
 import comp from "./../images/card.png";
@@ -8,10 +9,16 @@ const IndexPage = () => {
   return (
     <div>
       <Navbar arcs={false} />
+
       <img
         src={Box}
         alt="box"
         className="box z-20 absolute mt-6 w-72 ml-36 lg:ml-64  h-64"
+      />
+      <img
+        src={Rect}
+        alt="box"
+        className="rect z-10 absolute mt-6 w-72 ml-36 lg:ml-64  h-64"
       />
       <img
         src={ArcsHome}
@@ -19,7 +26,7 @@ const IndexPage = () => {
         className="arcs ml-44 z-30 absolute mt-14 lg:ml-80 h-44"
       />
       <img src={Circle} className="circle z-10 absolute mt-64  ml-72 -mb-10 " />
-      <p className="font line font-semibold inline-block mt-4 float-right text-justify mr-20  text-5xl lg:mr-64">
+      <p className="font line font-semibold inline-block  float-right text-justify mr-20  text-5xl lg:mr-72 mt-4">
         Your next <br />
         Interactive <br />
         Experience
@@ -31,7 +38,7 @@ const IndexPage = () => {
         Register now
       </button>
 
-      <div className="mt-5 mx-16 flex flex-col  text-justify mt-96 font text-sm md:flex-row">
+      <div className="mt-5 mx-16 flex flex-col  text-justify mt-96 font text-sm md:flex-row ">
         <div className="px-2 m-4  h-32 w-4/8 border-4 grad  md:h-auto md:w-screen md:m-2 md:pb-3 lg:h-32 lg:w-3/8">
           <p className=" font-semibold">Hackbattle</p>
           <img
