@@ -35,6 +35,15 @@
   z-index: -1;
   border-radius: 16px;
 }
+
+.caption {
+  margin-right: 17%;
+}
+
+.caption-md {
+  margin-right: 10%;
+}
+/* ************Landing Page animations************ */
 .box {
   animation-name: animate-right;
   animation-duration: 1s;
@@ -87,3 +96,4 @@
     margin-top: 1.5rem;
   }
 }
+/* ************Landing Page animations-end************ */

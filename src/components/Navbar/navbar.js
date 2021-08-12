@@ -3,62 +3,59 @@ import { Link } from "gatsby";
 import ieeecs from "./../../images/ieee_logo.png";
 import arcs from "./../../images/arcs.png";
 
-const navbar = (props) => {
+const navbar = () => {
   return (
-    <div className="flex flex-row mt-2 ml-6 ">
-      <img src={ieeecs} className="w-40 h-11 mt-2" alt="ieee" />
-      <div className="ml-20 mt-2  bg-nav my-auto rounded-3xl py-2 font">
-        <Link
-          className="px-4 py-2.5  -my-1 hover:bg-nav-hover rounded-3xl"
-          to="/"
-        >
-          Home
+    <div className="flex flex-row mt-2 ml-6 mb-2">
+      <img src={ieeecs} className="w-32 h-10 mt-2" alt="ieee" />
+      <div className="flex flex-col md:flex-row font-normal ml-auto mt-2  mx-auto bg-nav my-auto rounded-3xl font text-sm">
+        <Link className="px-3 py-2.5  hover:bg-nav-hover rounded-3xl" to="/">
+          HOME
         </Link>
         <Link
-          className="px-4 py-2.5 hover:bg-nav-hover rounded-3xl"
+          className="px-3 py-2.5 hover:bg-nav-hover rounded-3xl"
           to="/about"
         >
-          About
+          ABOUT
         </Link>
         <Link
-          className="px-4 py-2.5 hover:bg-nav-hover rounded-3xl "
+          className="px-3 py-2.5 hover:bg-nav-hover rounded-3xl "
           to="/speakers"
         >
-          Speakers
+          SPEAKERS
         </Link>
         <Link
-          className="px-4 py-2.5 hover:bg-nav-hover rounded-3xl"
+          className="px-3 py-2.5 hover:bg-nav-hover rounded-3xl"
           to="/timeline"
         >
-          Timeline
+          TIMELINE
         </Link>
         <Link
-          className="px-4 py-2.5 hover:bg-nav-hover rounded-3xl"
+          className="px-3 py-2.5 hover:bg-nav-hover rounded-3xl"
           to="/events"
         >
-          Events
+          EVENTS
         </Link>
         <Link
-          className="px-4 py-2.5 hover:bg-nav-hover rounded-3xl"
+          className="px-3 py-2.5 hover:bg-nav-hover rounded-3xl"
           to="/prizes"
         >
-          Prizes
+          PRIZES
         </Link>
         <Link
-          className="px-4 py-2.5 hover:bg-nav-hover rounded-3xl"
+          className="px-3 py-2.5 hover:bg-nav-hover rounded-3xl"
           to="/sponsors"
         >
-          Sponsors
+          SPONSORS
         </Link>
         <Link
-          className="px-4 py-2.5 hover:bg-nav-hover rounded-3xl"
+          className="px-3 py-2.5 hover:bg-nav-hover rounded-3xl"
           to="/contact"
         >
-          Contact Us
+          CONTACT US
         </Link>
       </div>
 
-      <img className="ml-28  w-16 h-14 " src={arcs} alt="arcs" />
+      <img className="ml-auto mr-10  w-14 h-12 mt-1 " src={arcs} alt="arcs" />
     </div>
   );
 };
