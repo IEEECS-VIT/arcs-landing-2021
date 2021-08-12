@@ -1,8 +1,15 @@
+  
 import * as React from "react"
+import {FaEnvelope} from "react-icons/fa"
+import 
+{ImLocation,
+ImPhoneHangUp
+}
+from "react-icons/im"
 
 const ContactPage = () => {
     return (
-     <div className="container mx-auto">
+     <div className="container pt-40 mx-auto">
          <center>
              <h1 className="text-3xl" style={{fontFamily:"Poppins"}}>Contact us!</h1>
              <div class="contactline"></div>
@@ -10,17 +17,17 @@ const ContactPage = () => {
          </center>
          <br></br>
         
-            <div class="flex mb-4 px-40" style={{paddingTop:"5px"}}>
-                 <div class="w-1/2 px-40 md:w-1/2 contactbox">
+            <div class="grid grid-cols-1 md:grid-cols-2 mb-4 px-40 " style={{paddingTop:"5px"}}>
+                 <div class="px-20 contactbox">
                    
-                      <h1 class="text-xl">VIT Vellore</h1>
+                     <p class="text-xl "><span className="env"><ImLocation style={{display:"inline",fontSize:"1.5rem",fill:"white"}}/></span> &nbsp; VIT Vellore</p>
                       <br></br><br></br>
-                      <h1 class="text-xl">arcs.register@gmail.com</h1>
+                      <p class="text-xl"><span className="env"><FaEnvelope style={{display:"inline",fontSize:"1.5rem",fill:"white"}}/></span> &nbsp; arcs.register@gmail.com</p>
                       <br></br><br></br>
-                      <h1 class="text-xl">8160XXXXXX</h1>
+                      <p class="text-xl"><span className="env"><ImPhoneHangUp style={{display:"inline",fontSize:"1.5rem",fill:"white"}}/></span>&nbsp; 8160XXXXXX</p>
                     
                 </div>
-  <div class="w-1/2 md:w-1/2">
+  <div >
           <div className="place-self-center">
          <form> 
          <input class="bginput" type="name" placeholder="NAME"></input>
