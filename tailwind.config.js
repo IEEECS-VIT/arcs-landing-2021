@@ -9,6 +9,7 @@ module.exports = {
       "nav-hover": "#FFC587",
       orange: "#F9AE5E",
       "light-orange": "#F8E2CF",
+      pink: "#EF8D98",
     }),
     textColor: (theme) => theme("colors"),
     textColor: {
