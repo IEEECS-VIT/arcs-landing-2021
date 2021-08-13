@@ -7,7 +7,7 @@
   font-family: "Montserrat", "san-serif";
 }
 .line {
-  letter-spacing: 2px;
+  letter-spacing: 1px;
 }
 
 /* .grad {
@@ -43,12 +43,13 @@
 .caption-md {
   margin-right: 10%;
 }
+
 /* ************Landing Page animations************ */
-.box {
+.rect {
   animation-name: animate-right;
   animation-duration: 1s;
 }
-.rect {
+.box {
   animation-name: animate-down;
   animation-duration: 0.8s;
 }
@@ -60,12 +61,27 @@
   animation-name: animate-arcs;
   animation-duration: 1.5s;
 }
+
+.icons {
+  margin-left: 16%;
+  animation-name: icon-right;
+  animation-duration: 1.5s;
+}
 @keyframes animate-right {
   0% {
-    margin-left: -20px;
+    margin-left: -100px;
   }
   100% {
     margin-left: 16rem;
+  }
+}
+
+@keyframes icon-right {
+  0% {
+    margin-left: -100px;
+  }
+  100% {
+    margin-left: 13rem;
   }
 }
 
@@ -96,4 +112,104 @@
     margin-top: 1.5rem;
   }
 }
+
+/* **************************** MOBILE************************************* */
+@keyframes animate-right-mob {
+  0% {
+    left: -100px;
+  }
+  100% {
+    left: 50%;
+  }
+}
+
+@keyframes icon-right-mob {
+  0% {
+    margin-left: -100px;
+  }
+  100% {
+    margin-left: 16%;
+  }
+}
+
+@keyframes animate-circle-mob {
+  0% {
+    left: -20px;
+  }
+  100% {
+    left: 50%;
+  }
+}
+
+@keyframes animate-arcs-mob {
+  0% {
+    margin-top: -200px;
+  }
+
+  100% {
+    margin-top: 3.5rem;
+  }
+}
+
+@keyframes animate-down-mob {
+  0% {
+    margin-top: -100px;
+  }
+  100% {
+    margin-top: 1.5rem;
+  }
+}
+/* ******************************************************* */
+
+@media only screen and (max-width: 767px) {
+  .rect {
+    animation-name: animate-right-mob;
+    animation-duration: 1s;
+    height: auto;
+    left: 50%;
+    width: 200px;
+    margin-left: -100px;
+  }
+  .box {
+    animation-name: animate-down-mob;
+    animation-duration: 0.8s;
+    height: auto;
+    left: 50%;
+    width: 200px;
+    margin-left: -80px;
+  }
+  .circle {
+    animation-name: animate-circle-mob;
+    animation-duration: 0.8s;
+    margin-top: 15rem;
+    left: 50%;
+    width: 50px;
+    margin-left: -90px;
+  }
+  .arcs {
+    animation-name: animate-arcs-mob;
+    animation-duration: 1.5s;
+    height: auto;
+    left: 50%;
+    width: 200px;
+    margin-left: -80px;
+  }
+  .icons {
+    animation-name: icon-right-mob;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .icons {
+    margin-left: 12%;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .icons {
+    margin-left: 12%;
+  }
+}
+@media only screen and(min-width:1024px) {
+}
+
 /* ************Landing Page animations-end************ */

@@ -7,7 +7,8 @@ module.exports = {
       ...theme("colors"),
       nav: "#FDA445",
       "nav-hover": "#FFC587",
-      button: "#F9AE5E",
+      orange: "#F9AE5E",
+      "light-orange": "#F8E2CF",
     }),
     textColor: (theme) => theme("colors"),
     textColor: {
