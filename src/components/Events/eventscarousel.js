@@ -1,130 +1,99 @@
-// import React,{Component} from "react"
-// import cyber from '../../images/event1.png'
-// import './carousel'
-//  import M from "materialize-css";
-// // import 'materialize-css/dist/js/materialize.js'
-//  import 'materialize-css/dist/css/materialize.css'
-//  import { IoChevronBackCircleSharp} from "react-icons/io5";
+import React,{Component} from "react"
+import cyber from '../../images/event1.png'
+import CSSTransitionGroup from 'react-transition-group/CSSTransitionGroup';
+import {IoIosArrowDropleftCircle,IoIosArrowDroprightCircle} from "react-icons/io"
 
 
 
 
-
-
-
-
-// const Event = () => {
-//     return (
-//         <div>
-//             <center>
-//         <div className="flex mt-4 p-4">
-//         <div className="w-1/3 scale">
-//         <div className="rec">
-//             <center>
-//             <div className="innerrec">
-//             <h1 className="eventhead">CYBER SECURITY</h1>
-//                 <img src={cyber} className="eventimg pt-8"></img>
-                
-//             </div>
-//             </center>
-//              </div>
-//              </div>
-
-//              <div className="w-1/3">
-//         <div className="rec">
-//             <center>
-//             <div className="innerrecmiddle">
-//                 <h1 className="eventhead">CYBER SECURITY</h1>
-//                 <img src={cyber} className="eventimg"></img>
-                
-//             </div>
-//             </center>
-//             <br></br>
-//             <button type="button" className="knowmore ">know more</button>
-//              </div>
-//              </div>
- 
-//              <div className="w-1/3 scale">
-//         <div className="rec">
-//             <center>
-//             <div className="innerrec">
-//             <h1 className="eventhead">CYBER SECURITY</h1>
-//                 <img src={cyber} className="eventimg pt-8"></img>
-//             </div>
-//             </center>
-//              </div>
-//              </div>
-             
-//         </div>
-//         </center>
-//         </div>
-//     )
-//   }
- 
-//   export default Event
-
-
-// class Event extends Component {
-//   componentDidMount() {
-//     const options = {
-//       duration: 300,
-//       numVisible:3,
-//       shift:230
-//     };
-//     M.Carousel.init(this.Carousel, options);
+export default class Carousel extends React.Component {
     
-//     console.log(this.Carousel.childNodes[0].childNodes)
-   
-  
-    
-    
-    
-  
-  
+    constructor(props) {
+        super(props)
+        this.state = {
+            items: this.props.items,
+            active: this.props.active,
+            direction: ''
+        }
+        this.rightClick = this.moveRight.bind(this)
+        this.leftClick = this.moveLeft.bind(this)
+    }
 
-// }
+    generateItems() {
+        var items = []
+        var level
+        console.log(this.state.active)
+        for (var i = this.state.active - 1; i < this.state.active + 2; i++) {
+            var index = i
+            if (i < 0) {
+                index = this.state.items.length + i
+            } else if (i >= this.state.items.length) {
+                index = i % this.state.items.length
+            }
+            level = this.state.active - i
+            
+            items.push(<Item key={index}  level={level} />)
+            
+        }
+        return items
+    }
+    
+    moveLeft() {
+        var newActive = this.state.active
+        newActive--
+        this.setState({
+            active: newActive < 0 ? this.state.items.length - 1 : newActive,
+            direction: 'left'
+        })
+    }
+    
+    moveRight() {
+        var newActive = this.state.active
+        this.setState({
+            active: (newActive + 1) % this.state.items.length,
+            direction: 'right'
+        })
+    }
+    
+    render() {
+      // document.getElementsByClassName('level0')[0].append('<button>Click Me</button>')
+        return(
+            <div id="carousel" className="noselect">
+                <div className="arrow arrow-left" onClick={this.leftClick}><IoIosArrowDropleftCircle className="arrow-left"></IoIosArrowDropleftCircle></div>
+                <CSSTransitionGroup 
+                    transitionName={this.state.direction}>
+                    {this.generateItems()}
+                </CSSTransitionGroup>
+                <div className="arrow arrow-right" onClick={this.rightClick}><IoIosArrowDroprightCircle className="arrow-right"></IoIosArrowDroprightCircle></div>
+            </div>
+        )
+    }
+}
 
-//   render() {
-  
-//       function left() {
+class Item extends React.Component {
+    
+    constructor(props) {
+        super(props)
+        this.state = {
+            level: this.props.level
+        }
+    }
+    
+    render() {
+        const className = 'item level' + this.props.level 
+        const innerclass='innerlevel'+this.props.level
         
-//         var instances = M.Carousel.init(this.Carousel);
-        
-//           instances.prev();
-//       }
-  
-//     return (
-//       <div
-//         ref={Carousel => {
-//           this.Carousel = Carousel;
-//         }}
-//         className="carousel" >
-//           <span className="float-left p-40 pt-100 text-5xl" ><IoChevronBackCircleSharp id="x" onClick={left()}/></span>
-//         <div className="carousel-item">
-//           <div className="cardbox">
-//           <p className="eventhead">CYBER SECURITY</p>
-//                <img src={cyber} className="pt-5"></img>
-//           </div>
-//         </div>
+            
+        return(
+          
+            <div className={className}>
+              <div className={innerclass}>
+               
+               <img className="eventimg" src={cyber} alt="noo"></img>
+              </div>
+                </div>
+          
+        )
+    }
+}
 
-//         <div className="carousel-item">
-//           <div className="cardbox">
-//           <p className="eventhead">CYBER SECURITY</p>
-//                 <img src={cyber} className=" pt-5"></img>
-//           </div>
-//         </div>
-
-//         <div className="carousel-item">
-//           <div className="cardbox">
-//           <p className="eventhead">CYBER SECURITY</p>              
-//            <img src={cyber} className="pt-5"></img>
-//           </div>
-//         </div>
-       
-       
-//       </div>
-//     );
-//   }
-//   }
-
-// export default Event;
