@@ -8,7 +8,7 @@
 .bginput{
     background-color: #F4F4F4;
     line-height: 1rem;
-    width: 400px;
+    width: 25rem;
     color: #495057;
     background-clip: padding-box;
     border-radius: 0.25rem;
@@ -60,6 +60,18 @@
    
     
   }
+
+  ///Mobile-View of Contact Page/////
+
+  // @media (max-width: 640px) {
+  //   .gridbox { padding:0px;}
+  //   .box{padding:40px;}
+  //   .contactbox{
+  //     padding-left: 5rem;
+  //     padding-right:0rem;
+  //   }
+    
+  
 /* Carousel */
 
   // .carousel-item{

@@ -15,20 +15,20 @@ const ContactPage = () => {
              <div className="contactline"></div>
              
          </center>
-         <br></br>
+         <br></br> 
         
-            <div className="grid grid-cols-1 md:grid-cols-2 mb-4 px-40 " style={{paddingTop:"5px"}}>
-                 <div className="px-20 contactbox">
+            <div className="grid grid-cols-1 md:grid-cols-2 md:mb-4 md:px-40" style={{paddingTop:"5px"}}>
+                 <div className="md:px-20 md:order-first order-last pr-0 pl-10 mb-8 contactbox">
                    
                      <p className="text-xl "><span className="env"><ImLocation style={{display:"inline",fontSize:"1.5rem",fill:"white"}}/></span> &nbsp; VIT Vellore</p>
-                      <br></br><br></br>
+                      <br></br><br></br> 
                       <p className="text-xl"><span className="env"><FaEnvelope style={{display:"inline",fontSize:"1.5rem",fill:"white"}}/></span> &nbsp; arcs.register@gmail.com</p>
                       <br></br><br></br>
                       <p className="text-xl"><span className="env"><ImPhoneHangUp style={{display:"inline",fontSize:"1.5rem",fill:"white"}}/></span>&nbsp; 8160XXXXXX</p>
                     
                 </div>
-  <div >
-          <div className="place-self-center box">
+  
+          <div className="place-self-center mx-8 ">
          <form> 
          <input className="bginput" type="name" placeholder="NAME"></input>
          <br>
@@ -37,7 +37,7 @@ const ContactPage = () => {
          <input className="bginput " type="email"  placeholder="EMAIL"></input>
          <br></br>
          
-        <textarea  className="bginput " placeholder="MESSAGE" rows="4"></textarea>
+        <textarea  className="bginput" placeholder="MESSAGE" rows="4"></textarea>
         <br></br>
         
         <button type="button" className="submitButton" >SUBMIT</button>
@@ -49,7 +49,7 @@ const ContactPage = () => {
       
          </div>
        
-     </div>
+   
     )
   }
   
