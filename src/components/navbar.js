@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "gatsby";
-
+import { FaTimes } from "react-icons/fa";
 import arcs from "./../images/arcs.png";
 import button from "./../images/hamburger.png";
 
@@ -18,59 +18,60 @@ const Navbar = () => {
           className=" flex float:right  px-3 py-2 "
           onClick={() => toggleExpansion(!isExpanded)}
         >
-          <img src={button} alt="ham" />
+          {!isExpanded && <img src={button} alt="ham" />}
+          {isExpanded && <FaTimes size={40} />}
         </button>
       </div>
       <div
-        className="nav ease-in-out duration-300 z-20 fixed  block flex flex-col  h-full top-0  pt-28  right-0  bg-orange font-semibold  font "
+        className="pr-auto w-1/5 nav ease-in-out duration-300 z-20 fixed  block flex flex-col  h-full top-0  pt-24  right-0  bg-orange font-semibold  font "
         style={{
           transform: !isExpanded ? "translateX(100%)" : "translateX(0)",
         }}
       >
         <Link
-          className="py-4 px-auto text-center hover:bg-light-orange rounded-3xl"
+          className="py-4 text-center hover:bg-light-orange rounded-3xl "
           to="/"
         >
           HOME
         </Link>
         <Link
-          className="py-4 px-20 text-center hover:bg-light-orange rounded-3xl"
+          className="py-4 text-center hover:bg-light-orange rounded-3xl"
           to="/about"
         >
           ABOUT
         </Link>
         <Link
-          className="py-4 px-20 text-center hover:bg-light-orange rounded-3xl"
+          className="py-4  text-center hover:bg-light-orange rounded-3xl"
           to="/speakers"
         >
           SPEAKERS
         </Link>
         <Link
-          className="py-4 px-20 text-center hover:bg-light-orange rounded-3xl"
+          className="py-4  text-center hover:bg-light-orange rounded-3xl"
           to="/timeline"
         >
           TIMELINE
         </Link>
         <Link
-          className="py-4 px-20 text-center hover:bg-light-orange rounded-3xl"
+          className="py-4  text-center hover:bg-light-orange rounded-3xl"
           to="/events"
         >
           EVENTS
         </Link>
         <Link
-          className="py-4 px-20 text-center hover:bg-light-orange rounded-3xl"
+          className="py-4  text-center hover:bg-light-orange rounded-3xl"
           to="/prizes"
         >
           PRIZES
         </Link>
         <Link
-          className="py-4 px-20 text-center hover:bg-light-orange rounded-3xl"
+          className="py-4  text-center hover:bg-light-orange rounded-3xl "
           to="/sponsors"
         >
           SPONSORS
         </Link>
         <Link
-          className="py-4 px-20 text-center hover:bg-light-orange rounded-3xl"
+          className="py-4  text-center hover:bg-light-orange rounded-3xl"
           to="/contact"
         >
           CONTACT US

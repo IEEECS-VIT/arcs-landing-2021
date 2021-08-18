@@ -11,10 +11,11 @@
 }
 .nav {
   border-color: #f9ae5e;
-  border-top-left-radius: 12rem;
-  border-bottom-left-radius: 12rem;
+  border-top-left-radius: 6rem;
+  border-bottom-left-radius: 6rem;
 }
-.grad {
+
+/* .grad {
   position: relative;
   border: 3px solid transparent;
   border-radius: 30px;
@@ -36,8 +37,22 @@
   content: "";
   z-index: -1;
   border-radius: 30px;
-}
+} */
 
+.border {
+  position: relative;
+  background: linear-gradient(to left, #9a54ad, #ef757c, #f9af61);
+  border-radius: 30px;
+  padding: 3px;
+}
+.inner {
+  background: white;
+  padding: 4.5%;
+  border-radius: 30px;
+}
+.border:hover {
+  transform: scale(1.1) translateY(-10px);
+}
 .caption-md {
   margin-right: 10%;
 }
