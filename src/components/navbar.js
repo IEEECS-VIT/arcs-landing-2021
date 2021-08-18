@@ -23,7 +23,7 @@ const Navbar = () => {
         </button>
       </div>
       <div
-        className="pr-auto w-1/5 nav ease-in-out duration-300 z-20 fixed  block flex flex-col  h-full top-0  pt-24  right-0  bg-orange font-semibold  font "
+        className="pr-auto px-16 nav ease-in-out duration-300 z-20 fixed  block flex flex-col  h-full top-0  pt-24  right-0  bg-orange font-semibold  font "
         style={{
           transform: !isExpanded ? "translateX(100%)" : "translateX(0)",
         }}

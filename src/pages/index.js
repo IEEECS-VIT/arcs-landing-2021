@@ -8,6 +8,7 @@ import Card from "./../components/landingCard";
 import { useSpring, animated } from "react-spring";
 import { FaTwitter, FaFacebook } from "react-icons/fa";
 import { AiFillInstagram } from "react-icons/ai";
+import Rectangles from "./../components/rectangle";
 
 const IndexPage = () => {
   const Rectangle = useSpring({
@@ -34,11 +35,7 @@ const IndexPage = () => {
   return (
     <div className="-mt-4">
       <Navbar arcs={false} />
-      <div className="absolute top-36 w-10 h-10  bg-pink"></div>
-      <div className="absolute right-0 top-36 w-10 h-10 bg-pink"></div>
-      {/* <div className="absolute right-5 bottom-0 w-8 h-14 bg-pink"></div>
-      <div className="absolute left-5 bottom-0 w-8 h-14 bg-pink"></div> */}
-
+      <Rectangles />
       <animated.img
         img
         src={Rect}
@@ -72,7 +69,7 @@ const IndexPage = () => {
       <a href="https://www.google.com/">
         <FaTwitter
           size={20}
-          className=" icons mt-32  md:ml-20 lg:ml-48 absolute"
+          className=" icons mt-28  md:ml-20 lg:ml-48 absolute"
           style={Rectangle}
         />
       </a>
@@ -80,13 +77,13 @@ const IndexPage = () => {
       <a href="https://www.google.com/">
         <FaFacebook
           size={20}
-          className="icons  mt-40 md:ml-20 lg:ml-48 absolute"
+          className="icons  mt-36 md:ml-20 lg:ml-48 absolute"
         />
       </a>
       <a href="https://www.google.com/">
         <AiFillInstagram
           size={20}
-          className="icons  mt-48 md:ml-20 lg:ml-48 absolute"
+          className="icons  mt-44 md:ml-20 lg:ml-48 absolute"
         />
       </a>
 
@@ -104,7 +101,7 @@ const IndexPage = () => {
         </button>
       </div>
 
-      <div className=" w-auto h-screen mx-5 md:mx-16 mt-20 md:space-x-7 md:h-auto md:mt-96 flex flex-col  text-justify  font  md:flex-row ">
+      <div className=" w-auto h-screen mx-10 md:mx-16 mt-20 md:space-x-7 md:h-auto md:mt-96 flex flex-col  text-justify  font  md:flex-row ">
         <Card />
         <Card />
         <Card />
