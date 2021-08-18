@@ -53,7 +53,12 @@
     left: 50%;
     width: 180px;
     margin-left: -80px;
+  }
+  .box {
     margin-top: 10px;
+  }
+  .arcs {
+    margin-top: 15px;
   }
   .circle {
     margin-top: 12.5rem;
@@ -62,7 +67,9 @@
     margin-left: -90px;
   }
 }
-
+.top {
+  margin-top: 200vw;
+}
 @media only screen and (max-width: 320px) {
   .icons {
     margin-left: 12%;

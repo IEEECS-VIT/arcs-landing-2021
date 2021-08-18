@@ -35,7 +35,9 @@ const IndexPage = () => {
   return (
     <div className="-mt-4">
       <Navbar arcs={false} />
+
       <Rectangles />
+
       <animated.img
         img
         src={Rect}
@@ -87,7 +89,7 @@ const IndexPage = () => {
         />
       </a>
 
-      <div className="block mt-80 ml-auto mr-auto w-1/2 md:mt-auto   md:w-auto md:mr-12 lg:mr-44 md:float-right ">
+      <div className="lg:mb-1 block mt-80 ml-auto mr-auto w-1/2 md:mt-auto   md:w-auto md:mr-12 lg:mr-44 md:float-right ">
         <p className="w-min font line font-semibold text-justify text-4xl md:text-5xl  caption">
           Your next <br />
           Interactive <br />
@@ -101,7 +103,7 @@ const IndexPage = () => {
         </button>
       </div>
 
-      <div className=" w-auto h-screen mx-10 md:mx-16 mt-20 md:space-x-7 md:h-auto md:mt-96 flex flex-col  text-justify  font  md:flex-row ">
+      <div className=" w-auto h-screen mx-16 md:mx-16 mt-20 md:space-x-7 md:h-auto md:mt-96 flex flex-col  text-justify  font  md:flex-row ">
         <Card />
         <Card />
         <Card />
