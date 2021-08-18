@@ -30,14 +30,14 @@ border-left: solid 3px rgba(249,171,88,1);
   align-items: center;
   text-align: center;
   
-} */
+}  */
 
 
 
 @media only screen and (min-width: 768px) {
-    .test {
+    /* .test {
         height:100vh;
         width:100vw;
-    }
+    } */
 
   }
