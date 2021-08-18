@@ -14,6 +14,7 @@ module.exports = {
     textColor: (theme) => theme("colors"),
     textColor: {
       orange: "#FFA53b",
+      gray: "#8E8E8E",
     },
   },
   variants: {

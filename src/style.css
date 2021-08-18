@@ -9,16 +9,23 @@
 .line {
   letter-spacing: 1px;
 }
-
+.nav {
+  border-color: #f9ae5e;
+  border-top-left-radius: 12rem;
+  border-bottom-left-radius: 12rem;
+}
 .grad {
   position: relative;
-  border: 4px solid transparent;
-  border-radius: 20px;
+  border: 3px solid transparent;
+  border-radius: 30px;
   background: white;
   background-clip: padding-box;
-  padding: 10px;
+  padding: 6px;
 }
 
+.grad:hover {
+  transform: scale(1.1);
+}
 .grad::after {
   position: absolute;
   top: -4px;
@@ -28,7 +35,7 @@
   background: linear-gradient(to left, #9a54ad, #ef757c, #f9af61);
   content: "";
   z-index: -1;
-  border-radius: 16px;
+  border-radius: 30px;
 }
 
 .caption-md {
@@ -51,12 +58,12 @@
   .box,
   .arcs {
     height: auto;
-    left: 50%;
+    left: 51%;
     width: 200px;
     margin-left: -80px;
   }
   .circle {
-    margin-top: 15rem;
+    margin-top: 13rem;
     left: 50%;
     width: 50px;
     margin-left: -90px;
@@ -68,6 +75,8 @@
     margin-left: 12%;
   }
   .caption {
-    width: 80%;
+    margin-top: -30px;
+    font-size: 1.9rem;
+    line-height: 2.2rem;
   }
 }
