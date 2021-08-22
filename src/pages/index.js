@@ -43,28 +43,28 @@ const IndexPage = () => {
         src={Rect}
         alt="box"
         style={Rectangle}
-        className="rect z-10 absolute  md:ml-28 lg:ml-56  md:h-64 md:w-72"
+        className="rect z-10 absolute  md:ml-28 lg:ml-60  md:h-64 md:w-72 lg:mt-4"
       />
 
       <animated.img
         img
         src={Box}
         alt="box"
-        className="box  z-5 absolute    md:ml-32 lg:ml-60  md:h-64 md:w-72"
+        className="box  z-5 absolute    md:ml-32 lg:ml-64  md:h-64 md:w-72 "
         style={box}
       />
       <animated.img
         img
         src={ArcsHome}
         alt="box"
-        className="arcs md:ml-44   absolute mt-4 lg:ml-72 md:h-44 md:w-auto"
+        className="arcs md:ml-44   absolute mt-4 lg:ml-72 md:h-48 md:w-auto"
         style={arcs}
       />
       <animated.img
         img
         alt="circle"
         src={Circle}
-        className="circle  absolute  md:mt-60 md:ml-36 lg:ml-72 "
+        className="circle  absolute  md:mt-60 lg:mt-64  md:ml-36 lg:ml-72 "
         style={Rectangle}
       />
 
@@ -89,8 +89,8 @@ const IndexPage = () => {
         />
       </a>
 
-      <div className="lg:mb-1 block mt-80 ml-auto mr-auto w-1/2 md:mt-auto   md:w-auto md:mr-12 lg:mr-44 md:float-right ">
-        <p className="w-min font line font-semibold text-justify text-4xl md:text-5xl  caption">
+      <div className="mb-48 lg:mb-1 block mt-80 ml-auto mr-auto w-1/2 md:mt-auto   md:w-auto md:mr-12 lg:mr-44 md:float-right ">
+        <p className="leading-tight w-min font line font-semibold text-justify text-4xl md:text-5xl  md:leading-tight caption">
           Your next <br />
           Interactive <br />
           Experience
@@ -103,7 +103,7 @@ const IndexPage = () => {
         </button>
       </div>
 
-      <div className=" w-auto h-screen mx-16 md:mx-16 mt-20 md:space-x-7 md:h-auto md:mt-96 flex flex-col  text-justify  font  md:flex-row ">
+      <div className="w-auto h-full mx-16  mt-20 md:space-x-7 md:h-auto  md:mt-96 flex flex-col  font  md:flex-row ">
         <Card />
         <Card />
         <Card />

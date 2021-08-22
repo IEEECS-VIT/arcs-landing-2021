@@ -13,6 +13,7 @@
   border-color: #f9ae5e;
   border-top-left-radius: 6rem;
   border-bottom-left-radius: 6rem;
+  box-shadow: 10px 10px 20px gray;
 }
 
 .border {
@@ -21,6 +22,7 @@
   background: linear-gradient(to left, #9a54ad, #ef757c, #f9af61);
   border-radius: 30px;
   padding: 3px;
+  box-shadow: 10px 8px 10px gray;
 }
 .inner {
   background: white;
@@ -30,9 +32,6 @@
 .border:hover {
   transition: all 0.2s ease-in-out;
   transform: scale(1.1) translateY(-10px);
-}
-.caption-md {
-  margin-right: 10%;
 }
 
 .icons {
@@ -45,7 +44,7 @@
   .rect {
     height: auto;
     left: 50%;
-    width: 180px;
+    width: 200px;
     margin-left: -100px;
     margin-top: 10px;
   }
@@ -53,8 +52,8 @@
   .arcs {
     height: auto;
     left: 50%;
-    width: 180px;
-    margin-left: -80px;
+    width: 200px;
+    margin-left: -77px;
   }
   .box {
     margin-top: 10px;
@@ -63,21 +62,22 @@
     margin-top: 15px;
   }
   .circle {
-    margin-top: 12.5rem;
+    margin-top: 13.4rem;
     left: 50%;
-    width: 50px;
+    width: 48px;
     margin-left: -90px;
   }
 }
 .top {
   margin-top: 200vw;
 }
+
 @media only screen and (max-width: 320px) {
   .icons {
     margin-left: 12%;
   }
   .caption {
-    margin-top: -30px;
+    margin-top: -15px;
     font-size: 1.9rem;
     line-height: 2.2rem;
   }
