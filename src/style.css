@@ -16,6 +16,7 @@
 }
 
 .border {
+  transition: all 0.2s ease-in-out;
   position: relative;
   background: linear-gradient(to left, #9a54ad, #ef757c, #f9af61);
   border-radius: 30px;
@@ -27,6 +28,7 @@
   border-radius: 30px;
 }
 .border:hover {
+  transition: all 0.2s ease-in-out;
   transform: scale(1.1) translateY(-10px);
 }
 .caption-md {
