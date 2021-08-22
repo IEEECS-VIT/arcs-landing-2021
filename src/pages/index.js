@@ -89,7 +89,7 @@ const IndexPage = () => {
         />
       </a>
 
-      <div className="mb-48 lg:mb-1 block mt-80 ml-auto mr-auto w-1/2 md:mt-auto   md:w-auto md:mr-12 lg:mr-44 md:float-right ">
+      <div className="mb-48 md:mb-1 block mt-80 ml-auto mr-auto w-1/2 md:mt-auto   md:w-auto md:mr-12 lg:mr-44 md:float-right ">
         <p className="leading-tight w-min font line font-semibold text-justify text-4xl md:text-5xl  md:leading-tight caption">
           Your next <br />
           Interactive <br />
