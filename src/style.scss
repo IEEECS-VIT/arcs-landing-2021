@@ -95,6 +95,7 @@
   .eventhead{
       font-family: 'Montserrat',sans-serif;
       font-weight: 600;
+      position: fixed;
   } 
   .head{
     font-family: 'Montserrat',sans-serif;
@@ -111,23 +112,53 @@
     line-height: 2rem;
     padding: 0 32px;
   }
-
+  .rec1{
+    position: fixed;
+    left:0;
+    
+  }
+  .rec2{
+    position: fixed;
+    right:0;
+    bottom:0;
+  }
+  .cir1{
+    position: fixed;
+    right:12rem;
    
+    
+    
+  }
+  .cir2{
+    position: fixed;
+    top:20rem;
+    left:0;
+  }
+.cir3{
+  position: fixed;
+  bottom:0;
+  left:15rem;
+}
+.cir4{
+  position: fixed;
+  bottom:0.5rem;
+  right:30rem;
+}
  
    
-  .container {
-    font-family: Montserrat;
-    position: relative;
-    z-index: 0;
-  }
+  // .container {
+  //   font-family: Montserrat;
+  //   position: relative;
+  //   z-index: 0;
+  // }
   
-  .containerWrapper {
-    max-width: 1400px;
-    position: relative;
-    margin: 0 auto;
-    /* border: solid 1px red; */
-    min-height: 100vh;
-  }
+  // .containerWrapper {
+  //   max-width: 1400px;
+  //   position: relative;
+  //   margin: 0 auto;
+  //   /* border: solid 1px red; */
+  //   min-height: 100vh;
+  // }
 
 
 
@@ -141,6 +172,8 @@
   right: 0;
   top: 0;
   bottom: 0;
+  margin-top:18rem !important;
+  
 
 }
 
@@ -207,7 +240,7 @@ $innerlevel1-width:185px;
   border-radius: 15px;
   height: $innerlevel0-height;
   width: $innerlevel0-width;
-  position: absolute;
+  position: fixed;
 
 }
 
@@ -219,7 +252,7 @@ $innerlevel1-width:185px;
   width: $innerlevel1-width;
  
   
-  position: absolute;
+  position:fixed;
  
 
 }
@@ -231,7 +264,7 @@ $innerlevel1-width:185px;
   width: $innerlevel1-width;
  
   
-  position: absolute;
+  position: fixed;
  
 
 }

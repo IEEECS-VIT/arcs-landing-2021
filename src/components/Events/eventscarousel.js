@@ -1,4 +1,4 @@
-import React,{Component} from "react"
+import React from "react"
 import cyber from '../../images/event1.png'
 import CSSTransitionGroup from 'react-transition-group/CSSTransitionGroup';
 import {IoIosArrowDropleftCircle,IoIosArrowDroprightCircle} from "react-icons/io"
@@ -58,7 +58,7 @@ export default class Carousel extends React.Component {
     render() {
       // document.getElementsByClassName('level0')[0].append('<button>Click Me</button>')
         return(
-            <div id="carousel" className="noselect">
+            <div id="carousel">
                 <div className="arrow arrow-left" onClick={this.leftClick}><IoIosArrowDropleftCircle className="arrow-left"></IoIosArrowDropleftCircle></div>
                 <CSSTransitionGroup 
                     transitionName={this.state.direction}>
