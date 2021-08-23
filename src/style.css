@@ -39,6 +39,55 @@
   animation-name: icon-right;
   animation-duration: 1.5s;
 }
+.smallDiv {
+  background-color: #e35a78 !important;
+  margin-right: 0.1rem;
+  transition: none !important;
+}
+.smallDiv.open {
+  background-color: transparent !important;
+}
+div:first-child.open {
+  transform: rotate(45deg);
+}
+div:nth-child(2).open {
+  transform: translateX(20px);
+  opacity: 0;
+}
+
+div:nth-child(3).open {
+  transform: rotate(-45deg);
+}
+
+div:first-child.close {
+  transform: rotate(0);
+}
+
+div :nth-child(2).close {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+div :nth-child(3).close {
+  transform: rotate(0);
+  background-color: transparent;
+}
+
+.btn {
+  width: 2rem;
+  height: 2rem;
+  justify-content: space-around;
+}
+
+.btn div {
+  width: 2rem;
+  height: 0.3rem;
+  border-radius: 10px;
+  transition: all 0.3s linear;
+  position: relative;
+  transform-origin: 1px;
+  background-color: black;
+}
 
 @media only screen and (max-width: 767px) {
   .rect {

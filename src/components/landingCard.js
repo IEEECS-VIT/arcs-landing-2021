@@ -3,7 +3,7 @@ import comp from "./../images/card.png";
 const landingCard = () => {
   return (
     <div className="border my-4  w-full md:my-1">
-      <div className="inner  h-auto  ">
+      <div className="inner  ">
         <p className="mb-2 mr-auto ml-auto w-1/2  text-lg pb-1 text-black ">
           Hackbattle
         </p>

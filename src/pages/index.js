@@ -103,7 +103,7 @@ const IndexPage = () => {
         </button>
       </div>
 
-      <div className="w-auto h-full mx-16  mt-20 md:space-x-7 md:h-auto  md:mt-96 flex flex-col  font  md:flex-row ">
+      <div className="mx-16  mt-20 md:space-x-7   md:mt-96 flex flex-col  font  md:flex-row ">
         <Card />
         <Card />
         <Card />

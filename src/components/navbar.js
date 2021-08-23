@@ -6,6 +6,7 @@ import button from "./../images/hamburger.png";
 
 const Navbar = () => {
   const [isExpanded, toggleExpansion] = useState(false);
+  var openClose = isExpanded ? "open" : "close";
   return (
     <div className="mt-14 mb-5 ml-3  flex items-center justify-between flex-wrap">
       <img
@@ -13,15 +14,19 @@ const Navbar = () => {
         className="fixed block lg:w-14 h-12  flex items-center"
         alt="arcs"
       />
-      <div className="z-30 block fixed top-3 right-3">
-        <button
-          className=" flex float:right  px-3 py-2 "
-          onClick={() => toggleExpansion(!isExpanded)}
-        >
-          {!isExpanded && <img src={button} alt="ham" />}
-          {isExpanded && <FaTimes size={40} />}
-        </button>
-      </div>
+
+      <button
+        className="fixed z-30 flex flex-col  right-5  btn"
+        onClick={() => toggleExpansion(!isExpanded)}
+      >
+        <div className={openClose}></div>
+        <div className={openClose}></div>
+        <div className={`${openClose} flex flex-row`}>
+          <div className={`${openClose} smallDiv`}></div>
+          <div className={`${openClose} lgDiv`}></div>
+        </div>
+      </button>
+
       <div
         className="pr-auto  nav ease-in-out duration-300 z-20 fixed  block flex flex-col  h-full top-0  pt-24  right-0  bg-orange font-semibold  font "
         style={{
