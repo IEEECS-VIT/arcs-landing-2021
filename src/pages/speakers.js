@@ -1,5 +1,7 @@
 import React, { Component } from "react";
-import Caroussel from "../components/Caroussel/Caroussel.component";
+// import Caroussel from "../components/Caroussel/Caroussel.component";
+import { CoverSpeaker } from "../components/CoverSpeaker/CoverSpeaker";
+
 
 export default class Speakers extends Component {
   constructor() {
@@ -48,7 +50,8 @@ export default class Speakers extends Component {
   render() {
     return (
       <div>
-        <Caroussel />
+        <CoverSpeaker title="Speakers" />
+        {/* <Caroussel /> */}
       </div>
     );
   }
