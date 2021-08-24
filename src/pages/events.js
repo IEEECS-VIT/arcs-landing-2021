@@ -1,6 +1,6 @@
 import * as React from "react"
 
-import Event from '../components/Events/eventscarousel'
+
 import c1 from '../images/c1.png'
 import c2 from '../images/c2.png'
 import c3 from '../images/c3.png'
@@ -9,7 +9,7 @@ import rec1 from '../images/rec1.png'
 import rec2 from '../images/rec2.png'
 import smrec2 from '../images/smrec2.png'
 import Carousel from '../components/Events/eventscarousel'
-import border from '../images/border.png'
+// import border from '../images/border.png'
 
 const EventPage = () => {
   var items = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]

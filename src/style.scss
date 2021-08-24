@@ -6,32 +6,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,600;1,500&display=swap');
 
 .bginput{
-    background-color: #F4F4F4;
-    line-height: 1rem;
-    width: 25rem;
-    color: #495057;
-    background-clip: padding-box;
-    border-radius: 0.25rem;
+    
     font-family: "Arial";
-    border: none;
     display: block;
-    padding: 0.9rem;
     resize: none !important;
 }
 .submitButton {
-    height: 40px;
-    width:400px;
-    margin: 0 auto;
     color: #e7e9e7;
-    
-    text-align: center;
-    padding: 0 32px;
-    line-height: 1.4rem;
-    border: none;
-    position: relative;
-    border-radius: 25px;
+    // padding: 0 32px;
     background-color: #df9318;
-    margin-bottom: 2%;
+    // margin-bottom: 2%;
     cursor: pointer;
   }
   .contactline{

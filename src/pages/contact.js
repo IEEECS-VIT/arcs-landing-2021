@@ -9,10 +9,10 @@ from "react-icons/im"
 
 const ContactPage = () => {
     return (
-     <div className="container pt-40 mx-auto">
+     <div className="container mt-40 mx-auto">
          <center>
              <h1 className="text-3xl" style={{fontFamily:"Poppins"}}>Contact us!</h1>
-             <div className="contactline"></div>
+             <div className="contactline md:visible invisible"></div>
              
          </center>
          <br></br> 
@@ -28,19 +28,19 @@ const ContactPage = () => {
                     
                 </div>
   
-          <div className="place-self-center mx-8 ">
+          <div className="place-self-center ">
          <form> 
-         <input className="bginput" type="name" placeholder="NAME"></input>
+         <input className="flex justify-center bginput bg-gray-100 rounded p-4 md:w-96 md:mx-auto md:leading-4 text-gray-400 w-80  leading-3 " type="name" placeholder="NAME"></input>
          <br>
         </br>
         
-         <input className="bginput " type="email"  placeholder="EMAIL"></input>
+         <input className=" flex justify-center bginput bg-gray-100 rounded p-4 md:w-96 md:mx-auto md:leading-4 text-gray-400 w-80  leading-3 " type="email"  placeholder="EMAIL"></input>
          <br></br>
          
-        <textarea  className="bginput" placeholder="MESSAGE" rows="4"></textarea>
+        <textarea  className=" flex justify-center bginput bg-gray-100 rounded p-4 md:w-96 md:mx-auto md:leading-4 text-gray-400 w-80  leading-3 " placeholder="MESSAGE" rows="4"></textarea>
         <br></br>
         
-        <button type="button" className="submitButton" >SUBMIT</button>
+        <button type="button" className="submitButton relative leading-3 mx-0 my-0 h-10 md:w-96 rounded-3xl text-center w-80" >SUBMIT</button>
          </form>
          </div>
          
