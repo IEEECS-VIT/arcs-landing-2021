@@ -25,7 +25,7 @@ const Navbar = (props) => {
       </button>
 
       <div
-        className="pr-auto  nav ease-in-out duration-300 z-20 fixed  block flex flex-col  h-full top-0  pt-24  right-0  bg-orange font-semibold  font "
+        className="pr-auto nav ease-in-out duration-300 z-20 fixed  block flex flex-col h-full top-0  pt-24  right-0  bg-orange font-semibold  font "
         style={{
           transform: !props.isExpanded ? "translateX(110%)" : "translateX(0)",
         }}

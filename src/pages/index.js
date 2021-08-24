@@ -34,7 +34,7 @@ const IndexPage = () => {
   });
   var Blur = isExpanded ? "blur" : "none";
   return (
-    <div className="-mt-5">
+    <div className="-mt-5 overflow-x-hidden">
       <Navbar isExpanded={isExpanded} toggleExpansion={toggleExpansion} />
       <Rectangles />
       <div className={`absolute z-5 ${Blur}`}>
@@ -67,27 +67,28 @@ const IndexPage = () => {
           className="circle  absolute  md:mt-60 lg:mt-64  md:ml-36 lg:ml-72 "
           style={Rectangle}
         />
+        <animated.div style={Rectangle}>
+          <a href="https://twitter.com/ieeecsvit">
+            <FaTwitter
+              size={20}
+              className=" icons mt-28  md:ml-20 lg:ml-48 absolute"
+              style={Rectangle}
+            />
+          </a>
 
-        <a href="https://twitter.com/ieeecsvit">
-          <FaTwitter
-            size={20}
-            className=" icons mt-28  md:ml-20 lg:ml-48 absolute"
-            style={Rectangle}
-          />
-        </a>
-
-        <a href="https://www.facebook.com/ieeecsvit">
-          <FaFacebook
-            size={20}
-            className="icons  mt-36 md:ml-20 lg:ml-48 absolute"
-          />
-        </a>
-        <a href="https://www.instagram.com/ieeecs_vit/">
-          <AiFillInstagram
-            size={20}
-            className="icons  mt-44 md:ml-20 lg:ml-48 absolute"
-          />
-        </a>
+          <a href="https://www.facebook.com/ieeecsvit">
+            <FaFacebook
+              size={20}
+              className="icons  mt-36 md:ml-20 lg:ml-48 absolute"
+            />
+          </a>
+          <a href="https://www.instagram.com/ieeecs_vit/">
+            <AiFillInstagram
+              size={20}
+              className="icons  mt-44 md:ml-20 lg:ml-48 absolute"
+            />
+          </a>
+        </animated.div>
 
         <div className="mb-48 md:mb-1 block mt-80 ml-auto mr-auto w-1/2 md:mt-auto   md:w-auto md:mr-12 lg:mr-44 md:float-right ">
           <p className="leading-tight w-min font line font-semibold text-justify text-4xl md:text-5xl  md:leading-tight caption">
@@ -103,7 +104,7 @@ const IndexPage = () => {
           </button>
         </div>
 
-        <div className="min-w-min mx-16  mt-20 md:space-x-7   md:mt-96 flex flex-col  font  md:flex-row ">
+        <div className="mt-20 md:mt-96 flex font mx-auto flex-wrap justify-around ">
           <Card />
           <Card />
           <Card />
