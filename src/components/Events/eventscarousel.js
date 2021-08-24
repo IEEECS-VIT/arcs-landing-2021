@@ -58,7 +58,7 @@ export default class Carousel extends React.Component {
     render() {
       // document.getElementsByClassName('level0')[0].append('<button>Click Me</button>')
         return(
-            <div id="carousel">
+            <div className="align-center absolute inset-0 mx-auto mb-auto mt-72 w-full h-96">
                 <div className="arrow arrow-left" onClick={this.leftClick}><IoIosArrowDropleftCircle className="arrow-left"></IoIosArrowDropleftCircle></div>
                 <CSSTransitionGroup 
                     transitionName={this.state.direction}>

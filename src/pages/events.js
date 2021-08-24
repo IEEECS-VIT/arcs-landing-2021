@@ -7,39 +7,47 @@ import c3 from '../images/c3.png'
 import c4 from '../images/c4.png'
 import rec1 from '../images/rec1.png'
 import rec2 from '../images/rec2.png'
+import smrec2 from '../images/smrec2.png'
 import Carousel from '../components/Events/eventscarousel'
+import border from '../images/border.png'
 
 const EventPage = () => {
   var items = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
     return (
-        <div className="mt-28">
-              <div className="rec1">
-                    <img src={rec1} style={{height:"10rem"}}></img>
+        <div className="md:mt-28 mt-10">
+              <div className="fixed md:left-0 md:visible invisible">
+                    <img src={rec1} className="h-44"></img>
               </div>
-                 <div className="cir1">
-                   <img src={c1}/>
+                 <div className="fixed md:right-48 -right-14 top-20 ">
+                   <img src={c1} className="h-32"/>
                  </div> 
-             <h1 className="text-center text-5xl head mt-5">Events</h1>
-        
-             <div className="flex justify-center mt-5">
-             <button type="button" className="grad border-2 text-l pt-2 pb-2 px-2" >REGISTER NOW</button>
+                 
+             <div className="md:text-6xl head mt-5 flex justify-center text-4xl ">Events</div>
+              
+             <div className="flex justify-center md:mt-6 mt-20">
+             <button type="button" className="grad border-4 md:text-xl py-2 px-5 text-l" >REGISTER NOW</button>
              </div>
-            <Carousel  items={items} active={0}/>
+            
+            {/* <Carousel  items={items} active={0}/> */}
        
-        <div className="cir2">
+        <div className="fixed md:top-80 left-0 -top-11 ">
         <img src={c2}/>
         </div> 
 
-            <div className="cir3">
+            <div className="fixed md:left-60 md:bottom-0 md:visible invisible">
         <img src={c3}/>
          </div> 
-        <div className="cir4">
-        <img src={c4}/>
+        <div className="fixed md:right-96 md:bottom-2 md:left-auto bottom-6 left-8 ">
+        <img src={c4} className="h-auto"/>
         </div> 
-        <div className="rec2">
-        <img src={rec2} style={{height:"10rem"}}></img>
+        <div className="fixed md:right-0 md:bottom-0 md:visible invisible ">
+        <img src={rec2} className="h-44"></img>
               </div> 
-          </div>   
+           
+           <div className="fixed right-0 bottom-0 md:invisible visible ">
+           <img src={smrec2} className="h-32"></img>
+        </div> 
+        </div>       
         
     )
   }
