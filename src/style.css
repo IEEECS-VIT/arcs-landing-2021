@@ -13,7 +13,10 @@
   border-color: #f9ae5e;
   border-top-left-radius: 6rem;
   border-bottom-left-radius: 6rem;
-  box-shadow: 10px 10px 20px gray;
+  box-shadow: 10px 10px 50px gray;
+}
+.blur {
+  filter: blur(0.9px);
 }
 
 .border {
@@ -22,7 +25,7 @@
   background: linear-gradient(to left, #9a54ad, #ef757c, #f9af61);
   border-radius: 30px;
   padding: 3px;
-  box-shadow: 10px 8px 10px gray;
+  box-shadow: 8px 8px 10px gray;
 }
 .inner {
   background: white;

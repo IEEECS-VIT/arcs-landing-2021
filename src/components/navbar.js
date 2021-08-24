@@ -1,14 +1,11 @@
 import React, { useState } from "react";
 import { Link } from "gatsby";
-import { FaTimes } from "react-icons/fa";
 import arcs from "./../images/arcs.png";
-import button from "./../images/hamburger.png";
 
-const Navbar = () => {
-  const [isExpanded, toggleExpansion] = useState(false);
-  var openClose = isExpanded ? "open" : "close";
+const Navbar = (props) => {
+  var openClose = props.isExpanded ? "open" : "close";
   return (
-    <div className="mt-14 mb-5 ml-3  flex items-center justify-between flex-wrap">
+    <div className="z-30 mt-12 mb-4 ml-3  flex items-center justify-between flex-wrap">
       <img
         src={arcs}
         className="fixed block lg:w-14 h-12  flex items-center"
@@ -17,7 +14,7 @@ const Navbar = () => {
 
       <button
         className="fixed z-30 flex flex-col  right-5  btn"
-        onClick={() => toggleExpansion(!isExpanded)}
+        onClick={() => props.toggleExpansion(!props.isExpanded)}
       >
         <div className={openClose}></div>
         <div className={openClose}></div>
@@ -30,7 +27,7 @@ const Navbar = () => {
       <div
         className="pr-auto  nav ease-in-out duration-300 z-20 fixed  block flex flex-col  h-full top-0  pt-24  right-0  bg-orange font-semibold  font "
         style={{
-          transform: !isExpanded ? "translateX(100%)" : "translateX(0)",
+          transform: !props.isExpanded ? "translateX(110%)" : "translateX(0)",
         }}
       >
         <Link
