@@ -56,9 +56,10 @@ export class Caroussel extends React.Component {
         <div className="arrow arrow-left" onClick={this.leftClick}>
           <i className="fi-arrow-left"></i>
         </div>
+        <div className='cards_move'>
         <CSSTransitionGroup transitionName={this.state.direction}>
           {this.generateItems()}
-        </CSSTransitionGroup>
+        </CSSTransitionGroup></div>
         <div className="arrow arrow-right" onClick={this.rightClick}>
           <i className="fi-arrow-right"></i>
         </div>
@@ -77,6 +78,6 @@ class Item extends React.Component {
 
   render() {
     const className = "item level" + this.props.level;
-    return <div className={className}>{this.props.id}</div>;
+    return <div className={`${className} carousel_card`}>{this.props.id}</div>;
   }
 }
