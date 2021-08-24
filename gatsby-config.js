@@ -3,7 +3,7 @@ module.exports = {
     siteUrl: "https://www.yourdomain.tld",
     title: "Arcs 2021",
   },
-  plugins: ['gatsby-plugin-postcss'],
+  plugins: ["gatsby-plugin-postcss"],
   plugins: [
     {
       resolve: `gatsby-plugin-sass`,
@@ -11,5 +11,5 @@ module.exports = {
         implementation: require("node-sass"),
       },
     },
-  ]
-}
+  ],
+};

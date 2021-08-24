@@ -7,16 +7,26 @@ body {
 
 #carousel {
   display: flex;
+  flex-direction: row;
   align-items: center;
-  position: absolute;
+  justify-content: center;
+  // position: absolute;
   border: 1px solid red;
   height: 400px;
-  width: 100vw;
+  width: 100%;
   margin: auto;
+}
+.bubble-container {
+  border: solid 1px black;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 80vw;
+  overflow: hidden;
 }
 
 .arrow {
-  position: absolute;
+  // position: absolute;
   width: 60px;
   height: 60px;
   background: linear-gradient(90deg, #faa41a, #000);
@@ -40,7 +50,7 @@ body {
   color: white;
   border: 1px solid blue;
   font-size: 40px;
-  position: absolute;
+  // position: absolute;
   height: 150px;
   width: 150px;
   border-radius: 50%;
@@ -67,9 +77,23 @@ $level2-left: 50px;
   height: 150px;
   width: 150px;
   line-height: $level2-height;
-//   border: 1px solid black;
-//   background-color: black;
-  background: linear-gradient(to right, #9a54ad, #b355a5, #c7589c, #d75d92, #e46688, #ec6e81, #f37879, #f78273, #fa8c6d, #fc9867, #fba363, #f9af61);
+  //   border: 1px solid black;
+  //   background-color: black;
+  background: linear-gradient(
+    to right,
+    #9a54ad,
+    #b355a5,
+    #c7589c,
+    #d75d92,
+    #e46688,
+    #ec6e81,
+    #f37879,
+    #f78273,
+    #fa8c6d,
+    #fc9867,
+    #fba363,
+    #f9af61
+  );
   left: $level-2-left;
   // margin-top: 25px;
 }
@@ -80,8 +104,22 @@ $level2-left: 50px;
   height: 150px;
   width: 150px;
   line-height: $level1-height;
-//   background-color: yellow;
-  background: linear-gradient(to right, #9a54ad, #b355a5, #c7589c, #d75d92, #e46688, #ec6e81, #f37879, #f78273, #fa8c6d, #fc9867, #fba363, #f9af61);
+  //   background-color: yellow;
+  background: linear-gradient(
+    to right,
+    #9a54ad,
+    #b355a5,
+    #c7589c,
+    #d75d92,
+    #e46688,
+    #ec6e81,
+    #f37879,
+    #f78273,
+    #fa8c6d,
+    #fc9867,
+    #fba363,
+    #f9af61
+  );
   left: $level-1-left;
   // margin-top: 10px;
 }
@@ -92,8 +130,22 @@ $level2-left: 50px;
   height: 150px;
   width: 150px;
   line-height: $level0-height;
-//   background-color: cyan;
-  background: linear-gradient(to right, #9a54ad, #b355a5, #c7589c, #d75d92, #e46688, #ec6e81, #f37879, #f78273, #fa8c6d, #fc9867, #fba363, #f9af61);
+  //   background-color: cyan;
+  background: linear-gradient(
+    to right,
+    #9a54ad,
+    #b355a5,
+    #c7589c,
+    #d75d92,
+    #e46688,
+    #ec6e81,
+    #f37879,
+    #f78273,
+    #fa8c6d,
+    #fc9867,
+    #fba363,
+    #f9af61
+  );
   left: $level0-left;
 }
 
@@ -103,8 +155,22 @@ $level2-left: 50px;
   height: 150px;
   width: 150px;
   line-height: $level1-height;
-//   background-color: purple;
-  background: linear-gradient(to right, #9a54ad, #b355a5, #c7589c, #d75d92, #e46688, #ec6e81, #f37879, #f78273, #fa8c6d, #fc9867, #fba363, #f9af61);
+  //   background-color: purple;
+  background: linear-gradient(
+    to right,
+    #9a54ad,
+    #b355a5,
+    #c7589c,
+    #d75d92,
+    #e46688,
+    #ec6e81,
+    #f37879,
+    #f78273,
+    #fa8c6d,
+    #fc9867,
+    #fba363,
+    #f9af61
+  );
   // margin-top: 10px;
   left: $level1-left;
 }
@@ -239,14 +305,15 @@ $level2-left: 50px;
   font-size: 20px;
   height: 150px;
   width: 150px;
-  margin: 0px 20vw;
+  // margin: 0px 20vw;
+  // border: solid 1px green;
 }
-.carousel_card {
-//   margin: 0px 200px;
-position: absolute;
-left: 10;
-transform: translate(50%, -50%);
-}
+// .carousel_card {
+// //   margin: 0px 200px;
+// position: absolute;
+// left: 10;
+// transform: translate(50%, -50%);
+// }
 
 .noselect {
   -webkit-user-select: none;

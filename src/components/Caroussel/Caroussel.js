@@ -56,10 +56,16 @@ export class Caroussel extends React.Component {
         <div className="arrow arrow-left" onClick={this.leftClick}>
           <i className="fi-arrow-left"></i>
         </div>
-        <div className='cards_move'>
-        <CSSTransitionGroup transitionName={this.state.direction}>
-          {this.generateItems()}
-        </CSSTransitionGroup></div>
+        <div className="cards_move">
+          {/* <div className="bubble-container"> */}
+          <CSSTransitionGroup
+            className="bubble-container"
+            transitionName={this.state.direction}
+          >
+            {this.generateItems()}
+          </CSSTransitionGroup>
+          {/* </div> */}
+        </div>
         <div className="arrow arrow-right" onClick={this.rightClick}>
           <i className="fi-arrow-right"></i>
         </div>
