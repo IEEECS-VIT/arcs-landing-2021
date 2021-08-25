@@ -8,11 +8,34 @@ import c4 from '../images/c4.png'
 import rec1 from '../images/rec1.png'
 import rec2 from '../images/rec2.png'
 import smrec2 from '../images/smrec2.png'
+// import cyber from '../images/event1.png'
 import Carousel from '../components/Events/eventscarousel'
 // import border from '../images/border.png'
 
 const EventPage = () => {
-  var items = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+  const items = [
+    {
+      title:"Cyber Security",
+      img:"event1"
+    },
+    {
+      title:"UI/UX",
+      img:"event1"
+    },
+    {
+      title:"AI",
+      img:"event1"
+    },
+    {
+      title:"Web Dev",
+      img:"event1"
+    },
+    {
+      title:"Design",
+      img:"event1"
+    }
+
+  ]
     return (
         <div className="md:mt-28 mt-10">
               <div className="fixed md:left-0 md:visible invisible">
@@ -28,7 +51,7 @@ const EventPage = () => {
              <button type="button" className="grad border-4 md:text-xl py-2 px-5 text-l" >REGISTER NOW</button>
              </div>
             
-            {/* <Carousel  items={items} active={0}/> */}
+            <Carousel  items={items} active={0}/>
        
         <div className="fixed md:top-80 left-0 -top-11 ">
         <img src={c2}/>

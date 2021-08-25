@@ -79,7 +79,7 @@
   .eventhead{
       font-family: 'Montserrat',sans-serif;
       font-weight: 600;
-      position: fixed;
+      
   } 
   .head{
     font-family: 'Montserrat',sans-serif;
@@ -141,19 +141,19 @@
 
 
   
-// #carousel {
-//   position: absolute;
-//   height: 200px;
-//   width: 950px;
-//   margin: auto;
-//   left: 0;
-//   right: 0;
-//   top: 0;
-//   bottom: 0;
-//   margin-top:18rem !important;
+#carousel {
+  position: fixed;
+  height: 200px;
+  width: 950px;
+  margin: auto;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin-top:18rem !important;
   
 
-// }
+}
 
 .arrow {
   position: absolute;
@@ -175,7 +175,7 @@
 
 .arrow-right {
   left: 950px;
-  margin-right: 20px ;
+  margin-right: 15px ;
 }
 
 .item {
@@ -218,7 +218,7 @@ $innerlevel1-width:185px;
   border-radius: 15px;
   height: $innerlevel0-height;
   width: $innerlevel0-width;
-  position: fixed;
+  
 
 }
 
@@ -230,7 +230,7 @@ $innerlevel1-width:185px;
   width: $innerlevel1-width;
  
   
-  position:fixed;
+  
  
 
 }
@@ -242,7 +242,7 @@ $innerlevel1-width:185px;
   width: $innerlevel1-width;
  
   
-  position: fixed;
+  
  
 
 }

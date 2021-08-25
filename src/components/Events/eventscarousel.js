@@ -1,5 +1,5 @@
 import React from "react"
-import cyber from '../../images/event1.png'
+
 import CSSTransitionGroup from 'react-transition-group/CSSTransitionGroup';
 import {IoIosArrowDropleftCircle,IoIosArrowDroprightCircle} from "react-icons/io"
 
@@ -11,7 +11,8 @@ export default class Carousel extends React.Component {
     constructor(props) {
         super(props)
         this.state = {
-            items: this.props.items,
+            
+            items:this.props.items,
             active: this.props.active,
             direction: ''
         }
@@ -23,7 +24,7 @@ export default class Carousel extends React.Component {
         var items = []
         var level
         console.log(this.state.active)
-        for (var i = this.state.active - 1; i < this.state.active + 2; i++) {
+        for (var i = this.state.active - 1 ; i < this.state.active + 2; i++) {
             var index = i
             if (i < 0) {
                 index = this.state.items.length + i
@@ -31,9 +32,9 @@ export default class Carousel extends React.Component {
                 index = i % this.state.items.length
             }
             level = this.state.active - i
-            
-            items.push(<Item key={index}  level={level} />)
-            
+       
+        items.push(<Item key={index} title={this.state.items[index].title} img={this.state.items[index].img}  level={level} />)
+            console.log(this.state.items[index].img)
         }
         return items
     }
@@ -58,12 +59,14 @@ export default class Carousel extends React.Component {
     render() {
       // document.getElementsByClassName('level0')[0].append('<button>Click Me</button>')
         return(
-            <div className="align-center absolute inset-0 mx-auto mb-auto mt-72 w-full h-96">
+            // className="absolute inset-0 mx-auto mb-auto mt-72 "
+            <div id="carousel">
                 <div className="arrow arrow-left" onClick={this.leftClick}><IoIosArrowDropleftCircle className="arrow-left"></IoIosArrowDropleftCircle></div>
-                <CSSTransitionGroup 
+                 <CSSTransitionGroup 
                     transitionName={this.state.direction}>
                     {this.generateItems()}
                 </CSSTransitionGroup>
+                
                 <div className="arrow arrow-right" onClick={this.rightClick}><IoIosArrowDroprightCircle className="arrow-right"></IoIosArrowDroprightCircle></div>
             </div>
         )
@@ -75,7 +78,9 @@ class Item extends React.Component {
     constructor(props) {
         super(props)
         this.state = {
-            level: this.props.level
+            level: this.props.level,
+            title:this.props.title,
+            img:this.props.img
         }
     }
     
@@ -87,9 +92,12 @@ class Item extends React.Component {
         return(
           
             <div className={className}>
+    
               <div className={innerclass}>
+               <h1 className="text-lg pt-5 eventhead">{this.state.title}</h1>
+               <img className="eventimg" src={require(`../../images/${this.state.img}.png`).default} alt="noo"></img>
                
-               <img className="eventimg" src={cyber} alt="noo"></img>
+              
               </div>
                 </div>
           
