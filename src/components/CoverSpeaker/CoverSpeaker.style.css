@@ -2,16 +2,20 @@
 .heading {
   /* border: 1px solid red; */
   display: flex;
-  align-items: flex-end;
+  align-items: flex-start;
+  height: 30vh;
 }
 
 .heading-content {
   cursor:default;
-  justify-self: baseline;
+  /* justify-self: flex-start; */
   font-family: "Montserrat", sans-serif;
   font-size: 5vw;
   font-weight: 600;
   /* border: 1px solid red; */
+}
+img {
+  height: 30vh;
 }
 .img1 {
   position: absolute;
@@ -26,6 +30,10 @@
 @media all and (max-width: 1024px) {
   .heading-content {
     font-size: 50px;
+    align-self: center;
+  }
+  .img {
+    height: 25vh;
   }
 }
 

@@ -59,7 +59,7 @@ export class Caroussel extends React.Component {
           {/* <i className="fi-arrow-left"></i> */}
           <ArrowBackIosIcon style={{ fontSize: 40, color: 'black' }} />
         </div>
-        <div className="cards_move">
+        {/* <div className="cards_move"> */}
           <div className="bubble-container">
           <CSSTransitionGroup
             className="bubble-container"
@@ -67,7 +67,7 @@ export class Caroussel extends React.Component {
           >
             {this.generateItems()}
           </CSSTransitionGroup>
-          </div>
+          {/* </div> */}
         </div>
         <div className="arrow arrow-right" onClick={this.rightClick}>
           {/* <i className="fi-arrow-right"></i> */}
@@ -88,6 +88,8 @@ class Item extends React.Component {
 
   render() {
     const className = "item level" + this.props.level;
-    return <div className={`${className} carousel_card`}>{this.props.id}</div>;
+    return <div className={`${className} carousel_card`}>
+      <div className='txt-content'>{this.props.id}</div>
+    </div>;
   }
 }
