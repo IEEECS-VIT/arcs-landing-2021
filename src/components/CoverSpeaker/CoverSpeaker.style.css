@@ -37,6 +37,12 @@ img {
   }
 }
 
+@media all and (max-width: 550px) {
+  img {
+    display: none;
+  }
+}
+
 @media all and (max-width: 375px) {
   .heading-content {
     font-size: 40px;

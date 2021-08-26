@@ -1,7 +1,6 @@
 import React from "react";
 import "./Carousel.style.scss";
 import CSSTransitionGroup from "react-transition-group/CSSTransitionGroup";
-import ArrowForwardIosIcon from '@material-ui/icons/ArrowForwardIos';
 import ArrowBackIosIcon from '@material-ui/icons/ArrowBackIos';
 
 export class Caroussel extends React.Component {
@@ -71,7 +70,8 @@ export class Caroussel extends React.Component {
         </div>
         <div className="arrow arrow-right" onClick={this.rightClick}>
           {/* <i className="fi-arrow-right"></i> */}
-          <ArrowForwardIosIcon style={{ fontSize: 40, color: 'black'}} />
+          {/* <ArrowForwardIosIcon style={{ fontSize: 40, color: 'black'}} /> */}
+          <ArrowBackIosIcon style={{ fontSize: 40, color: 'black', transform: "rotate(180deg)" }} />
         </div>
       </div>
     );

@@ -386,8 +386,8 @@ $level2-left: 50px;
   .level0 {
     height: 40vw;
     width: 40vw;
-    min-height: 280px;
-    min-width: 280px;
+    min-height: 250px;
+    min-width: 250px;
 
     .txt-content {
       margin-top: 55vw;
@@ -398,5 +398,15 @@ $level2-left: 50px;
 @media all and(max-width: 630px) {
   .level0>.txt-content {
     margin-top: 375px;
+  }
+  .arrow {
+    margin-bottom: 25vh;
+    // align-self: flex-start;
+  }
+}
+
+@media all and (max-width: 400px) {
+  .arrow {
+    margin-top: 50px;
   }
 }
