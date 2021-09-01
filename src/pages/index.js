@@ -38,7 +38,7 @@ const IndexPage = () => {
     config: { duration: 600 },
     loop: false,
   });
-  var Blur = isExpanded ? "blur" : "none";
+  var Blur = isExpanded ? "change-opacity" : "none";
   return (
     <div className="-mt-5 ">
       <Navbar isExpanded={isExpanded} toggleExpansion={toggleExpansion} />
@@ -85,21 +85,21 @@ const IndexPage = () => {
           </a>
         </animated.div>
 
-        <div className="mb-48 md:mb-1 block mt-80 ml-auto mr-auto w-1/2 md:mt-auto    md:w-auto md:mr-12 lg:mr-44 md:float-right ">
-          <p className=" leading-tight w-min font line font-semibold text-justify text-4xl md:text-5xl  md:leading-tight caption">
+        <div className="mb-48 md:mb-1 block mt-80 ml-auto mr-auto w-1/2 md:mt-auto md:w-auto md:mr-12 lg:mr-44 md:float-right ">
+          <p className=" leading-tight w-min font-mont line font-semibold text-justify text-4xl md:text-5xl  md:leading-tight caption">
             Your next <br />
             Interactive <br />
             Experience
           </p>
-          <p className="font text-xl md:text-2xl text-justify text-orange mt-2">
+          <p className="font-mont text-xl md:text-2xl text-justify text-orange mt-2">
             VIT VELLORE, <br /> MARCH 19-21
           </p>
-          <button className="relative center rounded-md  bg-orange px-5 py-2 mt-2">
+          <button className="font-mont font-bold relative center rounded-md  bg-orange px-5 py-2 mt-2">
             Register now
           </button>
         </div>
 
-        <div className=" mt-20 md:mt-96 flex font mx-auto lg:mx-20 flex-wrap justify-around ">
+        <div className=" mt-20 md:mt-96 flex font-mont mx-auto lg:mx-20 flex-wrap justify-around ">
           <Card />
           <Card />
           <Card />

@@ -3,9 +3,6 @@
 @tailwind utilities;
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 
-.font {
-  font-family: "Montserrat", "san-serif";
-}
 .line {
   letter-spacing: 1px;
 }
@@ -15,24 +12,24 @@
   border-bottom-left-radius: 6rem;
   box-shadow: 10px 10px 50px gray;
 }
-.blur {
-  filter: blur(0.9px);
+.change-opacity {
+  filter: opacity(0.6);
 }
 
-.border {
+.grad {
   transition: all 0.2s ease-in-out;
   position: relative;
   background: linear-gradient(to left, #9a54ad, #ef757c, #f9af61);
   border-radius: 30px;
-  padding: 3px;
-  box-shadow: 8px 8px 10px gray;
+  padding: 4px;
+  box-shadow: 2px 2px 10px gray;
 }
 .inner {
   background: white;
   padding: 4.5%;
   border-radius: 30px;
 }
-.border:hover {
+.grad:hover {
   transition: all 0.2s ease-in-out;
   transform: scale(1.1) translateY(-10px);
 }
@@ -119,9 +116,6 @@ div :nth-child(3).close {
     width: 48px;
     margin-left: -90px;
   }
-}
-.top {
-  margin-top: 200vw;
 }
 
 @media only screen and (max-width: 320px) {

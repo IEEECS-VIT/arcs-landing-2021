@@ -16,6 +16,9 @@ module.exports = {
       orange: "#FFA53b",
       gray: "#8E8E8E",
     },
+    fontFamily: {
+      mont: ["Montserrat, san-serif"],
+    },
   },
   variants: {
     extend: {},
