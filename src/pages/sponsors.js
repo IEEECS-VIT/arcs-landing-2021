@@ -21,10 +21,13 @@ export default function sponsors() {
         <div className="mt-12">
         <div className="overflow-x-hidden object-fill">
             <div className=" mt-4 sm:mt-10">
-                <div className="">
-                    <p className="text-center text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl">
+                <div className="w-full flex justify-center">
+                    <div className="flex">
+                    <img className="object-scale-down w-44 sm:w-52 md:w-64 lg:w-80 xl:w-96 h-24" src={combo} alt="lines"/>
+                    <p className="text-center text-4xl absolute sm:text-5xl md:text-6xl lg:text-7xl xl:text-7xl ml-8 sm:ml-8 mt-4 md:ml-12 md:mt-0 lg:ml-16 xl:ml-24 mb-10">
                         Sponsors
                     </p>
+                    </div>
                 </div>
 
                 <div className=" group float-left">
