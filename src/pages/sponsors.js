@@ -1,7 +1,7 @@
 import React from 'react'
 
 import image from '../images/sponsors/sponsors_ball.png'
-// import combo from '../images/sponsors/combo2.png'
+import combo from '../images/sponsors/combo2.png'
 
 import devf from '../images/sponsors/devfo.png'
 import gfg from '../images/sponsors/gfg.png'
@@ -16,13 +16,13 @@ import bottomleft from '../images/sponsors/leftbottom.png'
 import bottomright1 from '../images/sponsors/rightbottom1.png'
 import bottomright2 from '../images/sponsors/rightbottom2.png'
 
-export default function test() {
+export default function sponsors() {
     return (
+        <div className="mt-12">
         <div className="overflow-x-hidden object-fill">
             <div className=" mt-4 sm:mt-10">
-                <div className="mx-auto">
-                {/* <div className="bg-no-repeat bgrd1" style={{background: {combo}}}/> */}
-                    <p className="text-center text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl tit">
+                <div className="">
+                    <p className="text-center text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl">
                         Sponsors
                     </p>
                 </div>
@@ -100,5 +100,6 @@ export default function test() {
                 </div>
             </div>
         </div>
+     </div>
     )
 }

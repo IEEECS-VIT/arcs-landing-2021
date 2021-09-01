@@ -2,7 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
-
+.bg2 {
+  background-image: url('./images/sponsors/combo2.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-origin: border-box;
+}
   /* .tit
 {
   border-left: 3px solid black;
