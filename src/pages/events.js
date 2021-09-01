@@ -39,10 +39,10 @@ const EventPage = () => {
     return (
         <div className="md:mt-28 mt-10">
               <div className="fixed md:left-0 md:visible invisible">
-                    <img src={rec1} className="h-44"></img>
+                    <img src={rec1} alt="noo" className="h-44"></img>
               </div>
                  <div className="fixed md:right-48 -right-14 top-20 ">
-                   <img src={c1} className="h-32"/>
+                   <img src={c1} alt="noo" className="h-32"/>
                  </div> 
                  
              <div className="md:text-6xl head mt-5 flex justify-center text-4xl ">Events</div>
@@ -54,21 +54,21 @@ const EventPage = () => {
             <Carousel  items={items} active={0}/>
        
         <div className="fixed md:top-80 left-0 -top-11 ">
-        <img src={c2}/>
+        <img src={c2} alt="noo"/>
         </div> 
 
             <div className="fixed md:left-60 md:bottom-0 md:visible invisible">
-        <img src={c3}/>
+        <img src={c3} alt="noo"/>
          </div> 
         <div className="fixed md:right-96 md:bottom-2 md:left-auto bottom-6 left-8 ">
-        <img src={c4} className="h-auto"/>
+        <img src={c4} alt="noo" className="h-auto"/>
         </div> 
         <div className="fixed md:right-0 md:bottom-0 md:visible invisible ">
-        <img src={rec2} className="h-44"></img>
+        <img src={rec2} alt="noo" className="h-44"></img>
               </div> 
            
            <div className="fixed right-0 bottom-0 md:invisible visible ">
-           <img src={smrec2} className="h-32"></img>
+           <img src={smrec2}  alt="noo"className="h-32"></img>
         </div> 
         </div>       
         
