@@ -26,6 +26,9 @@ img {
   right: 0;
   transform: rotate(180deg);
 }
+.mobile-heading {
+  display: none;
+}
 
 @media all and (max-width: 1024px) {
   .heading-content {
@@ -38,8 +41,26 @@ img {
 }
 
 @media all and (max-width: 550px) {
-  img {
+  .img1, .img2 {
     display: none;
+  }
+  .heading {
+    margin-bottom: 70px;
+  }
+  .heading-content {
+    display: none;
+  }
+  .mobile-heading {
+    height: fit-content;
+    width: fit-content;
+    /* border: 2px solid black; */
+    display: block;
+    align-self: center;
+  }
+  .mobile-heading>img {
+    height: 25vw;
+    min-height: 40px;
+
   }
 }
 

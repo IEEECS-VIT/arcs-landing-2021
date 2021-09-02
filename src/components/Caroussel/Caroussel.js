@@ -18,7 +18,7 @@ export class Caroussel extends React.Component {
   generateItems() {
     var items = [];
     var level;
-    console.log(this.state.active);
+    // console.log(this.state.active);
     for (var i = this.state.active - 2; i < this.state.active + 3; i++) {
       var index = i;
       if (i < 0) {
@@ -54,7 +54,7 @@ export class Caroussel extends React.Component {
   render() {
     return (
       <div id="carousel" className="noselect">
-        <div className="arrow arrow-left" onClick={this.leftClick}>
+        <div className="arrow arrow-left" onClick={this.leftClick} aria-hidden='true'>
           {/* <i className="fi-arrow-left"></i> */}
           <ArrowBackIosIcon style={{ fontSize: 40, color: 'black' }} />
         </div>
@@ -68,7 +68,7 @@ export class Caroussel extends React.Component {
           </CSSTransitionGroup>
           {/* </div> */}
         </div>
-        <div className="arrow arrow-right" onClick={this.rightClick}>
+        <div className="arrow arrow-right" onClick={this.rightClick} aria-hidden='true'>
           {/* <i className="fi-arrow-right"></i> */}
           {/* <ArrowForwardIosIcon style={{ fontSize: 40, color: 'black'}} /> */}
           <ArrowBackIosIcon style={{ fontSize: 40, color: 'black', transform: "rotate(180deg)" }} />
