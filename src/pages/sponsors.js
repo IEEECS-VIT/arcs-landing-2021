@@ -1,7 +1,7 @@
 import React from 'react'
 
 import image from '../images/sponsors/sponsors_ball.png'
-import combo from '../images/sponsors/combo2.png'
+//import combo from '../images/sponsors/combo2.png'
 
 import devf from '../images/sponsors/devfo.png'
 import gfg from '../images/sponsors/gfg.png'
@@ -21,14 +21,21 @@ export default function sponsors() {
         <div className="mt-12">
         <div className="overflow-x-hidden object-fill">
             <div className=" mt-4 sm:mt-10">
-                <div className="w-full flex justify-center">
+                {/* <div className="w-full flex justify-center">
                     <div className="flex">
-                    <img className="object-scale-down w-44 sm:w-52 md:w-64 lg:w-80 xl:w-96 h-24" src={combo} alt="lines"/>
+                    <img className="object-scale-down w-44 sm:w-52 md:w-64 lg:w-80 xl:w-96 h-24" src={combo} alt="lines"/> 
                     <p className="text-center text-4xl absolute sm:text-5xl md:text-6xl lg:text-7xl xl:text-7xl ml-8 sm:ml-8 mt-4 md:ml-12 md:mt-0 lg:ml-16 xl:ml-24 mb-10">
                         Sponsors
                     </p>
                     </div>
-                </div>
+                </div>  */}
+
+                    <div className="w-full flex justify-center">
+                    <p className="text-center text-4xl absolute sm:text-5xl md:text-6xl lg:text-7xl xl:text-7xl">
+                        Sponsors
+                    </p>
+                    </div>
+               
 
                 <div className=" group float-left">
                     <div className="md:ml-12 md:mt-8 ml-4 sm:mt-12 sm:-translate-y-6 mt-8 transform  xs:group-hover:-translate-y-12 md:group-hover:-translate-y-8 sm:group-hover:translate-x-4 transition ease-in-out duration-700">
