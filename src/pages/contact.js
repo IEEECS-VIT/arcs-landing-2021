@@ -1,14 +1,23 @@
   
 import * as React from "react"
+import { useState } from "react";
 import {FaEnvelope} from "react-icons/fa"
 import 
 {ImLocation,
 ImPhoneHangUp
 }
 from "react-icons/im"
+import Navbar from "./../components/navbar";
+import Rectangles from "./../components/rectangle";
 
 const ContactPage = () => {
+    const [isExpanded, toggleExpansion] = useState(false);
+    
     return (
+        <div>
+            <Navbar isExpanded={isExpanded} toggleExpansion={toggleExpansion} />
+            <Rectangles />
+        
      <div className="container mt-40 mx-auto">
          <center>
              <h1 className="text-3xl" style={{fontFamily:"Poppins"}}>Contact us!</h1>
@@ -48,6 +57,7 @@ const ContactPage = () => {
        
       
          </div>
+        </div>
        
    
     )

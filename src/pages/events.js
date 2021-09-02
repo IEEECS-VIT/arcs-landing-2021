@@ -1,5 +1,6 @@
 import * as React from "react"
-
+import { useState } from "react";
+import Navbar from "./../components/navbar";
 
 import c1 from '../images/c1.png'
 import c2 from '../images/c2.png'
@@ -13,6 +14,7 @@ import Carousel from '../components/Events/eventscarousel'
 // import border from '../images/border.png'
 
 const EventPage = () => {
+  const [isExpanded, toggleExpansion] = useState(false);
   const items = [
     {
       title:"Cyber Security",
@@ -36,7 +38,11 @@ const EventPage = () => {
     }
 
   ]
+ 
     return (
+      <div>
+      <Navbar isExpanded={isExpanded} toggleExpansion={toggleExpansion} />
+     
         <div className="md:mt-28 mt-10">
               <div className="fixed md:left-0 md:visible invisible">
                     <img src={rec1} alt="noo" className="h-44"></img>
@@ -71,7 +77,7 @@ const EventPage = () => {
            <img src={smrec2}  alt="noo"className="h-32"></img>
         </div> 
         </div>       
-        
+        </div>
     )
   }
   
