@@ -122,7 +122,7 @@
 
   
 #carousel {
-  position: absolute;
+  position: fixed;
   height: 200px;
   width: 950px;
   margin: auto;
@@ -142,10 +142,6 @@
  
   text-align: center;
   font-size: 30px;
- 
-  cursor: pointer;
-
-
   line-height: 30px;
   margin-top: 85px;
   z-index: 1000;
@@ -184,15 +180,15 @@ $innerlevel0-height:260px;
 $innerlevel0-width:260px;
 $innerlevel1-height:220px;
 $innerlevel1-width:185px;
-.cardbox{
-  background: rgba(255, 255, 255, 0.8);
-  border-radius: 15px;
-  height: 300px;
-  width: 250px;
+// .cardbox{
+//   background: rgba(255, 255, 255, 0.8);
+//   border-radius: 15px;
+//   height: 300px;
+//   width: 250px;
   
-  padding: 1.9rem;
+//   padding: 1.9rem;
   
-}
+// }
 .innerlevel0{
   background: rgba(255, 255, 255, 0.8);
  
@@ -394,26 +390,66 @@ $innerlevel1-width:185px;
   .innerlevel1{
     display: none;
   }
-.arrow
-{
-  display: none;
-}
-.arrow-right{
-  display:none;
-}
+
   .level0{
     height:17rem;
     width:16rem;
+    left:5rem;
   
   }
   .innerlevel0{
     height: 13.5rem;
     width:13.5rem;
+    
+    
   }
- 
+ .arrow{
+     margin-top: 20rem;
+     margin-left:7rem;
+   
+     
+ }
+ .arrow-right
+ {
+
+     left:18rem;
+     margin-left: 0;
+     
+ }
   #carousel{
-    height: 5rem;
-    width:2rem;
-    margin-right:40rem;
+    height:100%;
+    width:100%;
+     
+    
   }
+}
+
+@media all and (max-width:375px) {
+  .level0{
+   
+    
+   
+    height:14.875rem;
+    width:14rem;
+  
+  }
+  .innerlevel0{
+    height: 11.5rem;
+    width:11.5rem;
+    
+    
+  }
+  .arrow{
+    margin-top: 16rem;
+  
+  
+    
+}
+.arrow-right
+{
+
+    left:16rem;
+    
+}
+
 }

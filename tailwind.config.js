@@ -3,7 +3,10 @@ module.exports = {
   purge: [],
   darkMode: false, // or 'media' or 'class'
   theme: {
-    
+    screen:{
+    'iphone5': {'max':'320px'},
+      ...defaultTheme.screens,
+  },
     extend: {},
     backgroundColor: (theme) => ({
       ...theme("colors"),

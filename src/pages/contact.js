@@ -19,7 +19,7 @@ const ContactPage = () => {
             <Navbar isExpanded={isExpanded} toggleExpansion={toggleExpansion} />
             <Rectangles />
         
-     <div className="container lg:mt-14 mt-5 overflow-x-hidden mx-auto">
+     <div className="container lg:mt-14 mt-5  mx-auto">
          <center>
          <div className="w-full flex justify-center">
                     <div className="flex">
@@ -29,8 +29,7 @@ const ContactPage = () => {
                     </p>
                     </div>
                 </div>
-             {/* <h1 className="text-4xl z-0 " >Contact Us</h1> */}
-            
+           
              
          </center>
          <br></br> 
@@ -48,14 +47,14 @@ const ContactPage = () => {
   
           <div className="place-self-center ">
          <form> 
-         <input className="flex justify-center bginput bg-gray-100 rounded p-3 md:p-4 md:w-96 md:mx-auto lg:leading-4 text-gray-400 w-72  leading-3 lg:text-l text-sm" type="name" placeholder="NAME"></input>
+         <input className="iphone5:w-52 iphone5:leading-2 flex justify-center bginput bg-gray-100 rounded p-3 md:p-4 md:w-96 md:mx-auto lg:leading-4 text-gray-400 w-72  leading-3 lg:text-l text-sm" type="name" placeholder="NAME"></input>
          <br>
         </br>
         
-         <input className=" flex justify-center bginput bg-gray-100 rounded p-3 md:p-4 md:w-96 md:mx-auto lg:leading-4 text-gray-400 w-72 leading-3 lg:text-l text-sm" type="email"  placeholder="EMAIL"></input>
+         <input className="iphone5:w-52  flex justify-center bginput bg-gray-100 rounded p-3 md:p-4 md:w-96 md:mx-auto lg:leading-4 text-gray-400 w-72 leading-3 lg:text-l text-sm" type="email"  placeholder="EMAIL"></input>
          <br></br>
          
-        <textarea  className=" flex justify-center bginput bg-gray-100 rounded p-3 md:p-4 md:w-96 md:mx-auto lg:leading-4 text-gray-400 w-72  leading-3 lg:text-l text-sm" placeholder="MESSAGE" rows="4"></textarea>
+        <textarea  className="iphone5:w-52 flex justify-center bginput bg-gray-100 rounded p-3 md:p-4 md:w-96 md:mx-auto lg:leading-4 text-gray-400 w-72  leading-3 lg:text-l text-sm" placeholder="MESSAGE" rows="4"></textarea>
         <br></br>
         
         <button type="button" className="submitButton relative leading-3 mx-0 my-0 h-8 md:w-96 rounded-3xl text-center w-72" >SUBMIT</button>

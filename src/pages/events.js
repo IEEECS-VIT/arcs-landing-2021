@@ -61,7 +61,7 @@ const EventPage = () => {
                 </div>   
              {/* <div className="md:text-5xl head mt-2 flex justify-center text-4xl ">Events</div> */}
               
-             <div className="flex justify-center md:mt-2 mt-10">
+             <div className="flex justify-center md:mt-2 mt-6">
              <button type="button" className="gradbox border-4 md:text-l py-2 px-3 text-base" >REGISTER NOW</button>
              </div>
             
