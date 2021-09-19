@@ -4,16 +4,10 @@
 
 .circles {
   border-radius: 50%;
-  height: 20rem;
-  width: 20rem;
+  height: 21rem;
+  width: 21rem;
 }
-.circles:hover p {
-  color: white;
-  margin-top: 30px;
-  z-index: 20;
-  transition-timing-function: ease-in-out;
-  transition-duration: 0.5s;
-}
+
 .prize-line {
   background-color: black !important;
 }
@@ -40,4 +34,45 @@
     #c7466d 49.63%,
     #f9ab58 80.24%
   );
+}
+.change-opacity {
+  filter: opacity(0.6);
+}
+.circles:hover {
+  z-index: 50;
+}
+@media only screen and (min-width: 768px) {
+  .circles:hover p {
+    color: white;
+    margin-top: 30px;
+    z-index: 20;
+    transition-timing-function: ease-in-out;
+    transition-duration: 0.5s;
+  }
+}
+.lines {
+  border: 2.5px solid black;
+  background-color: black;
+}
+@media only screen and (max-width: 767px) {
+  .circles p {
+    color: white;
+  }
+  .circles {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: -45px;
+    height: 14rem;
+    width: 14rem;
+  }
+  .lines {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    color: black;
+    transform: rotate(160deg);
+  }
+  .circles:nth-child(2) {
+    margin-left: -20px;
+  }
 }
