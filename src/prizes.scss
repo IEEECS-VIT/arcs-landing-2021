@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.circles {
+  border-radius: 50%;
+  height: 20rem;
+  width: 20rem;
+}
+.circles:hover p {
+  color: white;
+  margin-top: 30px;
+  z-index: 20;
+  transition-timing-function: ease-in-out;
+  transition-duration: 0.5s;
+}
+.prize-line {
+  background-color: black !important;
+}
+.prize1 {
+  background: linear-gradient(
+    133.53deg,
+    #312161 18.24%,
+    #8f4497 51.72%,
+    #a73c61 90.42%
+  );
+}
+.prize2 {
+  background: linear-gradient(
+    51.75deg,
+    #8f4497 25.05%,
+    #ef757c 53.11%,
+    #f9af61 77.54%
+  );
+}
+.prize3 {
+  background: linear-gradient(
+    53.49deg,
+    #88155d 15.29%,
+    #c7466d 49.63%,
+    #f9ab58 80.24%
+  );
+}
