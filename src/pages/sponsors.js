@@ -47,7 +47,7 @@ export default function sponsors() {
                 </div>
 
 
-                <div className="z-10 group float-right -mt-8">
+                <div className="z-10 group float-right mt-2">
                     <div className="z-40 -translate-y-4 iphone6:translate-y-0 transform iphone6:group-hover:scale-110 xs:group-hover:-translate-y-6 md:group-hover:-translate-y-2 sm:group-hover:-translate-x-10 transition ease-in-out duration-700">
                             <img className="object-scale-down w-12 h-12 md:w-24 md:h-24 sm:w-20 sm:h-20" src={image} alt=""/>
                     </div>
