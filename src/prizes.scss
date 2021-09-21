@@ -8,9 +8,6 @@
   width: 21rem;
 }
 
-.prize-line {
-  background-color: black !important;
-}
 .prize1 {
   background: linear-gradient(
     133.53deg,
@@ -18,6 +15,7 @@
     #8f4497 51.72%,
     #a73c61 90.42%
   );
+  transform: scale(1.23);
 }
 .prize2 {
   background: linear-gradient(
@@ -27,6 +25,7 @@
     #f9af61 77.54%
   );
 }
+
 .prize3 {
   background: linear-gradient(
     53.49deg,
@@ -39,20 +38,29 @@
   filter: opacity(0.6);
 }
 .circles:hover {
-  z-index: 50;
+  z-index: 40;
 }
+
 @media only screen and (min-width: 768px) {
-  .circles:hover p {
+  .circles:hover .caption {
     color: white;
-    margin-top: 30px;
+    transform: translateY(50px);
     z-index: 20;
+    transition-timing-function: ease-in-out;
+    transition-duration: 0.5s;
+  }
+  .lines:hover .caption-2 {
+    color: white;
+    transform: translateY(50px);
     transition-timing-function: ease-in-out;
     transition-duration: 0.5s;
   }
 }
 .lines {
-  border: 2.5px solid black;
-  background-color: black;
+  background-color: white;
+}
+.lines:hover .prize1 {
+  transform: scale(1.37);
 }
 @media only screen and (max-width: 767px) {
   .circles p {
@@ -64,15 +72,5 @@
     margin-bottom: -45px;
     height: 14rem;
     width: 14rem;
-  }
-  .lines {
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
-    color: black;
-    transform: rotate(160deg);
-  }
-  .circles:nth-child(2) {
-    margin-left: -20px;
   }
 }
