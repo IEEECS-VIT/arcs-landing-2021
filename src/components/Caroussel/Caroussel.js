@@ -1,7 +1,8 @@
 import React from "react";
 import "./Carousel.style.scss";
 import CSSTransitionGroup from "react-transition-group/CSSTransitionGroup";
-import ArrowBackIosIcon from '@material-ui/icons/ArrowBackIos';
+import ArrowBackIosIcon from "@material-ui/icons/ArrowBackIos";
+import { data } from '../Caroussel/data';
 
 export class Caroussel extends React.Component {
   constructor(props) {
@@ -17,6 +18,7 @@ export class Caroussel extends React.Component {
 
   generateItems() {
     var items = [];
+    var dt = data;
     var level;
     // console.log(this.state.active);
     for (var i = this.state.active - 2; i < this.state.active + 3; i++) {
@@ -28,7 +30,7 @@ export class Caroussel extends React.Component {
       }
       level = this.state.active - i;
       items.push(
-        <Item key={index} id={this.state.items[index]} level={level} />
+        <Item intro={dt[index].speaker_intro} name={dt[index].speaker_name} key={index} id={this.state.items[index]} level={level} />
       );
     }
     return items;
@@ -54,24 +56,40 @@ export class Caroussel extends React.Component {
   render() {
     return (
       <div id="carousel" className="noselect">
-        <div className="arrow arrow-left" onClick={this.leftClick} aria-hidden='true'>
+        <div
+          className="arrow arrow-left"
+          onClick={this.leftClick}
+          aria-hidden="true"
+        >
           {/* <i className="fi-arrow-left"></i> */}
-          <ArrowBackIosIcon style={{ fontSize: 40, color: 'black' }} />
+          <ArrowBackIosIcon style={{ fontSize: 40, color: "black" }} />
         </div>
         {/* <div className="cards_move"> */}
-          <div className="bubble-container">
+        <div className="bubble-container-wrapper">
           <CSSTransitionGroup
             className="bubble-container"
             transitionName={this.state.direction}
+            transitionEnterTimeout={300}
+            transitionLeaveTimeout={300}
           >
             {this.generateItems()}
           </CSSTransitionGroup>
           {/* </div> */}
         </div>
-        <div className="arrow arrow-right" onClick={this.rightClick} aria-hidden='true'>
+        <div
+          className="arrow arrow-right"
+          onClick={this.rightClick}
+          aria-hidden="true"
+        >
           {/* <i className="fi-arrow-right"></i> */}
           {/* <ArrowForwardIosIcon style={{ fontSize: 40, color: 'black'}} /> */}
-          <ArrowBackIosIcon style={{ fontSize: 40, color: 'black', transform: "rotate(180deg)" }} />
+          <ArrowBackIosIcon
+            style={{
+              fontSize: 40,
+              color: "black",
+              transform: "rotate(180deg)",
+            }}
+          />
         </div>
       </div>
     );
@@ -88,8 +106,12 @@ class Item extends React.Component {
 
   render() {
     const className = "item level" + this.props.level;
-    return <div className={`${className} carousel_card`}>
-      <div className='txt-content'>{this.props.id}</div>
-    </div>;
+    // console.log(this.props.info[this.props.id]);
+    return (
+      <div className={`${className} carousel_card`}>
+        <div className="speaker-name">{this.props.name}</div>
+        <div className='speaker-intro'>{this.props.intro}</div>
+      </div>
+    );
   }
 }

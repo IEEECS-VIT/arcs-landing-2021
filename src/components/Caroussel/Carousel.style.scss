@@ -3,6 +3,7 @@
 body {
   background-color: #fff;
   font-family: "Montserrat", sans-serif;
+  overflow-x: hidden;
 }
 
 #carousel {
@@ -18,18 +19,19 @@ body {
 }
 .bubble-container {
   // border: solid 1px black;
-  height: 100%;
-  min-height: 550px;
+  height: fit-content;
+  min-height: 500px;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-self: flex-start;
   width: 100vw;
   overflow: hidden;
+  // margin-bottom: 100px;
 }
 
 .arrow {
-  position: fixed;
+  position: absolute;
   width: 60px;
   height: 60px;
   // background: linear-gradient(90deg, #faa41a, #000);
@@ -50,6 +52,7 @@ body {
   min-height: 20px;
   min-width: 20px;
   padding: 10px;
+  padding-top: 20rem;
 }
 
 .arrow-right {
@@ -77,10 +80,10 @@ body {
   transition: .5s all ease-in-out;
 }
 
-.txt-content {
+.speaker-name {
   color: black;
   display: none;
-  margin-top: 30vw;
+  margin-top: 29vw;
   font-size: 48px;
 }
 
@@ -97,13 +100,30 @@ $level0-left: 330px;
 $level1-left: 180px;
 $level2-left: 50px;
 
+@keyframes txt-fade-out {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+@keyframes txt-fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 .level-2 {
   //   height: $level2-height;
   //   width: $level2-width;
   height: 10vw;
   width: 10vw;
   line-height: $level2-height;
-  align-self: flex-end;
+  align-self: center;
+  box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.4);
   //   border: 1px solid black;
   //   background-color: black;
   background: linear-gradient(
@@ -123,6 +143,9 @@ $level2-left: 50px;
   );
   left: $level-2-left;
   // margin-top: 25px;
+  .speaker-intro {
+    display: none;
+  }
 }
 
 .level-1 {
@@ -130,6 +153,7 @@ $level2-left: 50px;
   //   width: $level1-width;
   height: 17.5vw;
   width: 17.5vw;
+  box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.4);
   line-height: $level1-height;
   align-self: center;
   //   background-color: yellow;
@@ -150,16 +174,25 @@ $level2-left: 50px;
   );
   left: $level-1-left;
   // margin-top: 10px;
+  .speaker-name {
+    animation: txt-fade-in 0.5s;
+  }
+  .speaker-intro {
+    display: none;
+    animation: txt-fade-in 0.5s;
+  }
 }
 
 .level0 {
   //   height: $level0-height;
   //   width: $level0-width;
   height: 22vw;
+  box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.4);
   width: 22vw;
   line-height: $level0-height;
   //   background-color: cyan;
   margin-bottom: 50px;
+  align-self: center;
   background: linear-gradient(
     to right,
     #9a54ad,
@@ -176,8 +209,25 @@ $level2-left: 50px;
     #f9af61
   );
   left: $level0-left;
-  .txt-content {
+  .speaker-name {
     display: unset;
+    animation: txt-fade-out 0.5s;
+    height: fit-content;
+    align-items: flex-start;
+    // border: 1px solid red;
+  }
+  .speaker-intro {
+    position: relative;
+    color: black;
+    max-width: 35vw;
+    min-width: 300px;
+    height: fit-content;
+    line-height: 1.25;
+    animation: txt-fade-out 0.5s;
+    bottom: 0;
+    padding: 10px;
+    // padding-bottom: 10vh;
+    margin-top: 72.5vh;
   }
 }
 
@@ -187,6 +237,7 @@ $level2-left: 50px;
   height: 17.5vw;
   width: 17.5vw;
   line-height: $level1-height;
+  box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.4);
   align-self: center;
   //   background-color: purple;
   background: linear-gradient(
@@ -206,6 +257,13 @@ $level2-left: 50px;
   );
   // margin-top: 10px;
   left: $level1-left;
+  .speaker-name {
+    animation: txt-fade-in 0.2s;
+  }
+  .speaker-intro {
+    display: none;
+    animation: txt-fade-in 0.5s;
+  }
 }
 
 .level2 {
@@ -214,7 +272,8 @@ $level2-left: 50px;
   height: 10vw;
   width: 10vw;
   line-height: $level2-height;
-  align-self: flex-end;
+  align-self: center;
+  box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.4);
   background: linear-gradient(
     to right,
     #9a54ad,
@@ -232,6 +291,9 @@ $level2-left: 50px;
   );
   // margin-top: 25px;
   left: $level2-left;
+  .speaker-intro {
+    display: none;
+  }
 }
 
 .left-enter {
@@ -345,6 +407,17 @@ $level2-left: 50px;
   font-size: 20px;
 }
 
+.level0 {
+  .speaker-intro {
+    position: absolute;
+    padding: 20px;
+    // padding-bottom: 10vh;
+    // margin: 10px;
+    top: 20vh;
+    // border: 1px solid black;
+  }
+}
+
 .noselect {
   -webkit-user-select: none;
   -khtml-user-select: none;
@@ -365,7 +438,7 @@ $level2-left: 50px;
     width: 30vw;
     height: 30vw;
 
-    .txt-content {
+    .speaker-name {
       margin-top: 40vw;
     }
   }
@@ -390,14 +463,14 @@ $level2-left: 50px;
     min-height: 250px;
     min-width: 250px;
 
-    .txt-content {
+    .speaker-name {
       margin-top: 55vw;
     }
   }
 }
 
 @media all and(max-width: 630px) {
-  .level0>.txt-content {
+  .level0>.speaker-name {
     margin-top: 375px;
   }
   .arrow {
