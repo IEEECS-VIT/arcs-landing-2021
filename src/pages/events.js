@@ -54,7 +54,7 @@ const EventPage = () => {
                  <div className="w-full flex justify-center">
                     <div className="flex">
                     <img className="object-scale-down w-44 sm:w-52 md:w-64 visible lg:invisible h-24" src={border} alt="lines"/> 
-                    <p style={{fontFamily:"Poppins"}} className="text-center text-4xl absolute  md:text-6xl    mt-4 lg:ml-10 ml-8   ">
+                    <p style={{fontFamily:"Poppins"}} className="text-center text-4xl absolute  md:text-5xl    mt-4 lg:ml-12 ml-8   ">
                         Events
                     </p>
                     </div>

@@ -34,7 +34,7 @@ export default class Carousel extends React.Component {
             level = this.state.active - i
        
         items.push(<Item key={index} title={this.state.items[index].title} img={this.state.items[index].img}  level={level} />)
-            console.log(this.state.items[index].img)
+           
         }
         return items
     }
@@ -61,13 +61,16 @@ export default class Carousel extends React.Component {
         return(
             // className="absolute inset-0 mx-auto mb-auto mt-72 "
             <div id="carousel">
-                <div className="arrow arrow-left" onClick={this.leftClick} onKeyPress={this.leftClick} aria-label="Save"  tabIndex={0} role="button"><IoIosArrowDropleftCircle className="arrow-left"></IoIosArrowDropleftCircle></div>
+                <div className="arrow arrow-left" onClick={this.leftClick} onKeyPress={this.leftClick} aria-label="Save"  tabIndex={0} role="button"><IoIosArrowDropleftCircle style={{fill:"grey"}} className="arrow-left"></IoIosArrowDropleftCircle></div>
                  <CSSTransitionGroup 
+               
+                 transitionEnterTimeout={500}
+                 transitionLeaveTimeout={500}
                     transitionName={this.state.direction}>
                     {this.generateItems()}
                 </CSSTransitionGroup>
                 
-                <div className="arrow arrow-right" onClick={this.rightClick} onKeyPress={this.rightClick} aria-label="Save"  tabIndex={0} role="button"><IoIosArrowDroprightCircle className="arrow-right"></IoIosArrowDroprightCircle></div>
+                <div className="arrow arrow-right" onClick={this.rightClick} onKeyPress={this.rightClick} aria-label="Save"  tabIndex={0} role="button"><IoIosArrowDroprightCircle style={{fill:"grey"}}  className="arrow-right"></IoIosArrowDroprightCircle></div>
             </div>
         )
     }
@@ -86,7 +89,7 @@ class Item extends React.Component {
     
     render() {
         const className = 'item level' + this.props.level 
-        const innerclass='innerlevel'+this.props.level
+        const innerclass='innerdiv innerlevel'+this.props.level
   
             
         return(
