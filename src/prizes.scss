@@ -69,8 +69,33 @@
   .circles {
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: -45px;
+
     height: 14rem;
     width: 14rem;
+  }
+
+  .lines {
+    border-top-color: black;
+    border-bottom-color: black;
+    border-top-width: 4px;
+    border-bottom-width: 4px;
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+    transform: rotate(-16deg);
+  }
+  .caption-2 {
+    color: white;
+    transform: translate(10px, 30px) rotate(15deg);
+  }
+  .circles:nth-child(2) {
+    margin-bottom: 15px;
+  }
+  .circles:first-child {
+    margin-bottom: -25px;
+  }
+  .circles:last-child {
+    margin-top: -30px;
   }
 }
