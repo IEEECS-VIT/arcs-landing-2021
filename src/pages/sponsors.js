@@ -58,7 +58,7 @@ export default function sponsors() {
             </div>
 
             {/* <div className=""> */}
-                <div className="z-50 iphone6:mt-44 xs:mt-20 sm:mt-32 md:mt-24  text-center place-items-center align-items-center justify-items-center xs:gap-2 gap-6 sm:gap-4 grid grid-cols-1  grid-rows-6 xs:grid-cols-2 xs:grid-rows-3 md:grid-cols-3  md:grid-rows-2 ">
+                <div className="z-50 iphone6:mt-44 xs:mt-20 sm:mt-32 md:mt-24 md:pr-6 pr-4 text-center place-items-center align-items-center justify-items-center xs:gap-2 gap-6 sm:gap-4 grid grid-cols-1  grid-rows-6 xs:grid-cols-2 xs:grid-rows-3 md:grid-cols-3  md:grid-rows-2 ">
                     <div className="">
                         <img className="mx-auto z-40 object-scale-down w-20 h-20 iphone6:w-20 iphone6:h-20 md:w-40 md:h-40 sm:w-28 sm:h-28" src={devf} alt=""/>
                         <p className="text-l sm:text-xl text-center">Devfolio</p>
