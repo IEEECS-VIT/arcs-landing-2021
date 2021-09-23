@@ -39,7 +39,7 @@ const ContactPage = () => {
                    
                      <p className="text-l lg:text-xl "><span className="env  "><ImLocation style={{display:"inline",fontSize:"1.5rem",fill:"white"}}/></span> &nbsp; VIT Vellore</p>
                       <br></br><br></br> 
-                      <p className="text-l lg:text-xl -ml-2"><span className="env "><FaEnvelope style={{display:"inline",fontSize:"1.5rem",fill:"white"}}/></span> &nbsp; arcs.register@gmail.com</p>
+                      <p className="text-l lg:text-xl "><span className="env "><FaEnvelope style={{display:"inline",fontSize:"1.5rem",fill:"white"}}/></span> &nbsp; arcs.register@gmail.com</p>
                       <br></br><br></br>
                       <p className="text-l lg:text-xl"><span className="env"><ImPhoneHangUp  style={{display:"inline",fontSize:"1.5rem",fill:"white"}}/></span>&nbsp; 8160XXXXXX</p>
                     

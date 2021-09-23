@@ -1,13 +1,14 @@
 import React from "react"
-
+// import { useState } from "react";
 import CSSTransitionGroup from 'react-transition-group/CSSTransitionGroup';
 import {IoIosArrowDropleftCircle,IoIosArrowDroprightCircle} from "react-icons/io"
 import "../../Events.scss"
+import { timers } from "jquery";
 
 
 
 export default class Carousel extends React.Component {
-    
+     
     constructor(props) {
         super(props)
         this.state = {
@@ -57,9 +58,9 @@ export default class Carousel extends React.Component {
     }
     
     render() {
- 
+        // const [hasbtn]=useState(false)
         return(
-            // className="absolute inset-0 mx-auto mb-auto mt-72 "
+            
             <div id="carousel">
                 <div className="arrow arrow-left" onClick={this.leftClick} onKeyPress={this.leftClick} aria-label="Save"  tabIndex={0} role="button"><IoIosArrowDropleftCircle style={{fill:"grey"}} className="arrow-left"></IoIosArrowDropleftCircle></div>
                  <CSSTransitionGroup 
@@ -88,20 +89,37 @@ class Item extends React.Component {
     }
     
     render() {
-        const className = 'item level' + this.props.level 
-        const innerclass='innerdiv innerlevel'+this.props.level
-  
-            
+       
+
+        const outer='item level'+this.props.level
+        const innerclass='innerdiv innerlevel'+ this.props.level
+        const c=this.props.level
+        function Button(){
+            if(c==0)
+           {return(
+           
+            <button className="knowmore text-base p-1 px-4 mt-2 ">know more</button>
+           
+            )
+           }
+           else
+           return(<p></p>)
+            }
+         
+        
+        
         return(
           
-            <div className={className}>
-    
-              <div className={innerclass}>
+            <div className={outer}>
+              
+              <div className={innerclass} id="inner">
                <h1 className="text-lg pt-5 eventhead">{this.state.title}</h1>
                <img className="eventimg" src={require(`../../images/${this.state.img}.png`).default} alt="noo"></img>
                
-              
               </div>
+              <Button />
+              
+             
                 </div>
           
         )

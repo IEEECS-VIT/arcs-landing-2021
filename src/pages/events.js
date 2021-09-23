@@ -18,7 +18,7 @@ const EventPage = () => {
   const [isExpanded, toggleExpansion] = useState(false);
   const items = [
     {
-      title:"Cyber Security",
+      title:"CYBER SECURITY",
       img:"event1"
     },
     {
@@ -30,11 +30,11 @@ const EventPage = () => {
       img:"event1"
     },
     {
-      title:"Web Dev",
+      title:"WEB DEV",
       img:"event1"
     },
     {
-      title:"Design",
+      title:"DESIGN",
       img:"event1"
     }
 
@@ -44,7 +44,7 @@ const EventPage = () => {
       <div>
       <Navbar isExpanded={isExpanded} toggleExpansion={toggleExpansion} />
      
-        <div className="md:mt-22 mt-10">
+        <div className="md:mt-23 mt-10">
               <div className="fixed md:left-0 md:visible invisible">
                     <img src={rec1} alt="noo" className="h-44"></img>
               </div>
@@ -59,7 +59,7 @@ const EventPage = () => {
                     </p>
                     </div>
                 </div>   
-             {/* <div className="md:text-5xl head mt-2 flex justify-center text-4xl ">Events</div> */}
+          
               
              <div className="flex justify-center md:mt-2 mt-6">
              <button type="button" className="gradbox border-4 md:text-l py-2 px-3 text-base" >REGISTER NOW</button>
