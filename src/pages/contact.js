@@ -35,26 +35,26 @@ const ContactPage = () => {
          <br></br> 
         
             <div className="grid grid-cols-1 md:grid-cols-2 md:mb-4 lg:px-40 md:px-10 lg:mt-14" >
-                 <div className="xl:px-20 md:px-2 md:order-first order-last pr-0 pl-20 md:pl-10 lg:mb-8 contactbox">
+                 <div className="xl:px-20 md:px-2 md:order-first order-last pr-0 pl-20 md:pl-10 lg:mb-8 -ml-4 contactbox">
                    
-                     <p className="text-l lg:text-xl "><span className="env  "><ImLocation style={{display:"inline",fontSize:"1.5rem",fill:"white"}}/></span> &nbsp; VIT Vellore</p>
+                     <p className="text-sm lg:text-xl "><span className="env  "><ImLocation style={{display:"inline",fontSize:"1.5rem",fill:"white"}}/></span> &nbsp; VIT Vellore</p>
                       <br></br><br></br> 
-                      <p className="text-l lg:text-xl "><span className="env "><FaEnvelope style={{display:"inline",fontSize:"1.5rem",fill:"white"}}/></span> &nbsp; arcs.register@gmail.com</p>
+                      <p className="text-sm lg:text-xl "><span className="env "><FaEnvelope style={{display:"inline",fontSize:"1.5rem",fill:"white"}}/></span> &nbsp; arcs.register@gmail.com</p>
                       <br></br><br></br>
-                      <p className="text-l lg:text-xl"><span className="env"><ImPhoneHangUp  style={{display:"inline",fontSize:"1.5rem",fill:"white"}}/></span>&nbsp; 8160XXXXXX</p>
+                      <p className="text-sm lg:text-xl"><span className="env"><ImPhoneHangUp  style={{display:"inline",fontSize:"1.5rem",fill:"white"}}/></span>&nbsp; 8160XXXXXX</p>
                     
                 </div>
   
           <div className="place-self-center ">
          <form> 
-         <input className="iphone5:w-52 iphone5:leading-2 flex justify-center bginput bg-gray-100 rounded p-3 md:p-4 md:w-96 md:mx-auto lg:leading-4 text-gray-400 w-72  leading-3 lg:text-l text-sm" type="name" placeholder="NAME"></input>
+         <input className=" flex justify-center bginput bg-gray-100 rounded p-3 md:p-4 md:w-96 md:mx-auto lg:leading-4 text-gray-400 w-72  leading-3 lg:text-l text-sm" type="name" placeholder="NAME"></input>
          <br>
         </br>
         
-         <input className="iphone5:w-52  flex justify-center bginput bg-gray-100 rounded p-3 md:p-4 md:w-96 md:mx-auto lg:leading-4 text-gray-400 w-72 leading-3 lg:text-l text-sm" type="email"  placeholder="EMAIL"></input>
+         <input className="flex justify-center bginput bg-gray-100 rounded p-3 md:p-4 md:w-96 md:mx-auto lg:leading-4 text-gray-400 w-72 leading-3 lg:text-l text-sm" type="email"  placeholder="EMAIL"></input>
          <br></br>
          
-        <textarea  className="iphone5:w-52 flex justify-center bginput bg-gray-100 rounded p-3 md:p-4 md:w-96 md:mx-auto lg:leading-4 text-gray-400 w-72  leading-3 lg:text-l text-sm" placeholder="MESSAGE" rows="4"></textarea>
+        <textarea  className=" flex justify-center bginput bg-gray-100 rounded p-3 md:p-4 md:w-96 md:mx-auto lg:leading-4 text-gray-400 w-72  leading-3 lg:text-l text-sm" placeholder="MESSAGE" rows="4"></textarea>
         <br></br>
         
         <button type="button" className="submitButton relative leading-3 mx-0 my-0 h-8 md:w-96 rounded-3xl text-center w-72" >SUBMIT</button>

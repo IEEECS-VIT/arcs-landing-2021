@@ -3,7 +3,7 @@ import React from "react"
 import CSSTransitionGroup from 'react-transition-group/CSSTransitionGroup';
 import {IoIosArrowDropleftCircle,IoIosArrowDroprightCircle} from "react-icons/io"
 import "../../Events.scss"
-import { timers } from "jquery";
+
 
 
 
@@ -58,10 +58,10 @@ export default class Carousel extends React.Component {
     }
     
     render() {
-        // const [hasbtn]=useState(false)
+     
         return(
             
-            <div id="carousel">
+            <div id="carousel" >
                 <div className="arrow arrow-left" onClick={this.leftClick} onKeyPress={this.leftClick} aria-label="Save"  tabIndex={0} role="button"><IoIosArrowDropleftCircle style={{fill:"grey"}} className="arrow-left"></IoIosArrowDropleftCircle></div>
                  <CSSTransitionGroup 
                
@@ -95,10 +95,10 @@ class Item extends React.Component {
         const innerclass='innerdiv innerlevel'+ this.props.level
         const c=this.props.level
         function Button(){
-            if(c==0)
+            if(c===0)
            {return(
            
-            <button className="knowmore text-base p-1 px-4 mt-2 ">know more</button>
+            <button className="knowmore md:text-base md:p-1 md:px-6  px-6 md:mt-2 p-1 mt-2 text-sm ">know more</button>
            
             )
            }
@@ -112,9 +112,9 @@ class Item extends React.Component {
           
             <div className={outer}>
               
-              <div className={innerclass} id="inner">
-               <h1 className="text-lg pt-5 eventhead">{this.state.title}</h1>
-               <img className="eventimg" src={require(`../../images/${this.state.img}.png`).default} alt="noo"></img>
+              <div className={innerclass}>
+               <h1 className="md:text-lg text-base pt-10 eventhead iphone5:text-sm ">{this.state.title}</h1>
+               <img className="eventimg -mt-4" src={require(`../../images/${this.state.img}.png`).default} alt="noo"></img>
                
               </div>
               <Button />

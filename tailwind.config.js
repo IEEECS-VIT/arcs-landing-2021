@@ -3,11 +3,12 @@ module.exports = {
   purge: [],
   darkMode: false, // or 'media' or 'class'
   theme: {
-    screen:{
-    'iphone5': {'max':'320px'},
-      ...defaultTheme.screens,
-  },
+  
     extend: {},
+    screens:{
+      'iphone5': {'max':'320px'},
+        ...defaultTheme.screens,
+    },
     backgroundColor: (theme) => ({
       ...theme("colors"),
       nav: "#FDA445",
