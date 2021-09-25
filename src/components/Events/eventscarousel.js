@@ -1,5 +1,5 @@
 import React from "react";
-// import { useState } from "react";
+
 import CSSTransitionGroup from "react-transition-group/CSSTransitionGroup";
 import {
   IoIosArrowDropleftCircle,
@@ -120,7 +120,7 @@ class Item extends React.Component {
     function Button() {
       if (c === 0) {
         return (
-          <button className="knowmore md:text-base md:p-1 md:px-6  px-6 md:mt-2 p-1 mt-2 text-sm ">
+          <button className="knowmore md:text-base  md:py-1 md:px-4 px-6 md:mt-2 py-0 mt-4 text-sm ">
             know more
           </button>
         );
@@ -134,7 +134,7 @@ class Item extends React.Component {
             {this.state.title}
           </h1>
           <img
-            className="eventimg -mt-4"
+            className="eventimg"
             src={require(`../../images/${this.state.img}.png`).default}
             alt="noo"
           ></img>
