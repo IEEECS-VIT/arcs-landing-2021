@@ -23,7 +23,7 @@ const EventPage = () => {
     },
     {
       title:"UI/UX",
-      img:"event1"
+      img:"ux"
     },
     {
       title:"AI",
