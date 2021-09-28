@@ -11,10 +11,12 @@ const Prizes = () => {
         <img
           src={Rect}
           className="absolute invisible md:visible w-24 h-auto mt-10 mr-5"
+          alt="separator"
         />
         <img
           src={Rect}
           className="absolute invisible md:visible w-24 h-auto mt-20 ml-5 right-0 transform rotate-180"
+          alt="separator"
         />
         <p className=" text-center font-bold text-4xl md:text-5xl font-mont">
           PRIZES
