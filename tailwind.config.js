@@ -9,6 +9,9 @@ module.exports = {
       'iphone5': {'max':'320px'},
         ...defaultTheme.screens,
     },
+    zIndex: {
+      '-1': '-1',
+     },
     backgroundColor: (theme) => ({
       ...theme("colors"),
       nav: "#FDA445",
