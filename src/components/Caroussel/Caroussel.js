@@ -8,7 +8,7 @@ function Carousel() {
         <div className="speaker-img"></div>
 
         <div className="speaker-content">
-          <div className="speaker-name text-center my-4 font-bold text-xl md:text-2xl lg:text-3xl">
+          <div className="speaker-name text-center md:my-4 font-bold text-xl md:text-2xl lg:text-3xl">
             Speaker Name
           </div>
           <div className="speaker-intro text-center mx-4">

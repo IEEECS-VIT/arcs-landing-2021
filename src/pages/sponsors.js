@@ -19,7 +19,6 @@ import Navbar from "../components/navbar";
 
 const Sponsors = () => {
   const [isExpanded, toggleExpansion] = useState(false);
-  var Blur = isExpanded ? "change-opacity" : "none";
   return (
     <div className="mt-10">
       <Navbar isExpanded={isExpanded} toggleExpansion={toggleExpansion} />
