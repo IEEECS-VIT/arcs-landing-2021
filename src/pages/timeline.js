@@ -1,15 +1,16 @@
-import React from "react";
+import React, { useState } from "react";
 import Navbar from "./../components/navbar";
 
-const timeline = () => {
+const Timeline = () => {
+  const [isExpanded, toggleExpansion] = useState(false);
   return (
-    <div className="w-full h-screen  bg-auto overflow-hidden">
-      <Navbar arcs={true} />
-      <h1 className="font-mont font-semibold text-center  block text-6xl pt-12  italic">
+    <div className="-mt-5">
+      <Navbar isExpanded={isExpanded} toggleExpansion={toggleExpansion} />
+      <p className="font-mont font-medium text-center  block text-5xl italic">
         Timeline
-      </h1>
+      </p>
     </div>
   );
 };
 
-export default timeline;
+export default Timeline;
