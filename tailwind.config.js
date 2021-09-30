@@ -4,7 +4,11 @@ module.exports = {
   purge: [],
   darkMode: false, // or 'media' or 'class'
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage: (theme) => ({
+        "card-background": "url('../src/images/cardbackground.png')",
+      }),
+    },
     backgroundColor: (theme) => ({
       ...theme("colors"),
       nav: "#FDA445",
@@ -13,6 +17,7 @@ module.exports = {
       "light-orange": "#F8E2CF",
       pink: "#EF8D98",
     }),
+
     textColor: (theme) => theme("colors"),
     textColor: {
       orange: "#FFA53b",
