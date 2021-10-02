@@ -5,23 +5,32 @@
 .dot {
   width: 40px;
   height: 40px;
-  background: orange;
+  background: #fda445;
   border-radius: 100%;
 }
 .vertical-timeline-element-icon {
   box-shadow: none !important;
   padding-left: 2px;
 }
+.backg {
+  background-image: url("./images/cardbackground.png");
+  background-size: cover;
+}
 
 .vertical-timeline.vertical-timeline--one-column-right::before {
   background-color: black !important;
-  height: 90%;
+  border: none;
+  border-top: 4px dashed black;
 }
 .vertical-timeline-element-content {
   box-shadow: none !important;
 }
 
 @media screen and (min-width: 1024px) {
+  .vertical-timeline.vertical-timeline--one-column-right::before {
+    height: 80%;
+    margin-top: 4%;
+  }
   .vertical-timeline.vertical-timeline--one-column-right {
     right: -90px !important;
   }
@@ -32,21 +41,12 @@
   .vertical-timeline-element {
     margin: -10px 0 !important;
   }
-  // .vertical-timeline-element:first-child {
-  //   margin-left: 20px !important;
-  // }
 
-  .vertical-timeline-element-content {
-    box-shadow: none !important;
-    height: 50%;
-    width: 20% !important;
-  }
   .data {
-    transform: rotate(90deg);
     text-align: center;
   }
   .vertical-timeline--one-column-right .vertical-timeline-element-content {
-    margin-left: 72% !important;
+    margin-left: 78% !important;
   }
 
   .vertical-timeline--one-column-right
