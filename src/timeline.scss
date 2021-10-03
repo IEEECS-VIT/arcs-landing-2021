@@ -21,9 +21,15 @@
   background-color: black !important;
   border: none;
   border-top: 4px dashed black;
+  border-left: none;
 }
 .vertical-timeline-element-content {
   box-shadow: none !important;
+}
+@media screen and (max-width: 1023px) {
+  .vertical-timeline-element-content-arrow {
+    transform: rotate(-90deg);
+  }
 }
 
 @media screen and (min-width: 1024px) {
@@ -55,4 +61,12 @@
     font-weight: 400 !important;
     margin-left: 12px !important;
   }
+  .vertical-timeline-element-content-arrow {
+    left: 25% !important;
+    top: -10px !important;
+  }
+
+  // .vertical-timeline--one-column-right .vertical-timeline-element-content {
+  //   opacity: 0;
+  // }
 }

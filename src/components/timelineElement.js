@@ -1,29 +1,39 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import {
   VerticalTimeline,
   VerticalTimelineElement,
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
 import circles from "./../images/cardbackground.png";
+
 const TimelineElement = (props) => {
+  const [Width, setWidth] = useState(window.innerWidth);
+  useEffect(() => {
+    const handleWindowResize = () => setWidth(window.innerWidth);
+    window.addEventListener("resize", handleWindowResize);
+
+    return () => window.removeEventListener("resize", handleWindowResize);
+  });
   return (
     <VerticalTimelineElement
       className="vertical-timeline-element--work "
       contentStyle={{
-        backgroundImage: props.show ? `url(${circles})` : "none",
-        zIndex: props.show ? "40" : "10",
-        backgroundSize: "cover",
+        backgroundImage:
+          Width < 1024 || props.show ? `url(${circles})` : "none",
+        zIndex: Width < 1024 || props.show ? "40" : "10",
+        backgroundSize: Width > 1024 ? "cover" : "100% 100%",
         backgroundRepeat: "no-repeat",
         color: "white",
-        transform: "rotate(90deg) translateY(50px)",
-        width: "260px",
+        transform:
+          Width > 1024
+            ? "rotate(90deg) translateY(50px)"
+            : "rotate(0deg) translateY(0px) ",
+        width: Width > 1024 ? "260px" : "none",
       }}
       contentArrowStyle={{
-        visibility: props.show ? "visible" : "hidden",
-        borderBottom: "20px solid #040303",
-        borderRadius: "2px",
-        left: "25%",
-        top: "-25px",
+        visibility: props.show || Width < 1024 ? "visible" : "hidden",
+        borderBottom: Width > 1024 ? "10px solid #040303" : "none",
+        borderTop: Width < 1024 ? "10px solid #040303" : "none",
       }}
       iconStyle={{
         background: "white",
@@ -37,7 +47,10 @@ const TimelineElement = (props) => {
         ></button>
       }
     >
-      <div className="data " style={{ opacity: props.show ? "1" : "0" }}>
+      <div
+        className="data "
+        style={{ opacity: props.show || Width < 1024 ? "1" : "0" }}
+      >
         <h3 className="">EVENT NAME</h3>
         <h4 className="">03/08/2021</h4>
         <p className="text-xs">
