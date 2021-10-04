@@ -36,12 +36,12 @@ const Navbar = (props) => {
         >
           HOME
         </Link>
-        <Link
+        {/* <Link
           className="py-4 px-16  text-center hover:bg-light-orange rounded-3xl"
           to="/about"
         >
           ABOUT
-        </Link>
+        </Link> */}
         <Link
           className="py-4 px-16  text-center hover:bg-light-orange rounded-3xl"
           to="/speakers"
