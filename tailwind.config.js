@@ -7,7 +7,12 @@ module.exports = {
   ],
   darkMode: false, // or 'media' or 'class'
   theme: {
+  
     extend: {},
+    screens:{
+      'iphone5': {'max':'320px'},
+        ...defaultTheme.screens,
+    },
     backgroundColor: (theme) => ({
       ...theme("colors"),
       nav: "#FDA445",
@@ -29,6 +34,7 @@ module.exports = {
         ...defaultTheme.screens,
       },
     },
+<<<<<<< HEAD
     variants: {
       extend: {
         scale: ["group-hover"],
@@ -36,5 +42,8 @@ module.exports = {
       },
     },
     plugins: [],
+=======
+  
+>>>>>>> events+contact
   },
 };
