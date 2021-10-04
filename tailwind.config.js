@@ -34,7 +34,6 @@ module.exports = {
         ...defaultTheme.screens,
       },
     },
-<<<<<<< HEAD
     variants: {
       extend: {
         scale: ["group-hover"],
@@ -42,8 +41,5 @@ module.exports = {
       },
     },
     plugins: [],
-=======
-  
->>>>>>> events+contact
   },
 };
