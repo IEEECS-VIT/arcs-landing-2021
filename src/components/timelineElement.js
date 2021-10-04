@@ -1,10 +1,8 @@
+import { Hidden } from "@material-ui/core";
 import React, { useEffect, useState } from "react";
-import {
-  VerticalTimeline,
-  VerticalTimelineElement,
-} from "react-vertical-timeline-component";
+import { VerticalTimelineElement } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
-import circles from "./../images/cardbackground.png";
+import circles from "./../images/EventCard.png";
 
 const TimelineElement = (props) => {
   const [Width, setWidth] = useState(window.innerWidth);
@@ -20,20 +18,20 @@ const TimelineElement = (props) => {
       contentStyle={{
         backgroundImage:
           Width < 1024 || props.show ? `url(${circles})` : "none",
-        zIndex: Width < 1024 || props.show ? "40" : "10",
+        zIndex: Width < 1024 || props.show ? "1" : "0",
         backgroundSize: Width > 1024 ? "cover" : "100% 100%",
         backgroundRepeat: "no-repeat",
+
         color: "white",
         transform:
           Width > 1024
             ? "rotate(90deg) translateY(50px)"
-            : "rotate(0deg) translateY(0px) ",
-        width: Width > 1024 ? "260px" : "none",
+            : "rotate(90deg) translateY(50px) ",
+        width: Width > 1024 ? "270px" : "auto",
+        height: Width > 1024 ? "200px" : "auto",
       }}
       contentArrowStyle={{
-        visibility: props.show || Width < 1024 ? "visible" : "hidden",
-        borderBottom: Width > 1024 ? "10px solid #040303" : "none",
-        borderTop: Width < 1024 ? "10px solid #040303" : "none",
+        visibility: "hidden",
       }}
       iconStyle={{
         background: "white",
@@ -48,7 +46,7 @@ const TimelineElement = (props) => {
       }
     >
       <div
-        className="data "
+        className="data mt-5"
         style={{ opacity: props.show || Width < 1024 ? "1" : "0" }}
       >
         <h3 className="">EVENT NAME</h3>

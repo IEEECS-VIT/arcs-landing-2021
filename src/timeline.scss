@@ -21,13 +21,16 @@
   background-color: black !important;
   border: none;
   border-top: 4px dashed black;
-  border-left: none;
 }
 .vertical-timeline-element-content {
   box-shadow: none !important;
 }
 @media screen and (max-width: 1023px) {
   .vertical-timeline-element-content-arrow {
+    transform: rotate(-90deg);
+    border-left: 7px solid transparent !important;
+  }
+  .data {
     transform: rotate(-90deg);
   }
 }
@@ -45,7 +48,7 @@
     margin: 10px !important;
   }
   .vertical-timeline-element {
-    margin: -10px 0 !important;
+    margin: -20px 0 !important;
   }
 
   .data {
@@ -66,7 +69,15 @@
     top: -10px !important;
   }
 
-  // .vertical-timeline--one-column-right .vertical-timeline-element-content {
-  //   opacity: 0;
-  // }
+  .dot::before {
+    content: "dd/mm";
+    position: absolute;
+    color: black;
+    transform: rotate(90deg);
+    margin-left: 10px;
+    font-family: "Montserrat", "san-serif";
+    font-style: italic;
+    font-weight: lighter;
+    font-size: x-small;
+  }
 }

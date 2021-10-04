@@ -1,9 +1,6 @@
 import React, { useState } from "react";
-import circles from "./../images/cardbackground.png";
-import {
-  VerticalTimeline,
-  VerticalTimelineElement,
-} from "react-vertical-timeline-component";
+
+import { VerticalTimeline } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
 import Navbar from "./../components/navbar";
 import Element from "./../components/timelineElement";
