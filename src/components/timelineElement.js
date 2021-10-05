@@ -1,4 +1,3 @@
-import { Hidden } from "@material-ui/core";
 import React, { useEffect, useState } from "react";
 import { VerticalTimelineElement } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
@@ -26,8 +25,8 @@ const TimelineElement = (props) => {
           Width > 1023
             ? "rotate(90deg)  translateX(10px)"
             : "rotate(90deg) translateY(0px) ",
-        width: Width > 1023 ? "270px" : "270px",
-        height: Width > 1023 ? "200px" : "263px",
+        width: Width > 1023 ? "270px" : "300px",
+        height: Width > 1023 ? "200px" : "363px",
       }}
       contentArrowStyle={{
         visibility: "hidden",
@@ -40,12 +39,12 @@ const TimelineElement = (props) => {
         <button
           aria-label="btn"
           onClick={() => props.showCard(props.num)}
-          className="dot"
+          className={`${props.date} dot`}
         ></button>
       }
     >
       <div
-        className="data mt-5 ml-5 lg:mt-10 w-1/2 lg:w-auto"
+        className="data mt-5 ml-5 lg:mt-5 w-1/2 lg:w-auto"
         style={{ opacity: props.show || Width < 1024 ? "1" : "0" }}
       >
         <h3 className="">EVENT NAME</h3>

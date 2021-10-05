@@ -36,11 +36,22 @@
     transform: rotate(-90deg);
     text-align: justify;
   }
+  .vertical-timeline--one-column-right .vertical-timeline-element-icon {
+    top: 50px;
+  }
+  .vertical-timeline--one-column-right .vertical-timeline-element-content {
+    margin-left: -97px !important;
+    margin-right: unset !important;
+  }
+  .vertical-timeline.vertical-timeline--one-column-right::before {
+    height: 83%;
+    margin-top: 18%;
+  }
 }
 
 @media screen and (min-width: 1024px) {
   .vertical-timeline.vertical-timeline--one-column-right::before {
-    height: 80%;
+    height: 76%;
     margin-top: -2%;
   }
   .vertical-timeline.vertical-timeline--one-column-right {
@@ -50,18 +61,17 @@
     transform: rotate(-90deg);
   }
   .vertical-timeline-element {
-    margin: -60px 0 0 0 !important;
+    margin: -70px 0 0 0 !important;
   }
 
   .data {
     text-align: justify;
   }
   .vertical-timeline--one-column-right .vertical-timeline-element-content {
-    margin-left: 64% !important;
+    margin-left: 65% !important;
   }
 
   .dot::before {
-    content: "dd/mm";
     position: absolute;
     color: black;
     transform: rotate(90deg);
@@ -70,5 +80,23 @@
     font-style: italic;
     font-weight: lighter;
     font-size: x-small;
+  }
+  .one::before {
+    content: "dd/mm";
+  }
+  .two::before {
+    content: "dd2/mm2";
+  }
+  .three::before {
+    content: "dd3/mm3";
+  }
+  .four::before {
+    content: "dd4/mm4";
+  }
+  .five::before {
+    content: "dd5/mm5";
+  }
+  .six:before {
+    content: "dd6/mm6";
   }
 }
