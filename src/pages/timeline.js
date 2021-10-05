@@ -23,9 +23,10 @@ const Timeline = () => {
     false,
   ]);
   return (
-    <div className="w-full lg:overflow-y-hidden h-screen -mt-5">
+    <div className="w-full lg:overflow-hidden  h-screen -mt-5">
       <Navbar isExpanded={isExpanded} toggleExpansion={toggleExpansion} />
-      <div className="mt-5 lg:mt-44 ">
+      <p className="text-5xl text-center mb-10">Timeline</p>
+      <div className="mt-5 md:mt-28 lg:mt-44 lg:ml-44 ">
         <VerticalTimeline layout={"1-column-right"} animate={false}>
           <Element show={show[0]} showCard={showCard} num={0} />
           <Element show={show[1]} showCard={showCard} num={1} />

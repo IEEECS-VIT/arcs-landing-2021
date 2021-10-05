@@ -17,18 +17,17 @@ const TimelineElement = (props) => {
       className="vertical-timeline-element--work "
       contentStyle={{
         backgroundImage:
-          Width < 1024 || props.show ? `url(${circles})` : "none",
-        zIndex: Width < 1024 || props.show ? "1" : "0",
-        backgroundSize: Width > 1024 ? "cover" : "100% 100%",
+          Width < 1023 || props.show ? `url(${circles})` : "none",
+        zIndex: Width < 1023 || props.show ? "1" : "0",
+        backgroundSize: Width > 1023 ? "contain" : "contain",
         backgroundRepeat: "no-repeat",
-
         color: "white",
         transform:
-          Width > 1024
-            ? "rotate(90deg) translateY(50px)"
-            : "rotate(90deg) translateY(50px) ",
-        width: Width > 1024 ? "270px" : "auto",
-        height: Width > 1024 ? "200px" : "auto",
+          Width > 1023
+            ? "rotate(90deg)  translateX(10px)"
+            : "rotate(90deg) translateY(0px) ",
+        width: Width > 1023 ? "270px" : "270px",
+        height: Width > 1023 ? "200px" : "263px",
       }}
       contentArrowStyle={{
         visibility: "hidden",
@@ -46,7 +45,7 @@ const TimelineElement = (props) => {
       }
     >
       <div
-        className="data mt-5"
+        className="data mt-5 ml-5 lg:mt-10 w-1/2 lg:w-auto"
         style={{ opacity: props.show || Width < 1024 ? "1" : "0" }}
       >
         <h3 className="">EVENT NAME</h3>
