@@ -6,7 +6,31 @@
   width: 40px;
   height: 40px;
   background: #fda445;
-  border-radius: 100%;
+  border-radius: 50%;
+  position: relative;
+}
+.inner-circle {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  position: relative;
+  top: 0px;
+  left: 25%;
+  background: white;
+}
+.inner-circle2 {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  position: relative;
+  top: 0px;
+  left: 25%;
+  background: linear-gradient(
+    133.53deg,
+    #312161 18.24%,
+    #8f4497 51.72%,
+    #a73c61 90.42%
+  );
 }
 .vertical-timeline-element-icon {
   box-shadow: none !important;
@@ -42,12 +66,12 @@
     top: 50px;
   }
   .vertical-timeline--one-column-right .vertical-timeline-element-content {
-    margin-left: -97px !important;
+    margin-left: -99px !important;
     margin-right: unset !important;
   }
   .vertical-timeline.vertical-timeline--one-column-right::before {
-    height: 83%;
-    margin-top: 18%;
+    height: 82.5%;
+    margin-top: 17.8%;
   }
 }
 @media screen and (max-width: 1023px) and (min-width: 768px) {
@@ -65,12 +89,12 @@
     top: 50px;
   }
   .vertical-timeline--one-column-right .vertical-timeline-element-content {
-    margin-left: -97px !important;
+    margin-left: -50px !important;
     margin-right: unset !important;
   }
   .vertical-timeline.vertical-timeline--one-column-right::before {
     height: 83%;
-    margin-top: 14%;
+    margin-top: 11%;
   }
 }
 
@@ -80,7 +104,7 @@
     margin-top: -32%;
   }
   .vertical-timeline.vertical-timeline--one-column-right {
-    left: 12% !important;
+    left: 15% !important;
   }
   .vertical-timeline {
     transform: rotate(-90deg);

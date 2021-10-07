@@ -15,8 +15,8 @@ const TimelineElement = (props) => {
     <VerticalTimelineElement
       className="vertical-timeline-element--work "
       contentStyle={{
-        backgroundImage:
-          Width < 1023 || props.show ? `url(${circles})` : "none",
+        opacity: Width < 1023 || props.show ? "1" : "0",
+        backgroundImage: `url(${circles})`,
         zIndex: Width < 1023 || props.show ? "1" : "0",
         backgroundSize: Width > 1023 ? "contain" : "contain",
         backgroundRepeat: "no-repeat",
@@ -27,6 +27,7 @@ const TimelineElement = (props) => {
             : "rotate(90deg) translateY(0px) ",
         width: Width > 1023 ? "340px" : "350px",
         height: Width > 1023 ? "300px" : "400px",
+        transition: "all 0.6s ease-in-out",
       }}
       contentArrowStyle={{
         visibility: "hidden",
@@ -40,11 +41,17 @@ const TimelineElement = (props) => {
           aria-label="btn"
           onClick={() => props.showCard(props.num)}
           className={`${props.date} dot`}
-        ></button>
+        >
+          <div
+            className={
+              props.show || Width < 1024 ? "inner-circle2" : "inner-circle"
+            }
+          ></div>
+        </button>
       }
     >
       <div
-        className="data  lg:mt-5 w-1/2 lg:w-auto"
+        className="data  lg:mt-5 w-1/2 lg:w-auto "
         style={{ opacity: props.show || Width < 1024 ? "1" : "0" }}
       >
         <h3 className="">EVENT NAME</h3>
