@@ -25,8 +25,14 @@ const Timeline = () => {
   return (
     <div className="w-full lg:overflow-hidden  h-screen -mt-5">
       <Navbar isExpanded={isExpanded} toggleExpansion={toggleExpansion} />
-      <p className="text-5xl text-center font-medium italic  ">Timeline</p>
-      <div className="mt-5 md:mt-28 lg:mt-56 lg:ml-48 ">
+      <p className="text-5xl text-center font-medium italic font-mont">
+        Timeline
+      </p>
+      <img
+        className="invisible lg:visible z-10 absolute right-24 h-auto w-48 bottom-3"
+        src={ArcsText}
+      />
+      <div className="mt-5 md:mt-28 lg:mt-2 lg:mt-32  ">
         <VerticalTimeline layout={"1-column-right"} animate={false}>
           <Element show={show[0]} showCard={showCard} num={0} date={"one"} />
           <Element show={show[1]} showCard={showCard} num={1} date={"two"} />
@@ -36,12 +42,8 @@ const Timeline = () => {
           <Element show={show[5]} showCard={showCard} num={5} date={"six"} />
         </VerticalTimeline>
         <img
-          className="invisible lg:visible z-20 absolute right-0 h-56 w-56 bottom-0"
+          className="invisible lg:visible z-10 absolute right-0 h-56 w-56 bottom-0"
           src={line}
-        />
-        <img
-          className="invisible lg:visible absolute right-24 h-20 w-44 bottom-3"
-          src={ArcsText}
         />
       </div>
     </div>

@@ -27,7 +27,7 @@
 .vertical-timeline-element-content {
   box-shadow: none !important;
 }
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: 767px) {
   .vertical-timeline-element-content-arrow {
     transform: rotate(-90deg);
     border-left: 7px solid transparent !important;
@@ -35,6 +35,8 @@
   .data {
     transform: rotate(-90deg);
     text-align: justify;
+    margin-left: 50px;
+    margin-top: -10px;
   }
   .vertical-timeline--one-column-right .vertical-timeline-element-icon {
     top: 50px;
@@ -48,27 +50,52 @@
     margin-top: 18%;
   }
 }
+@media screen and (max-width: 1023px) and (min-width: 768px) {
+  .vertical-timeline-element-content-arrow {
+    transform: rotate(-90deg);
+    border-left: 7px solid transparent !important;
+  }
+  .data {
+    transform: rotate(-90deg);
+    text-align: justify;
+    margin-left: 50px;
+    margin-top: -10px;
+  }
+  .vertical-timeline--one-column-right .vertical-timeline-element-icon {
+    top: 50px;
+  }
+  .vertical-timeline--one-column-right .vertical-timeline-element-content {
+    margin-left: -97px !important;
+    margin-right: unset !important;
+  }
+  .vertical-timeline.vertical-timeline--one-column-right::before {
+    height: 83%;
+    margin-top: 14%;
+  }
+}
 
 @media screen and (min-width: 1024px) {
   .vertical-timeline.vertical-timeline--one-column-right::before {
-    height: 76%;
-    margin-top: -2%;
+    height: 80%;
+    margin-top: -32%;
   }
   .vertical-timeline.vertical-timeline--one-column-right {
-    left: auto !important;
+    left: 12% !important;
   }
   .vertical-timeline {
     transform: rotate(-90deg);
+    max-width: 450px !important;
+    margin: -200px auto !important;
   }
   .vertical-timeline-element {
-    margin: -70px 0 0 0 !important;
+    margin: -180px 0 0 0 !important;
   }
 
   .data {
     text-align: justify;
   }
   .vertical-timeline--one-column-right .vertical-timeline-element-content {
-    margin-left: 65% !important;
+    margin-left: 10% !important;
   }
 
   .dot::before {

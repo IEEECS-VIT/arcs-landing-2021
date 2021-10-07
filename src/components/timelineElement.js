@@ -23,10 +23,10 @@ const TimelineElement = (props) => {
         color: "white",
         transform:
           Width > 1023
-            ? "rotate(90deg)  translateX(10px)"
+            ? "rotate(90deg)  translateX(-10px)"
             : "rotate(90deg) translateY(0px) ",
-        width: Width > 1023 ? "270px" : "300px",
-        height: Width > 1023 ? "200px" : "363px",
+        width: Width > 1023 ? "340px" : "350px",
+        height: Width > 1023 ? "300px" : "400px",
       }}
       contentArrowStyle={{
         visibility: "hidden",
@@ -44,14 +44,18 @@ const TimelineElement = (props) => {
       }
     >
       <div
-        className="data mt-5 ml-5 lg:mt-5 w-1/2 lg:w-auto"
+        className="data  lg:mt-5 w-1/2 lg:w-auto"
         style={{ opacity: props.show || Width < 1024 ? "1" : "0" }}
       >
         <h3 className="">EVENT NAME</h3>
         <h4 className="">03/08/2021</h4>
         <p className="text-xs">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Molestie at
-          egestas justo quis nibh. Turpis diam lectus viverra a velit quis.
+          egestas justo quis nibh. Turpis diam lectus viverra a velit quis. In
+          volutpat nisl, sed libero malesuada nunc convallis tellus dignissim.
+          Sed aliquet eu morbi aliquam dolor. Libero, non et orci, laoreet vitae
+          amet, facilisis. Dolor id mattis ut massa scelerisque mattis. Tortor
+          vulputate urna venenatis eu.
         </p>
       </div>
     </VerticalTimelineElement>
