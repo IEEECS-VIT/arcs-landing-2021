@@ -151,3 +151,14 @@
     content: "dd6/mm6";
   }
 }
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.6;
+  }
+  to {
+    opacity: 1;
+  }
+}

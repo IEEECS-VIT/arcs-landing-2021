@@ -27,7 +27,7 @@ const TimelineElement = (props) => {
             : "rotate(90deg) translateY(0px) ",
         width: Width > 1023 ? "340px" : "350px",
         height: Width > 1023 ? "300px" : "400px",
-        transition: "all 0.6s ease-in-out",
+        animation: Width > 1023 && props.show ? "fadein 1s" : "none",
       }}
       contentArrowStyle={{
         visibility: "hidden",
