@@ -25,7 +25,7 @@ const Timeline = () => {
   return (
     <div className="w-full lg:overflow-hidden  h-screen ">
       <Navbar isExpanded={isExpanded} toggleExpansion={toggleExpansion} />
-      <p className="text-5xl text-center font-medium italic font-mont">
+      <p className="text-5xl mt-5 text-center font-medium italic font-mont">
         Timeline
       </p>
       <img

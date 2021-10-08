@@ -24,7 +24,7 @@ const TimelineElement = (props) => {
         transform:
           Width > 1023
             ? "rotate(90deg)  translateX(-10px)"
-            : "rotate(90deg) translateY(0px) ",
+            : "rotate(90deg) translateX(-3px) ",
         width: Width > 1023 ? "340px" : "350px",
         height: Width > 1023 ? "300px" : "400px",
         animation: Width > 1023 && props.show ? "fadein 1s" : "none",

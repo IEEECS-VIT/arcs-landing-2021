@@ -66,12 +66,12 @@
     top: 50px;
   }
   .vertical-timeline--one-column-right .vertical-timeline-element-content {
-    margin-left: -99px !important;
+    margin-left: -108px !important;
     margin-right: unset !important;
   }
   .vertical-timeline.vertical-timeline--one-column-right::before {
-    height: 82.5%;
-    margin-top: 17.8%;
+    height: 83%;
+    margin-top: 24%;
   }
 }
 @media screen and (max-width: 1023px) and (min-width: 768px) {
