@@ -60,7 +60,7 @@
     transform: rotate(-90deg);
     text-align: justify;
     margin-left: 50px;
-    margin-top: -10px;
+    margin-top: 10px;
   }
   .vertical-timeline--one-column-right .vertical-timeline-element-icon {
     top: 50px;
@@ -114,7 +114,9 @@
   .vertical-timeline-element {
     margin: -180px 0 0 0 !important;
   }
-
+  // .vertical-timeline-element:nth-child(2){
+  //   margin: ;
+  // }
   .data {
     text-align: justify;
   }

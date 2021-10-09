@@ -22,9 +22,10 @@ const TimelineElement = (props) => {
         backgroundRepeat: "no-repeat",
         color: "white",
         transform:
-          Width > 1023
+          props.num < 3 || Width < 1023
             ? "rotate(90deg)  translateX(-10px)"
-            : "rotate(90deg) translateX(-3px) ",
+            : " rotate(90deg) scaleX(-1) translatex(250px) ",
+
         width: Width > 1023 ? "340px" : "350px",
         height: Width > 1023 ? "300px" : "400px",
         animation: Width > 1023 && props.show ? "fadein 1s" : "none",
@@ -51,8 +52,13 @@ const TimelineElement = (props) => {
       }
     >
       <div
-        className="data  lg:mt-5 w-1/2 lg:w-auto "
-        style={{ opacity: props.show || Width < 1024 ? "1" : "0" }}
+        className={`lg:mt-7 w-1/2 lg:w-auto ${
+          props.num < 3 || Width < 1023 ? "data" : "data-inverted"
+        }`}
+        style={{
+          opacity: props.show || Width < 1024 ? "1" : "0",
+          transform: props.num >= 3 && Width > 1023 ? "scaleX(-1)" : "",
+        }}
       >
         <h3 className="">EVENT NAME</h3>
         <h4 className="">03/08/2021</h4>
