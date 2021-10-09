@@ -31,6 +31,7 @@ const Timeline = () => {
       <img
         className="invisible lg:visible z-10 absolute right-24 h-auto w-48 bottom-3"
         src={ArcsText}
+        alt="arcsText"
       />
       <div className="mt-5 md:mt-28 lg:mt-2 lg:mt-32  ">
         <VerticalTimeline layout={"1-column-right"} animate={false}>
@@ -43,6 +44,7 @@ const Timeline = () => {
         </VerticalTimeline>
         <img
           className="invisible lg:visible z-10 absolute right-0 h-56 w-56 bottom-0"
+          alt="line"
           src={line}
         />
       </div>
