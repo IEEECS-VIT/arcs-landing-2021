@@ -7,11 +7,13 @@ module.exports = {
   ],
   darkMode: false, // or 'media' or 'class'
   theme: {
-  
-    extend: {},
     screens:{
       'iphone5': {'max':'320px'},
         ...defaultTheme.screens,
+    extend: {
+      backgroundImage: (theme) => ({
+        "card-background": "url('../src/images/cardbackground.png')",
+      }),
     },
     backgroundColor: (theme) => ({
       ...theme("colors"),
@@ -21,6 +23,7 @@ module.exports = {
       "light-orange": "#F8E2CF",
       pink: "#EF8D98",
     }),
+
     textColor: (theme) => theme("colors"),
     textColor: {
       orange: "#FFA53b",

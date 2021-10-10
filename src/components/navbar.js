@@ -5,7 +5,7 @@ import arcs from "./../images/arcs.png";
 const Navbar = (props) => {
   var openClose = props.isExpanded ? "open" : "close";
   return (
-    <div className="z-30 mt-12 mb-4 ml-3  flex items-center justify-between flex-wrap">
+    <div className="z-40 mt-12 mb-4 ml-3  flex items-center justify-between flex-wrap">
       <img
         src={arcs}
         className="fixed block lg:w-14 h-12  flex items-center"
@@ -13,7 +13,7 @@ const Navbar = (props) => {
       />
 
       <button
-        className="fixed z-30 flex flex-col  right-5  btn"
+        className="fixed z-40 flex flex-col  right-5  btn"
         onClick={() => props.toggleExpansion(!props.isExpanded)}
       >
         <div className={openClose}></div>

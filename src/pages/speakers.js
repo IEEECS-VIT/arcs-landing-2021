@@ -7,7 +7,7 @@ const Speakers = () => {
   return (
     <div>
       <div className="mb-10">
-      <Navbar isExpanded={isExpanded} toggleExpansion={toggleExpansion} />
+        <Navbar isExpanded={isExpanded} toggleExpansion={toggleExpansion} />
       </div>
       <CoverSpeaker title="Speakers" />
       <Carousel />

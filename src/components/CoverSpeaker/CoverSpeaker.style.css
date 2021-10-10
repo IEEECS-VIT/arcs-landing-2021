@@ -6,7 +6,7 @@
 }
 
 .heading-content {
-  cursor:default;
+  cursor: default;
   font-family: "Montserrat", sans-serif;
   font-size: 5vw;
   font-weight: 600;
@@ -26,7 +26,6 @@
 .mobile-heading {
   display: none;
   min-height: 250px;
-
 }
 
 @media all and (max-width: 1024px) {
@@ -40,7 +39,8 @@
 }
 
 @media all and (max-width: 550px) {
-  .img1, .img2 {
+  .img1,
+  .img2 {
     display: none;
   }
   .heading {
@@ -55,10 +55,9 @@
     display: flex;
     align-items: center;
   }
-  .mobile-heading>img {
+  .mobile-heading > img {
     height: 25vw;
     min-height: 40px;
-
   }
 }
 
