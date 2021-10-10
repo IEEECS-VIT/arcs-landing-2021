@@ -51,6 +51,18 @@
 .vertical-timeline-element-content {
   box-shadow: none !important;
 }
+@media screen and (max-width: 400px) {
+  .vertical-timeline.vertical-timeline--one-column-right::before {
+    margin-top: 28% !important;
+  }
+}
+@media screen and (min-width: 401px) and (max-width: 540px) {
+  .vertical-timeline.vertical-timeline--one-column-right::before {
+    right: 16px !important;
+    height: 83%;
+    margin-top: 24% !important;
+  }
+}
 @media screen and (max-width: 767px) {
   .vertical-timeline-element-content-arrow {
     transform: rotate(-90deg);
@@ -70,8 +82,9 @@
     margin-right: unset !important;
   }
   .vertical-timeline.vertical-timeline--one-column-right::before {
-    height: 83%;
-    margin-top: 24%;
+    right: 16px !important;
+    height: 82%;
+    margin-top: 17%;
   }
 }
 @media screen and (max-width: 1023px) and (min-width: 768px) {
@@ -93,6 +106,7 @@
     margin-right: unset !important;
   }
   .vertical-timeline.vertical-timeline--one-column-right::before {
+    right: 16px !important;
     height: 83%;
     margin-top: 11%;
   }
@@ -100,6 +114,7 @@
 
 @media screen and (min-width: 1024px) {
   .vertical-timeline.vertical-timeline--one-column-right::before {
+    right: 16px !important;
     height: 80%;
     margin-top: -32%;
   }
@@ -156,9 +171,6 @@
 @keyframes fadein {
   from {
     opacity: 0;
-  }
-  50% {
-    opacity: 0.6;
   }
   to {
     opacity: 1;
