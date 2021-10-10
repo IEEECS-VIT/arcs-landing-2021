@@ -15,7 +15,7 @@
     #8f4497 51.72%,
     #a73c61 90.42%
   );
-  transform: scale(1.25);
+  transform: scale(1.25) !important;
 }
 .prize2 {
   background: linear-gradient(
@@ -60,7 +60,7 @@
   background-color: white;
 }
 .lines:hover .prize1 {
-  transform: scale(1.4);
+  transform: scale(1.4) !important;
 }
 @media only screen and (max-width: 767px) {
   .circles p {
