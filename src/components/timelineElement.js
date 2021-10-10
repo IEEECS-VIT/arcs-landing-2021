@@ -4,7 +4,9 @@ import "react-vertical-timeline-component/style.min.css";
 import circles from "./../images/EventCard.png";
 
 const TimelineElement = (props) => {
-  const [Width, setWidth] = useState(window.innerWidth);
+  const [Width, setWidth] = useState(
+    typeof window !== "undefined" ? window.innerWidth : 0
+  );
   useEffect(() => {
     const handleWindowResize = () => setWidth(window.innerWidth);
     window.addEventListener("resize", handleWindowResize);
