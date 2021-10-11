@@ -1,14 +1,29 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "gatsby";
 import arcs from "./../images/arcs.png";
+import useWindowScrollPosition from "@rehooks/window-scroll-position";
 
 const Navbar = (props) => {
   var openClose = props.isExpanded ? "open" : "close";
+  const [visible, setVisible] = useState(false);
+  const changePosition = 100;
+  let position = useWindowScrollPosition();
+  if (position.y > changePosition && !visible) {
+    setVisible(true);
+  } else if (position.y <= changePosition && visible) {
+    setVisible(false);
+  }
   return (
-    <div className="z-40 mt-12 mb-4 ml-3  flex items-center justify-between flex-wrap">
+    <div
+      className=" top-0 w-full   p-8 z-50   flex items-center justify-between flex-wrap"
+      style={{
+        boxShadow: visible ? "2px  2px 5px grey" : "",
+        position: visible ? "fixed" : "static",
+      }}
+    >
       <img
         src={arcs}
-        className="fixed block lg:w-14 h-12  flex items-center"
+        className="fixed w-auto h-11  flex items-center"
         alt="arcs"
       />
 
@@ -25,12 +40,13 @@ const Navbar = (props) => {
       </button>
 
       <div
-        className="pr-auto nav ease-in-out duration-300 z-20 fixed  block flex flex-col h-full top-0  pt-24  right-0  bg-orange font-semibold  font-mont "
+        className="pr-auto nav ease-in-out duration-300 z-20 fixed font-semibold block flex flex-col h-full top-0  pt-24  right-0  bg-orange   font-mont "
         style={{
           transform: !props.isExpanded ? "translateX(110%)" : "translateX(0)",
         }}
       >
         <Link
+          onClick={() => props.toggleExpansion(!props.isExpanded)}
           className="py-4 px-16  text-center hover:bg-light-orange rounded-3xl "
           to="/"
         >
