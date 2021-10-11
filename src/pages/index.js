@@ -40,7 +40,7 @@ const IndexPage = () => {
   });
   var Blur = isExpanded ? "change-opacity" : "none";
   return (
-    <div className="">
+    <div className="pt-16">
       <Navbar isExpanded={isExpanded} toggleExpansion={toggleExpansion} />
       <Rectangles />
       <div className={`absolute w-full z-5 ${Blur}`}>

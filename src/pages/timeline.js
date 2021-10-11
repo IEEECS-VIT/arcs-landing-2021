@@ -24,10 +24,10 @@ const Timeline = () => {
   ]);
   var Blur = isExpanded ? "change-opacity" : "none";
   return (
-    <div className="w-full lg:overflow-hidden  h-screen ">
+    <div className="w-full lg:overflow-hidden pt-10  h-screen ">
       <Navbar isExpanded={isExpanded} toggleExpansion={toggleExpansion} />
       <div className={Blur}>
-        <p className="text-5xl mt-10 lg:mt-5 text-center font-medium italic font-mont">
+        <p className="text-5xl mt-10 lg:mt-5 text-center font-bold font-mont">
           Timeline
         </p>
         <img

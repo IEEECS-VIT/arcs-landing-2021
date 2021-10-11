@@ -6,7 +6,7 @@ const Speakers = () => {
   const [isExpanded, toggleExpansion] = useState(false);
   return (
     <div>
-      <div className="mb-10">
+      <div className="sm:mb-20 lg:mb-20">
         <Navbar isExpanded={isExpanded} toggleExpansion={toggleExpansion} />
       </div>
       <CoverSpeaker title="Speakers" />

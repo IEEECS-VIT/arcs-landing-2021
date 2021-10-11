@@ -15,10 +15,11 @@ const Navbar = (props) => {
   }
   return (
     <div
-      className=" top-0 w-full px-3 py-9 z-50   flex items-center justify-between flex-wrap"
+      className=" top-0 w-full px-3 py-9 fixed z-50 duration-200 flex items-center justify-between flex-wrap"
       style={{
-        boxShadow: visible ? "2px  2px 5px grey" : "",
-        position: visible ? "fixed" : "static",
+        boxShadow: visible ? "0px  2px 2px #aaa" : "",
+        backgroundColor: visible ? "#FFF":"",
+        // position: visible ? "fixed" : "fixed",
       }}
     >
       <img
