@@ -2,14 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,600;1,500&display=swap');
-
-
-
-
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,600;1,500&display=swap");
 
 .line {
   letter-spacing: 1px;
@@ -96,7 +92,9 @@ div :nth-child(3).close {
   transform-origin: 1px;
   background-color: black;
 }
-
+.card-margin {
+  margin-top: 22rem;
+}
 @media only screen and (max-width: 767px) {
   .rect {
     height: auto;
@@ -139,4 +137,3 @@ div :nth-child(3).close {
 .card-style {
   min-width: 300px !important;
 }
-

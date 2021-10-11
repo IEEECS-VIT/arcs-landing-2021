@@ -5,7 +5,7 @@ const Prizes = () => {
   const [isExpanded, toggleExpansion] = useState(false);
   var Blur = isExpanded ? "change-opacity" : "none";
   return (
-    <div className="-mt-5">
+    <div className="">
       <Navbar isExpanded={isExpanded} toggleExpansion={toggleExpansion} />
       <div className={Blur}>
         <img
@@ -21,7 +21,7 @@ const Prizes = () => {
         <p className=" text-center font-bold text-4xl md:text-5xl font-mont">
           PRIZES
         </p>
-        <div className="justify-center mt-7 md:mt-32 flex flex-col md:flex-row ">
+        <div className="justify-center mt-7 md:mt-28 flex flex-col md:flex-row ">
           <p className="md:-mr-16 z-10 circles prize3 transform ease-in-out  duration-500 hover:scale-125">
             <p className=" caption text-center mt-10 md:-mt-10 font-mont font-semibold text-2xl">
               Quiz

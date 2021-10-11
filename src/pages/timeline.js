@@ -22,31 +22,39 @@ const Timeline = () => {
     false,
     false,
   ]);
+  var Blur = isExpanded ? "change-opacity" : "none";
   return (
     <div className="w-full lg:overflow-hidden  h-screen ">
       <Navbar isExpanded={isExpanded} toggleExpansion={toggleExpansion} />
-      <p className="text-5xl mt-10 lg:mt-5 text-center font-medium italic font-mont">
-        Timeline
-      </p>
-      <img
-        className="invisible lg:visible z-10 absolute right-24 h-auto w-48 bottom-3"
-        src={ArcsText}
-        alt="arcsText"
-      />
-      <div className="mt-5 md:mt-28 lg:mt-2 lg:mt-32  ">
-        <VerticalTimeline layout={"1-column-right"} animate={false}>
-          <Element show={show[0]} showCard={showCard} num={0} date={"one"} />
-          <Element show={show[1]} showCard={showCard} num={1} date={"two"} />
-          <Element show={show[2]} showCard={showCard} num={2} date={"three"} />
-          <Element show={show[3]} showCard={showCard} num={3} date={"four"} />
-          <Element show={show[4]} showCard={showCard} num={4} date={"five"} />
-          <Element show={show[5]} showCard={showCard} num={5} date={"six"} />
-        </VerticalTimeline>
+      <div className={Blur}>
+        <p className="text-5xl mt-10 lg:mt-5 text-center font-medium italic font-mont">
+          Timeline
+        </p>
         <img
-          className="invisible lg:visible z-10 absolute right-0 h-56 w-56 bottom-0"
-          alt="line"
-          src={line}
+          className="invisible lg:visible z-10 absolute right-24 h-auto w-48 bottom-3"
+          src={ArcsText}
+          alt="arcsText"
         />
+        <div className="mt-5 md:mt-28 lg:mt-2 lg:mt-32  ">
+          <VerticalTimeline layout={"1-column-right"} animate={false}>
+            <Element show={show[0]} showCard={showCard} num={0} date={"one"} />
+            <Element show={show[1]} showCard={showCard} num={1} date={"two"} />
+            <Element
+              show={show[2]}
+              showCard={showCard}
+              num={2}
+              date={"three"}
+            />
+            <Element show={show[3]} showCard={showCard} num={3} date={"four"} />
+            <Element show={show[4]} showCard={showCard} num={4} date={"five"} />
+            <Element show={show[5]} showCard={showCard} num={5} date={"six"} />
+          </VerticalTimeline>
+          <img
+            className="invisible lg:visible z-10 absolute right-0 h-56 w-56 bottom-0"
+            alt="line"
+            src={line}
+          />
+        </div>
       </div>
     </div>
   );

@@ -40,7 +40,7 @@ const IndexPage = () => {
   });
   var Blur = isExpanded ? "change-opacity" : "none";
   return (
-    <div className="-mt-5 ">
+    <div className="">
       <Navbar isExpanded={isExpanded} toggleExpansion={toggleExpansion} />
       <Rectangles />
       <div className={`absolute w-full z-5 ${Blur}`}>
@@ -85,7 +85,7 @@ const IndexPage = () => {
           </a>
         </animated.div>
 
-        <div className="mb-48 md:mb-1 block mt-80 ml-auto mr-auto w-1/2 md:mt-auto md:w-auto md:mr-12 lg:mr-44 md:float-right ">
+        <div className="mb-48 md:mb-2 block mt-80 ml-auto mr-auto w-1/2 md:mt-auto md:w-auto md:mr-12 lg:mr-44 md:float-right ">
           <p className=" leading-tight w-min font-mont line font-semibold text-justify text-4xl md:text-5xl  md:leading-tight caption">
             Your next <br />
             Interactive <br />
@@ -99,7 +99,7 @@ const IndexPage = () => {
           </button>
         </div>
 
-        <div className=" mt-20 md:mt-96 flex font-mont mx-auto lg:mx-20 flex-wrap justify-around ">
+        <div className=" mt-20 md:mt-80 pt-10 flex font-mont mx-auto lg:mx-20 flex-wrap justify-around ">
           <Card />
           <Card />
           <Card />
