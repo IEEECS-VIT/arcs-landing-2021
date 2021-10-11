@@ -15,7 +15,7 @@ const Navbar = (props) => {
   }
   return (
     <div
-      className=" top-0 w-full   p-8 z-50   flex items-center justify-between flex-wrap"
+      className=" top-0 w-full px-3 py-9 z-50   flex items-center justify-between flex-wrap"
       style={{
         boxShadow: visible ? "2px  2px 5px grey" : "",
         position: visible ? "fixed" : "static",
@@ -28,7 +28,7 @@ const Navbar = (props) => {
       />
 
       <button
-        className="fixed z-40 flex flex-col  right-5  btn"
+        className="fixed z-40 flex flex-col  right-5  btn "
         onClick={() => props.toggleExpansion(!props.isExpanded)}
       >
         <div className={openClose}></div>
