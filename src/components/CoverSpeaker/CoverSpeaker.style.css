@@ -11,7 +11,8 @@
   font-size: 5vw;
   font-weight: 600;
 }
-.img1, .img2 {
+.img1,
+.img2 {
   height: 25vh;
 }
 .img1 {
@@ -33,7 +34,8 @@
     font-size: 50px;
     align-self: center;
   }
-  .img1, .img2 {
+  .img1,
+  .img2 {
     height: 25vh;
   }
 }

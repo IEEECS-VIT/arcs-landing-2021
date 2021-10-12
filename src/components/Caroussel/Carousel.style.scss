@@ -8,7 +8,9 @@
   width: 100%;
 }
 
-.speaker1, .speaker2, .speaker3 {
+.speaker1,
+.speaker2,
+.speaker3 {
   padding: 7.5px;
   margin: 7.5px;
   display: flex;
@@ -45,7 +47,6 @@
     #f9af61
   );
 }
-
 
 @media all and(max-width:1130px) {
   .speaker-img {

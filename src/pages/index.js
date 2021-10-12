@@ -87,15 +87,19 @@ const IndexPage = () => {
 
         <div className="mb-48 md:mb-2 block mt-80 ml-auto mr-auto w-1/2 md:mt-auto md:w-auto md:mr-12 lg:mr-44 md:float-right ">
           <p className=" leading-tight w-min font-mont line font-semibold text-justify text-4xl md:text-5xl  md:leading-tight caption">
-            Your next <br />
+            Your Next <br />
             Interactive <br />
             Experience
           </p>
           <p className="font-mont text-xl md:text-2xl text-justify text-orange mt-2">
-            VIT VELLORE, <br /> MARCH 19-21
+            VIT VELLORE, <br />
+            26-28 NOVEMBER
           </p>
-          <button className="font-mont font-bold relative center rounded-md  bg-orange px-5 py-2 mt-2">
-            Register now
+          <button
+            disabled={true}
+            className="font-mont opacity-70 font-bold relative center rounded-md  bg-orange px-5 py-2 mt-2"
+          >
+            Coming Soon!
           </button>
         </div>
 

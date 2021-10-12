@@ -1,19 +1,15 @@
 const defaultTheme = require("tailwindcss/defaultTheme");
 
 module.exports = {
-  purge: [
-    './src/**/*.html',
-    './src/**/*.js',
-  ],
+  purge: ["./src/**/*.html", "./src/**/*.js"],
   darkMode: false, // or 'media' or 'class'
   theme: {
-  
     extend: {},
-    screens:{
-      'iphone5': {'max':'320px'},
-        ...defaultTheme.screens,
-      'max-md':{'max':'767px'},
-      'max-sm':{'max':'639px'},
+    screens: {
+      iphone5: { max: "320px" },
+      ...defaultTheme.screens,
+      "max-md": { max: "767px" },
+      "max-sm": { max: "639px" },
     },
     backgroundColor: (theme) => ({
       ...theme("colors"),

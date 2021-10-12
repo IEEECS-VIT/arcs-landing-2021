@@ -121,7 +121,7 @@ class Item extends React.Component {
       if (c === 0) {
         return (
           <button className="knowmore md:text-base  md:py-1 md:px-4 px-6 md:mt-2 py-0 mt-4 text-sm ">
-            know more
+            Know More
           </button>
         );
       } else return <p></p>;
