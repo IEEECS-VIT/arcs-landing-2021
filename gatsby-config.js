@@ -20,7 +20,7 @@ module.exports = {
         background_color: '#f7f0eb',
         theme_color: '#a2466c',
         display: 'standalone',
-        icon: 'src/images/arcs.png',
+        icon: 'src/images/arcs_favicon.png',
       },
     }
   ],

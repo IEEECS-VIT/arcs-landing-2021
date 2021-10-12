@@ -24,7 +24,7 @@ const Sponsors = () => {
       <Navbar isExpanded={isExpanded} toggleExpansion={toggleExpansion} />
 
       <div className="overflow-x-hidden object-fill">
-        <div className="z-10 mt-4 sm:mt-10">
+        <div className="z-10 mt-4 sm:mt-10 max-sm:pb-20">
           {/* <div className="w-full flex justify-center">
                     <div className="flex">
                     <img className="object-scale-down w-44 sm:w-52 md:w-64 lg:w-80 xl:w-96 h-24" src={combo} alt="lines"/> 
@@ -34,9 +34,9 @@ const Sponsors = () => {
                     </div>
                 </div>  */}
 
-          <div className="z-40 w-full flex justify-center">
+          <div className="z-40 flex justify-center">
             <p className=" text-center md:-mt-4 text-4xl absolute sm:text-5xl md:text-6xl lg:text-7xl xl:text-7xl">
-              Sponsors
+              Past Sponsors
             </p>
           </div>
 
@@ -137,7 +137,7 @@ const Sponsors = () => {
                 alt=""
               />
             </div>
-            <div className="ml-24 md:translate-y-72 sm:translate-y-52 sm:-translate-x-24 xs:translate-y-44 xs:-translate-x-12  bottom-0 transform group-hover:scale-125  sm:group-hover:-translate-x-20 md:group-hover:translate-x-0 md:group-hover:scale-110 transition ease-in-out duration-500">
+            <div className="max-md:hidden ml-24 md:translate-y-72 sm:translate-y-52 sm:-translate-x-24 xs:translate-y-44 xs:-translate-x-12  bottom-0 transform group-hover:scale-125  sm:group-hover:-translate-x-20 md:group-hover:translate-x-0 md:group-hover:scale-110 transition ease-in-out duration-500">
               <img
                 className="object-scale-down w-32 h-32 sm:w-44 sm:h-44 md:w-48 md:h-48 xs:w-28 xs:h-28 iphone6:w-36 iphone6:h-36"
                 src={bottomleft}
