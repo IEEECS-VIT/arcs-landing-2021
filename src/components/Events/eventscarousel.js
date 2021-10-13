@@ -68,7 +68,7 @@ export default class Carousel extends React.Component {
     return (
       <div id="carousel">
         <div
-          className="arrow arrow-left"
+          className="arrow arrow-left "
           onClick={this.leftClick}
           onKeyPress={this.leftClick}
           aria-label="Save"
@@ -89,7 +89,7 @@ export default class Carousel extends React.Component {
         </CSSTransitionGroup>
 
         <div
-          className="arrow arrow-right"
+          className="arrow arrow-right "
           onClick={this.rightClick}
           onKeyPress={this.rightClick}
           aria-label="Save"
