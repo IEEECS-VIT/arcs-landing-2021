@@ -5,7 +5,7 @@ import { ImLocation, ImPhoneHangUp } from "react-icons/im";
 import Navbar from "./../components/navbar";
 import Rectangles from "./../components/rectangle";
 import "../Events.scss";
-import border from "../images/border.png";
+// import border from "../images/border.png";
 const ContactPage = () => {
   const [isExpanded, toggleExpansion] = useState(false);
 
