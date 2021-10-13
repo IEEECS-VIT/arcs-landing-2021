@@ -1,4 +1,6 @@
 import React from "react";
+import Modal from  './modal.js'
+
 
 import CSSTransitionGroup from "react-transition-group/CSSTransitionGroup";
 import {
@@ -104,31 +106,59 @@ export default class Carousel extends React.Component {
 }
 
 class Item extends React.Component {
+
   constructor(props) {
     super(props);
     this.state = {
       level: this.props.level,
       title: this.props.title,
       img: this.props.img,
+      show:false,
+     
     };
+    this.showModal = this.showModal.bind(this);
+    this.hideModal = this.hideModal.bind(this);
   }
+  showModal = () => {
+    this.setState({ show: true });
+  };
+   hideModal = () => {
+      this.setState({ show: false });
+    };
 
   render() {
+   
+   
     const outer = "item level" + this.props.level;
     const innerclass = "innerdiv innerlevel" + this.props.level;
     const c = this.props.level;
-    function Button() {
+  
+  
+      
       if (c === 0) {
         return (
-          <button className="knowmore md:text-base  md:py-1 md:px-4 px-6 md:mt-2 py-0 mt-4 text-sm ">
+          <div className={outer}>
+          <div className={innerclass}>
+            <h1 className="md:text-lg text-base pt-10 eventhead iphone5:text-sm ">
+              {this.state.title}
+            </h1>
+            <img
+              className="eventimg"
+              src={require(`../../images/${this.state.img}.png`).default}
+              alt="noo"
+            ></img>
+          </div>
+       
+          <button  onClick={this.showModal} className="knowmore md:text-base  md:py-1 md:px-4 px-6 md:mt-2 py-0 mt-4 text-sm ">
             know more
           </button>
+          <Modal show={this.state.show} handleClose={this.hideModal}/>
+          </div>
+         
         );
-      } else return <p></p>;
-    }
-
-    return (
-      <div className={outer}>
+      }
+       else  return(
+        <div className={outer}>
         <div className={innerclass}>
           <h1 className="md:text-lg text-base pt-10 eventhead iphone5:text-sm ">
             {this.state.title}
@@ -139,8 +169,32 @@ class Item extends React.Component {
             alt="noo"
           ></img>
         </div>
-        <Button />
+       
+    
+       
       </div>
-    );
+      )
+    
+
+    
+
+    // return (
+    //   <div className={outer}>
+    //     <div className={innerclass}>
+    //       <h1 className="md:text-lg text-base pt-10 eventhead iphone5:text-sm ">
+    //         {this.state.title}
+    //       </h1>
+    //       <img
+    //         className="eventimg"
+    //         src={require(`../../images/${this.state.img}.png`).default}
+    //         alt="noo"
+    //       ></img>
+    //     </div>
+    //     <Modal show={this.state.show} handleClose={this.hideModal}/>
+    
+    
+       
+    //   </div>
+    // );
   }
 }
