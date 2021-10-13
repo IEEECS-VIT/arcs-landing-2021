@@ -10,13 +10,13 @@ const ContactPage = () => {
   const [isExpanded, toggleExpansion] = useState(false);
 
   return (
-    <div>
+    <div className="pt-3">
       <Navbar isExpanded={isExpanded} toggleExpansion={toggleExpansion} />
       <Rectangles />
 
-      <div className="container lg:mt-14 mt-5  mx-auto">
+      <div className="container lg:mt-14 mt-5 mx-auto">
         <center>
-          <div className="w-full flex justify-center">
+          {/* <div className="w-full flex justify-center">
             <div className="flex">
               <img
                 className="object-scale-down w-44 sm:w-52 md:w-64 lg:w-80 xl:w-96 h-24"
@@ -30,7 +30,13 @@ const ContactPage = () => {
                 Contact Us
               </p>
             </div>
-          </div>
+          </div> */}
+          <p
+            style={{ fontFamily: "Montserrat" }}
+            className="text-center w-full font-medium md:-mt-4 text-4xl mb-10 sm:text-5xl md:text-6xl lg:text-7xl xl:text-7xl"
+          >
+            Contact Us
+          </p>
         </center>
         <br></br>
 

@@ -20,7 +20,7 @@ import Navbar from "../components/navbar";
 const Sponsors = () => {
   const [isExpanded, toggleExpansion] = useState(false);
   return (
-    <div className="mt-10">
+    <div className="mt-8">
       <Navbar isExpanded={isExpanded} toggleExpansion={toggleExpansion} />
 
       <div className="overflow-x-hidden object-fill">
