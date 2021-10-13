@@ -134,6 +134,7 @@ class Item extends React.Component {
             {this.state.title}
           </h1>
           <img
+            draggable="false"
             className="eventimg"
             src={require(`../../images/${this.state.img}.png`).default}
             alt="noo"

@@ -18,11 +18,12 @@ const Navbar = (props) => {
       className=" top-0 w-full px-3 py-9 fixed z-50 duration-200 flex items-center justify-between flex-wrap"
       style={{
         boxShadow: visible ? "0px  2px 2px #aaa" : "",
-        backgroundColor: visible ? "#FFF":"",
+        backgroundColor: visible ? "#FFF" : "",
         // position: visible ? "fixed" : "fixed",
       }}
     >
       <img
+        draggable="false"
         src={arcs}
         className="fixed w-auto h-11  flex items-center"
         alt="arcs"
