@@ -9,6 +9,7 @@ import { useSpring, animated } from "react-spring";
 import { FaTwitter, FaFacebook } from "react-icons/fa";
 import { AiFillInstagram } from "react-icons/ai";
 import Rectangles from "./../components/rectangle";
+import '../style.scss';
 
 const IndexPage = () => {
   const [isExpanded, toggleExpansion] = useState(false);
@@ -43,45 +44,45 @@ const IndexPage = () => {
     <div className="pt-16">
       <Navbar isExpanded={isExpanded} toggleExpansion={toggleExpansion} />
       <Rectangles />
-      <div className={`absolute w-full z-5 ${Blur}`}>
+      <div className={`select-none absolute w-full z-5 ${Blur}`}>
         <animated.img
           src={Rect}
           alt="box"
           style={Rectangle}
-          className="rect z-10 absolute  md:ml-28 lg:ml-60  md:h-64 md:w-72 lg:mt-4"
+          className="select-none rect z-10 absolute  md:ml-28 lg:ml-60  md:h-64 md:w-72 lg:mt-4"
         />
 
         <animated.img
           src={Box}
           alt="box"
-          className="box  z-5 absolute    md:ml-32 lg:ml-64  md:h-64 md:w-72 "
+          className="select-none box  z-5 absolute    md:ml-32 lg:ml-64  md:h-64 md:w-72 "
           style={box}
         />
         <animated.img
           src={ArcsHome}
           alt="box"
-          className="arcs md:ml-44   absolute mt-4 lg:ml-72 md:h-48 md:w-auto"
+          className="select-none arcs md:ml-44   absolute mt-4 lg:ml-72 md:h-48 md:w-auto"
           style={arcs}
         />
         <animated.img
           alt="circle"
           src={Circle}
-          className="circle  absolute  md:mt-60 lg:mt-64  md:ml-36 lg:ml-72 "
+          className="select-none circle  absolute  md:mt-60 lg:mt-64  md:ml-36 lg:ml-72 "
           style={Rectangle}
         />
         <animated.div
           style={social}
-          className="icons absolute w-5 ml-14 md:ml-20 lg:ml-48 mt-36 space-y-3 flex flex-col"
+          className="select-none icons absolute w-5 ml-14 md:ml-20 lg:ml-48 mt-36 space-y-3 flex flex-col"
         >
           <a href="https://twitter.com/ieeecsvit">
-            <FaTwitter size={20} className=" block" />
+            <FaTwitter size={20} className="select-none block" />
           </a>
 
           <a href="https://www.facebook.com/ieeecsvit">
-            <FaFacebook size={20} className=" block" />
+            <FaFacebook size={20} className="select-none block" />
           </a>
           <a href="https://www.instagram.com/ieeecs_vit/">
-            <AiFillInstagram size={20} className="block " />
+            <AiFillInstagram size={20} className="select-none block " />
           </a>
         </animated.div>
 

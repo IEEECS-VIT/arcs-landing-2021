@@ -5,7 +5,12 @@ const landingCard = () => {
     <div className="grad w-60 h-40 my-4 mx-2 card-style flex flex-none  md:my-2 lg:my-0.5">
       <div className="inner">
         <div className="flex flex-none items-center ">
-          <img src={comp} className="w-24 h-24 pr-3" alt="comp" />
+          <img
+            draggable="false"
+            src={comp}
+            className="w-24 h-24 pr-3"
+            alt="comp"
+          />
           <div className="text-justify">
             <p className="mb-2 mr-auto ml-auto text-lg pb-1 text-black">
               Hackbattle
