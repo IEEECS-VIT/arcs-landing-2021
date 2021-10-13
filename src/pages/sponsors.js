@@ -35,7 +35,7 @@ const Sponsors = () => {
                 </div>  */}
 
           <div className="z-40 flex justify-center">
-            <p className=" text-center md:-mt-4 text-4xl absolute sm:text-5xl md:text-6xl lg:text-7xl xl:text-7xl">
+            <p className=" font-mont font-medium text-center md:-mt-4 text-4xl absolute sm:text-5xl md:text-6xl lg:text-7xl xl:text-7xl">
               Past Sponsors
             </p>
           </div>

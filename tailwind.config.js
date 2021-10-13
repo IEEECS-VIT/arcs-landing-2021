@@ -9,7 +9,7 @@ module.exports = {
       iphone5: { max: "320px" },
       ...defaultTheme.screens,
       "max-md": { max: "767px" },
-      "max-sm": { max: "639px" },
+      "max-sm": { max: "640px" },
     },
     backgroundColor: (theme) => ({
       ...theme("colors"),

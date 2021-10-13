@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "gatsby";
 import Navbar from "./../components/navbar";
 import Rect from "./../images/arcsRect.png";
 import Box from "./../images/arcsBox.png";
@@ -104,9 +105,15 @@ const IndexPage = () => {
         </div>
 
         <div className=" mt-20 md:mt-80 pt-10 flex font-mont mx-auto lg:mx-20 flex-wrap justify-around ">
-          <Card />
-          <Card />
-          <Card />
+          <Link to="/events">
+            <Card />
+          </Link>
+          <Link to="/events">
+            <Card />
+          </Link>
+          <Link to="/events">
+            <Card />
+          </Link>
         </div>
       </div>
     </div>

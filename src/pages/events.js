@@ -12,7 +12,7 @@ import rec2 from "../images/rec2.png";
 import smrec2 from "../images/smrec2.png";
 // import cyber from '../images/event1.png'
 import Carousel from "../components/Events/eventscarousel";
-import border from "../images/border.png";
+// import border from "../images/border.png";
 
 const EventPage = () => {
   const [isExpanded, toggleExpansion] = useState(false);
@@ -43,34 +43,39 @@ const EventPage = () => {
     <div>
       <Navbar isExpanded={isExpanded} toggleExpansion={toggleExpansion} />
 
-      <div className="md:mt-23 mt-10">
+      <div className="md:mt-23 mt-16">
         <div className="fixed md:left-0 md:visible invisible">
           <img src={rec1} alt="noo" className="h-44"></img>
         </div>
         <div className="fixed md:right-48 -right-14 top-32 ">
           <img src={c1} alt="noo" className="iphone5:h-24 h-32" />
         </div>
-        <div className="w-full flex justify-center">
+        {/* <div className="w-full flex justify-center">
           <div className="flex">
             <img
-              className="object-scale-down w-44 sm:w-52 md:w-64 visible lg:invisible h-24 iphone5:h-20 iphone5:w-40"
+              className="opacity-0 object-scale-down w-44 sm:w-52 md:w-64 visible lg:invisible h-24 iphone5:h-20 iphone5:w-40"
               src={border}
               alt="lines"
             />
             <p
-              style={{ fontFamily: "Poppins" }}
-              className="text-center text-4xl absolute  md:text-5xl  iphone5:text-3xl  mt-4 lg:ml-12 ml-8   "
+              style={{ fontFamily: "Montserrat" }}
+              className="text-center font-medium ml-4 md:-mt-4 text-4xl absolute sm:text-5xl md:text-6xl lg:text-7xl xl:text-7xl"
             >
               Events
             </p>
           </div>
-        </div>
-
-        <div className="flex justify-center md:mt-2 mt-6 iphone5:mt-4">
+        </div> */}
+        <p
+          style={{ fontFamily: "Montserrat" }}
+          className="text-center w-full font-medium md:-mt-4 text-4xl mb-10 sm:text-5xl md:text-6xl lg:text-7xl xl:text-7xl"
+        >
+          Events
+        </p>
+        <div className="w-full text-center">
           <button
             disabled={true}
             type="button"
-            className="gradbox opacity-70 border-4 md:text-l py-2 px-3 text-base iphone5:text-sm"
+            className=" gradbox opacity-70 border-4 md:text-l py-2 px-3 text-base iphone5:text-sm"
           >
             COMING SOON!
           </button>
