@@ -39,6 +39,7 @@ export default class Carousel extends React.Component {
           key={index}
           title={this.state.items[index].title}
           img={this.state.items[index].img}
+          caption={this.state.items[index].text}
           level={level}
         />
       );
@@ -113,6 +114,7 @@ class Item extends React.Component {
       level: this.props.level,
       title: this.props.title,
       img: this.props.img,
+      caption:this.props.caption,
       show:false,
      
     };
@@ -152,7 +154,7 @@ class Item extends React.Component {
           <button  onClick={this.showModal} className="knowmore md:text-base  md:py-1 md:px-4 px-6 md:mt-2 py-0 mt-4 text-sm ">
             know more
           </button>
-          <Modal show={this.state.show} handleClose={this.hideModal}/>
+          <Modal show={this.state.show} caption={this.state.caption} handleClose={this.hideModal} />
           </div>
          
         );

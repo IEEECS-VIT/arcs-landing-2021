@@ -2,8 +2,8 @@
   .modal-main {
     position:fixed;
     background: white;
-    width: 40rem;
-    height: 20rem;
+    // width: 40rem;
+    // height: 20rem;
     
  
     z-index: 1;
@@ -12,7 +12,7 @@
   }
   
   .closebtn{
-    border: solid 2px black;
+   border: solid 2px red;
    line-height:1rem;
   }
   .display-block {
