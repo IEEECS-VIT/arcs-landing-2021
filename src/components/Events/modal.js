@@ -4,18 +4,16 @@ import "../../Modal.scss";
 
 const Modal = ({show,caption,handleClose}) => {
    
-  const main = show ? " display-block" : "display-none";
+  const main = show ? " modal display-block" : "modal display-none";
 
   return (
     <div className={main}>
-      <div className="modal-main top-0 left-10 w-72 h-72">
+      <div className="modal-main ">
       <div className="text-sm">{caption}
-     <button className="closebtn w-10 h-10 text-sm "onClick={handleClose} >
+      </div>
+        <button className="closebtn w-10 h-10 text-sm "onClick={handleClose} >
           Close
         </button>
-      
-      </div>
-        
       </div>
     </div>
   );
