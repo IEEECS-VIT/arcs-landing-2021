@@ -1,0 +1,104 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.circles {
+  border-radius: 50%;
+  height: 21rem;
+  width: 21rem;
+}
+
+.prize1 {
+  background: linear-gradient(
+    133.53deg,
+    #312161 18.24%,
+    #8f4497 51.72%,
+    #a73c61 90.42%
+  );
+  transform: scale(1.25) !important;
+}
+.prize2 {
+  background: linear-gradient(
+    51.75deg,
+    #8f4497 25.05%,
+    #ef757c 53.11%,
+    #f9af61 77.54%
+  );
+}
+
+.prize3 {
+  background: linear-gradient(
+    53.49deg,
+    #88155d 15.29%,
+    #c7466d 49.63%,
+    #f9ab58 80.24%
+  );
+}
+.change-opacity {
+  filter: opacity(0.6);
+}
+.circles:hover {
+  z-index: 40;
+}
+
+@media only screen and (min-width: 768px) {
+  .circles:hover .caption {
+    color: white;
+    transform: translateY(50px);
+    z-index: 20;
+    transition-timing-function: ease-in-out;
+    transition-duration: 0.5s;
+  }
+  .lines:hover .caption-2 {
+    color: white;
+    transform: translateY(50px);
+    transition-timing-function: ease-in-out;
+    transition-duration: 0.5s;
+  }
+}
+.lines {
+  background-color: white;
+}
+.lines:hover .prize1 {
+  transform: scale(1.4) !important;
+}
+@media only screen and (max-width: 767px) {
+  .circles p {
+    color: white;
+  }
+  .circles {
+    margin-left: auto;
+    margin-right: auto;
+
+    height: 14rem;
+    width: 14rem;
+  }
+
+  .lines {
+    border-top-color: black;
+    border-bottom-color: black;
+    border-top-width: 4px;
+    border-bottom-width: 4px;
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+    transform: rotate(-16deg);
+  }
+  .caption-2 {
+    color: white;
+    transform: translate(10px, 30px) rotate(15deg);
+  }
+  .circles:nth-child(2) {
+    margin-bottom: 15px;
+  }
+  .circles:first-child {
+    margin-bottom: -25px;
+  }
+  .circles:last-child {
+    margin-top: -30px;
+  }
+  .lines:hover .prize1 {
+    transform: scale(1.36);
+  }
+}

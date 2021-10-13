@@ -139,6 +139,7 @@ class Item extends React.Component {
       
       if (c === 0) {
         return (
+
           <div className={outer}>
           <div className={innerclass}>
             <h1 className="md:text-lg text-base pt-10 eventhead iphone5:text-sm ">
@@ -153,6 +154,7 @@ class Item extends React.Component {
        
           <button  onClick={this.showModal} className="knowmore md:text-base  md:py-1 md:px-4 px-6 md:mt-2 py-0 mt-4 text-sm ">
             know more
+
           </button>
           <Modal show={this.state.show} caption={this.state.caption} handleClose={this.hideModal} />
           </div>
@@ -180,23 +182,6 @@ class Item extends React.Component {
 
     
 
-    // return (
-    //   <div className={outer}>
-    //     <div className={innerclass}>
-    //       <h1 className="md:text-lg text-base pt-10 eventhead iphone5:text-sm ">
-    //         {this.state.title}
-    //       </h1>
-    //       <img
-    //         className="eventimg"
-    //         src={require(`../../images/${this.state.img}.png`).default}
-    //         alt="noo"
-    //       ></img>
-    //     </div>
-    //     <Modal show={this.state.show} handleClose={this.hideModal}/>
     
-    
-       
-    //   </div>
-    // );
   }
 }

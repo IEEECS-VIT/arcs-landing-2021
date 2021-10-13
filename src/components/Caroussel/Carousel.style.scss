@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap");
+
+.speaker-list {
+  display: flex;
+  flex-direction: row;
+  margin-top: -5%;
+  // border: 1px solid black;
+  width: 100%;
+}
+
+.speaker1,
+.speaker2,
+.speaker3 {
+  padding: 7.5px;
+  margin: 7.5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.speaker-name {
+  margin: 20px 0px;
+}
+
+.speaker-img {
+  height: 17.5vw;
+  width: 17.5vw;
+  min-height: 200px;
+  min-width: 200px;
+  // border: 1px solid red;
+  border-radius: 50%;
+  box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.4);
+  background: linear-gradient(
+    to right,
+    #9a54ad,
+    #b355a5,
+    #c7589c,
+    #d75d92,
+    #e46688,
+    #ec6e81,
+    #f37879,
+    #f78273,
+    #fa8c6d,
+    #fc9867,
+    #fba363,
+    #f9af61
+  );
+}
+
+@media all and(max-width:1130px) {
+  .speaker-img {
+    height: 20vw;
+    width: 20vw;
+  }
+}
+
+@media all and(max-width: 768px) {
+  .speaker-list {
+    flex-direction: column;
+  }
+  .speaker-img {
+    height: 30vw;
+    width: 30vw;
+  }
+}

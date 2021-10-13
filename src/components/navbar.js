@@ -1,19 +1,37 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "gatsby";
 import arcs from "./../images/arcs.png";
 
+import useWindowScrollPosition from "@rehooks/window-scroll-position";
+
 const Navbar = (props) => {
   var openClose = props.isExpanded ? "open" : "close";
+  const [visible, setVisible] = useState(false);
+  const changePosition = 100;
+  let position = useWindowScrollPosition();
+  if (position.y > changePosition && !visible) {
+    setVisible(true);
+  } else if (position.y <= changePosition && visible) {
+    setVisible(false);
+  }
   return (
-    <div className="z-30 mt-12 mb-4 ml-3  flex items-center justify-between flex-wrap">
-      <img
-        src={arcs}
-        className="fixed block lg:w-14 h-12  flex items-center"
-        alt="arcs"
-      />
-
+    <div
+      className=" top-0 w-full px-3 py-9 fixed z-50 duration-200 flex items-center justify-between flex-wrap"
+      style={{
+        boxShadow: visible ? "0px  2px 2px #aaa" : "",
+        backgroundColor: visible ? "#FFF" : "",
+        // position: visible ? "fixed" : "fixed",
+      }}
+    >
+      <Link to="/">
+        <img
+          src={arcs}
+          className="fixed w-auto h-11 -mt-5 flex items-center"
+          alt="arcs"
+        />
+      </Link>
       <button
-        className="fixed z-30 flex flex-col  right-5  btn"
+        className="fixed z-40 flex flex-col  right-5  btn "
         onClick={() => props.toggleExpansion(!props.isExpanded)}
       >
         <div className={openClose}></div>
@@ -25,47 +43,42 @@ const Navbar = (props) => {
       </button>
 
       <div
-        className="pr-auto nav ease-in-out duration-300 z-20 fixed  block flex flex-col h-full top-0  pt-24  right-0  bg-orange font-semibold  font-mont "
+        className="pr-auto nav ease-in-out duration-300 z-20 fixed font-semibold block flex flex-col h-full top-0  pt-24  right-0  bg-orange   font-mont "
         style={{
           transform: !props.isExpanded ? "translateX(110%)" : "translateX(0)",
         }}
       >
         <Link
+          onClick={() => props.toggleExpansion(!props.isExpanded)}
           className="py-4 px-16  text-center hover:bg-light-orange rounded-3xl "
           to="/"
         >
           HOME
         </Link>
-        <Link
-          className="py-4 px-16  text-center hover:bg-light-orange rounded-3xl"
-          to="/about"
-        >
-          ABOUT
-        </Link>
-        <Link
+        {/* <Link
           className="py-4 px-16  text-center hover:bg-light-orange rounded-3xl"
           to="/speakers"
         >
           SPEAKERS
-        </Link>
-        <Link
+        </Link> */}
+        {/* <Link
           className="py-4 px-16  text-center hover:bg-light-orange rounded-3xl"
           to="/timeline"
         >
           TIMELINE
-        </Link>
+        </Link> */}
         <Link
           className="py-4 px-16  text-center hover:bg-light-orange rounded-3xl"
           to="/events"
         >
           EVENTS
         </Link>
-        <Link
+        {/* <Link
           className="py-4 px-16  text-center hover:bg-light-orange rounded-3xl"
           to="/prizes"
         >
           PRIZES
-        </Link>
+        </Link> */}
         <Link
           className="py-4 px-16  text-center hover:bg-light-orange rounded-3xl "
           to="/sponsors"
