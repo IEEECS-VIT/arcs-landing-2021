@@ -16,10 +16,11 @@ const Navbar = (props) => {
   }
   return (
     <div
-      className=" top-0 w-full px-3 py-9 fixed z-50 duration-200 flex items-center justify-between flex-wrap"
+      className=" top-0 w-full px-3 py-9 fixed duration-200 flex items-center justify-between flex-wrap"
       style={{
         boxShadow: visible ? "0px  2px 2px #aaa" : "",
         backgroundColor: visible ? "#FFF" : "",
+        zIndex: "1000",
         // position: visible ? "fixed" : "fixed",
       }}
     >
@@ -32,6 +33,7 @@ const Navbar = (props) => {
       </Link>
       <button
         className="fixed z-40 flex flex-col  right-5  btn "
+        style={{ zIndex: "1001" }}
         onClick={() => props.toggleExpansion(!props.isExpanded)}
       >
         <div className={openClose}></div>

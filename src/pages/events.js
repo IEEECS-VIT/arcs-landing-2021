@@ -18,39 +18,35 @@ const EventPage = () => {
   const [isExpanded, toggleExpansion] = useState(false);
   const items = [
     {
-
-      title:"CYBER SECURITY",
-      img:"event1",
-      text:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris in enim dictum, elementum lacus ac, sagittis nulla. Suspendisse potenti. Vestibulum vitae ex ac felis porta tempus."
-       
+      title: "CYBER SECURITY",
+      img: "event1",
+      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris in enim dictum, elementum lacus ac, sagittis nulla. Suspendisse potenti. Vestibulum vitae ex ac felis porta tempus.",
     },
     {
-      title:"UI/UX",
-      img:"ux",
-      text:"Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Curabitur pretium metus eu eros luctus, faucibus fermentum purus venenatis. Vivamus quis elit orci."
+      title: "UI/UX",
+      img: "ux",
+      text: "Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Curabitur pretium metus eu eros luctus, faucibus fermentum purus venenatis. Vivamus quis elit orci.",
     },
     {
-      title:"AI",
-      img:"event1",
-      text:"Suspendisse et aliquam risus. Suspendisse porttitor eu nibh ut dignissim. Phasellus tempus, augue sit amet finibus pharetra, nisl arcu volutpat turpis, ac gravida arcu sem id ipsum"
+      title: "AI",
+      img: "event1",
+      text: "Suspendisse et aliquam risus. Suspendisse porttitor eu nibh ut dignissim. Phasellus tempus, augue sit amet finibus pharetra, nisl arcu volutpat turpis, ac gravida arcu sem id ipsum",
     },
     {
-      title:"WEB DEV",
-      img:"event1",
-      text:"Sed pulvinar pretium urna, in tincidunt lectus rutrum sit amet."
+      title: "WEB DEV",
+      img: "event1",
+      text: "Sed pulvinar pretium urna, in tincidunt lectus rutrum sit amet.",
     },
     {
-      title:"DESIGN",
-      img:"event1",
-      text:"Curabitur commodo, sapien a vehicula facilisis, augue sem dapibus nisl, at facilisis velit ex sed odio. Maecenas molestie porttitor diam luctus convallis. Ut eget vestibulum lacus."
-    }
-  ]
+      title: "DESIGN",
+      img: "event1",
+      text: "Curabitur commodo, sapien a vehicula facilisis, augue sem dapibus nisl, at facilisis velit ex sed odio. Maecenas molestie porttitor diam luctus convallis. Ut eget vestibulum lacus.",
+    },
+  ];
 
   return (
     <div>
       <Navbar isExpanded={isExpanded} toggleExpansion={toggleExpansion} />
-       
-
 
       <div className="md:mt-23 mt-16 -z-1">
         <div className="fixed md:left-0 md:visible invisible">
@@ -104,7 +100,6 @@ const EventPage = () => {
         </div>
         <div className="fixed md:right-0 md:bottom-0 md:visible invisible -z-1 ">
           <img src={rec2} alt="noo" className="h-44 "></img>
-
         </div>
 
         <div className="fixed right-0 bottom-0 md:invisible visible -z-1 ">
