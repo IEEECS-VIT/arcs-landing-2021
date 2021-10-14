@@ -10,6 +10,8 @@ import { useSpring, animated } from "react-spring";
 import { FaTwitter, FaFacebook } from "react-icons/fa";
 import { AiFillInstagram } from "react-icons/ai";
 import Rectangles from "./../components/rectangle";
+import { IoChevronDownCircleOutline } from "react-icons/io5";
+import scrollTo from "gatsby-plugin-smoothscroll";
 
 const IndexPage = () => {
   const [isExpanded, toggleExpansion] = useState(false);
@@ -86,13 +88,13 @@ const IndexPage = () => {
           </a>
         </animated.div>
 
-        <div className="mb-48 md:mb-2 block mt-80 ml-auto mr-auto w-1/2 md:mt-auto md:w-auto md:mr-12 lg:mr-44 md:float-right ">
+        <div className="max-xs:h-3/5 max-xs:pb-12 sm:mb-48 md:mb-2 caption-div block mt-80 ml-auto mr-auto w-1/2 md:mt-auto md:w-auto md:mr-12 lg:mr-44 md:float-right ">
           <p className=" leading-tight w-min font-mont line font-semibold text-justify text-4xl md:text-5xl  md:leading-tight caption">
             Your Next <br />
             Interactive <br />
             Experience
           </p>
-          <p className="font-mont text-xl md:text-2xl text-justify text-orange mt-2">
+          <p className="font-mont subcaption text-xl md:text-2xl text-justify text-orange mt-2">
             VIT VELLORE, <br />
             26-28 NOVEMBER
           </p>
@@ -102,9 +104,18 @@ const IndexPage = () => {
           >
             Coming Soon!
           </button>
+          <button
+            onClick={() => scrollTo("#cards")}
+            className="md:hidden w-full cta flex justify-center pt-10"
+          >
+            <IoChevronDownCircleOutline size="50px" color="#fcc48b" />
+          </button>
         </div>
 
-        <div className=" mt-20 md:mt-80 pt-10 flex font-mont mx-auto lg:mx-20 flex-wrap justify-around ">
+        <div
+          id="cards"
+          className="max-xs:h-3/5 sm:mt-20 sm:pt-10 md:pt-20 md:mt-80 flex font-mont mx-auto lg:mx-20 flex-wrap justify-around "
+        >
           <Link to="/events">
             <Card />
           </Link>

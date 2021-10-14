@@ -10,6 +10,7 @@ module.exports = {
       ...defaultTheme.screens,
       "max-md": { max: "767px" },
       "max-sm": { max: "640px" },
+      "max-xs": { max: "500px" },
     },
     backgroundColor: (theme) => ({
       ...theme("colors"),
