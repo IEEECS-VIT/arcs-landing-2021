@@ -19,30 +19,37 @@ const EventPage = () => {
   const items = [
     {
 
-      title:"CYBER SECURITY",
+      title:"HACKBATTLE",
       img:"event1",
-      text:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris in enim dictum, elementum lacus ac, sagittis nulla. Suspendisse potenti. Vestibulum vitae ex ac felis porta tempus."
+      text:" ipsum dolor sit amet, consectetur adipiscing elit. Mauris in enim dictum, elementum lacus ac, sagittis nulla. Suspendisse potenti.Vestibulum vitae ex ac felis porta tempus.Lorem ipsum dolor sit amet, consectetur adipiscing elit. "
        
     },
     {
-      title:"UI/UX",
+      title:"CICADA",
       img:"ux",
       text:"Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Curabitur pretium metus eu eros luctus, faucibus fermentum purus venenatis. Vivamus quis elit orci."
     },
     {
-      title:"AI",
+      title:"CONVOKE",
       img:"event1",
       text:"Suspendisse et aliquam risus. Suspendisse porttitor eu nibh ut dignissim. Phasellus tempus, augue sit amet finibus pharetra, nisl arcu volutpat turpis, ac gravida arcu sem id ipsum"
     },
     {
-      title:"WEB DEV",
+
+      title:"HACKBATTLE",
       img:"event1",
-      text:"Sed pulvinar pretium urna, in tincidunt lectus rutrum sit amet."
+      text:" ipsum dolor sit amet, consectetur adipiscing elit. Mauris in enim dictum, elementum lacus ac, sagittis nulla. Suspendisse potenti. Vestibulum vitae ex ac felis porta tempus.Lorem ipsum dolor sit amet, consectetur adipiscing elit. "
+       
     },
     {
-      title:"DESIGN",
+      title:"CICADA",
+      img:"ux",
+      text:"Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Curabitur pretium metus eu eros luctus, faucibus fermentum purus venenatis. Vivamus quis elit orci."
+    },
+    {
+      title:"CONVOKE",
       img:"event1",
-      text:"Curabitur commodo, sapien a vehicula facilisis, augue sem dapibus nisl, at facilisis velit ex sed odio. Maecenas molestie porttitor diam luctus convallis. Ut eget vestibulum lacus."
+      text:"Suspendisse et aliquam risus. Suspendisse porttitor eu nibh ut dignissim. Phasellus tempus, augue sit amet finibus pharetra, nisl arcu volutpat turpis, ac gravida arcu sem id ipsum"
     }
   ]
 

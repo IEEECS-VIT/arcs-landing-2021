@@ -156,7 +156,7 @@ class Item extends React.Component {
             know more
 
           </button>
-          <Modal show={this.state.show} caption={this.state.caption} handleClose={this.hideModal} />
+          <Modal show={this.state.show} title={this.state.title} caption={this.state.caption} handleClose={this.hideModal} />
           </div>
          
         );
