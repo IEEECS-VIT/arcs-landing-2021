@@ -1,6 +1,5 @@
 import React from "react";
-import Modal from  './modal.js'
-
+import Modal from "./modal.js";
 
 import CSSTransitionGroup from "react-transition-group/CSSTransitionGroup";
 import {
@@ -107,16 +106,14 @@ export default class Carousel extends React.Component {
 }
 
 class Item extends React.Component {
-
   constructor(props) {
     super(props);
     this.state = {
       level: this.props.level,
       title: this.props.title,
       img: this.props.img,
-      caption:this.props.caption,
-      show:false,
-     
+      caption: this.props.caption,
+      show: false,
     };
     this.showModal = this.showModal.bind(this);
     this.hideModal = this.hideModal.bind(this);
@@ -124,23 +121,18 @@ class Item extends React.Component {
   showModal = () => {
     this.setState({ show: true });
   };
-   hideModal = () => {
-      this.setState({ show: false });
-    };
+  hideModal = () => {
+    this.setState({ show: false });
+  };
 
   render() {
-   
-   
     const outer = "item level" + this.props.level;
     const innerclass = "innerdiv innerlevel" + this.props.level;
     const c = this.props.level;
-  
-  
-      
-      if (c === 0) {
-        return (
 
-          <div className={outer}>
+    if (c === 0) {
+      return (
+        <div className={outer}>
           <div className={innerclass}>
             <h1 className="md:text-lg text-base pt-10 eventhead iphone5:text-sm ">
               {this.state.title}
@@ -151,37 +143,33 @@ class Item extends React.Component {
               alt="noo"
             ></img>
           </div>
-       
-          <button  onClick={this.showModal} className="knowmore md:text-base  md:py-1 md:px-4 px-6 md:mt-2 py-0 mt-4 text-sm ">
-            know more
 
+          <button
+            onClick={this.showModal}
+            className="knowmore md:text-base  md:py-1 md:px-4 px-6 md:mt-2 py-0 mt-4 text-sm "
+          >
+            know more
           </button>
+
           <Modal show={this.state.show} title={this.state.title} caption={this.state.caption} handleClose={this.hideModal} />
           </div>
          
         );
       }
        else  return(
+
         <div className={outer}>
-        <div className={innerclass}>
-          <h1 className="md:text-lg text-base pt-10 eventhead iphone5:text-sm ">
-            {this.state.title}
-          </h1>
-          <img
-            className="eventimg"
-            src={require(`../../images/${this.state.img}.png`).default}
-            alt="noo"
-          ></img>
+          <div className={innerclass}>
+            <h1 className="md:text-lg text-base pt-10 eventhead iphone5:text-sm ">
+              {this.state.title}
+            </h1>
+            <img
+              className="eventimg"
+              src={require(`../../images/${this.state.img}.png`).default}
+              alt="noo"
+            ></img>
+          </div>
         </div>
-       
-    
-       
-      </div>
-      )
-    
-
-    
-
-    
+      );
   }
 }

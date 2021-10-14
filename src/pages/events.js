@@ -19,6 +19,7 @@ const EventPage = () => {
   const items = [
     {
 
+
       title:"HACKBATTLE",
       img:"event1",
       text:" ipsum dolor sit amet, consectetur adipiscing elit. Mauris in enim dictum, elementum lacus ac, sagittis nulla. Suspendisse potenti.Vestibulum vitae ex ac felis porta tempus.Lorem ipsum dolor sit amet, consectetur adipiscing elit. "
@@ -53,11 +54,10 @@ const EventPage = () => {
     }
   ]
 
+
   return (
     <div>
       <Navbar isExpanded={isExpanded} toggleExpansion={toggleExpansion} />
-       
-
 
       <div className="md:mt-23 mt-16 -z-1">
         <div className="fixed md:left-0 md:visible invisible">
@@ -111,7 +111,6 @@ const EventPage = () => {
         </div>
         <div className="fixed md:right-0 md:bottom-0 md:visible invisible -z-1 ">
           <img src={rec2} alt="noo" className="h-44 "></img>
-
         </div>
 
         <div className="fixed right-0 bottom-0 md:invisible visible -z-1 ">

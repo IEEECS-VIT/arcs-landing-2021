@@ -1,9 +1,10 @@
-import React from "react"
+import React from "react";
 
 import "../../Modal.scss";
 
+
 const Modal = ({show,title,caption,handleClose}) => {
-   
+  
   const main = show ? " modal display-block" : "modal display-none";
 
   return (
@@ -19,6 +20,7 @@ const Modal = ({show,title,caption,handleClose}) => {
       </div>
       <div className="modal-footer">
         <button className="closebtn text-lg" onClick={handleClose} >
+
           Close
         </button>
         </div>
