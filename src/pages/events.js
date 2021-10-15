@@ -22,35 +22,35 @@ const EventPage = () => {
 
       title:"HACKBATTLE",
       img:"event1",
-      text:" ipsum dolor sit amet, consectetur adipiscing elit. Mauris in enim dictum, elementum lacus ac, sagittis nulla. Suspendisse potenti.Vestibulum vitae ex ac felis porta tempus.Lorem ipsum dolor sit amet, consectetur adipiscing elit. "
+      text:" HackBattle, our premier event - where participants show us what they're made of - powered by creativity, determination, and of course, coffee. Working on avenues of cutting edge technology - whether it be Machine Learning, Cloud Computing, Blockchain, IoT, AR/VR, or any other new tech - we've covered them all. "
        
     },
     {
       title:"CICADA",
       img:"ux",
-      text:"Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Curabitur pretium metus eu eros luctus, faucibus fermentum purus venenatis. Vivamus quis elit orci."
+      text:"Based on the famous enigmatic online puzzles known as Cicada 3301, this event is IEEE – CS’s take on the unsolved mystery. Participants and their teammates will have to use skills of logic, cryptography and deduction to progress through different levels of brain-boggling conundrums."
     },
     {
       title:"CONVOKE",
       img:"event1",
-      text:"Suspendisse et aliquam risus. Suspendisse porttitor eu nibh ut dignissim. Phasellus tempus, augue sit amet finibus pharetra, nisl arcu volutpat turpis, ac gravida arcu sem id ipsum"
+      text:"Discover a world of technology and innovation that you never dreamt existed. Through CONVOKE, IEEE-CS is here to help you envision the opportunities in the tech world. Here we bring an opportunity for you to get involved with the heroes of the tech industry. Our speakers range from executives, entrepreneurs and eminent personalities from the biggest tech firms like Google, Amazon, Infosys etc."
     },
     {
 
       title:"HACKBATTLE",
       img:"event1",
-      text:" ipsum dolor sit amet, consectetur adipiscing elit. Mauris in enim dictum, elementum lacus ac, sagittis nulla. Suspendisse potenti. Vestibulum vitae ex ac felis porta tempus.Lorem ipsum dolor sit amet, consectetur adipiscing elit. "
+      text:" HackBattle, our premier event - where participants show us what they're made of - powered by creativity, determination, and of course, coffee. Working on avenues of cutting edge technology - whether it be Machine Learning, Cloud Computing, Blockchain, IoT, AR/VR, or any other new tech - we've covered them all."
        
     },
     {
       title:"CICADA",
       img:"ux",
-      text:"Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Curabitur pretium metus eu eros luctus, faucibus fermentum purus venenatis. Vivamus quis elit orci."
+      text:"Based on the famous enigmatic online puzzles known as Cicada 3301, this event is IEEE – CS’s take on the unsolved mystery. Participants and their teammates will have to use skills of logic, cryptography and deduction to progress through different levels of brain-boggling conundrums."
     },
     {
       title:"CONVOKE",
       img:"event1",
-      text:"Suspendisse et aliquam risus. Suspendisse porttitor eu nibh ut dignissim. Phasellus tempus, augue sit amet finibus pharetra, nisl arcu volutpat turpis, ac gravida arcu sem id ipsum"
+      text:"Discover a world of technology and innovation that you never dreamt existed. Through CONVOKE, IEEE-CS is here to help you envision the opportunities in the tech world. Here we bring an opportunity for you to get involved with the heroes of the tech industry. Our speakers range from executives, entrepreneurs and eminent personalities from the biggest tech firms like Google, Amazon, Infosys etc."
     }
   ]
 
