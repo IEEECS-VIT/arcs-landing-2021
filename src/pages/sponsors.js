@@ -9,12 +9,16 @@ import jetb from "../images/sponsors/jetb.png";
 import balsa from "../images/sponsors/balsamiq.png";
 import matic from "../images/sponsors/matic.png";
 import portis from "../images/sponsors/portis.png";
+import taskade from "../images/sponsors/Taskade_logo.png";
+import tezos from "../images/sponsors/Tezos.png";
+import hackintl from "../images/sponsors/hi_logo.png";
+import cb from "../images/sponsors/cb_logo.png";
 
 import topleft from "../images/sponsors/topleft.png";
 import topright from "../images/sponsors/topright.png";
 import bottomleft from "../images/sponsors/leftbottom.png";
 import bottomright1 from "../images/sponsors/rightbottom1.png";
-import bottomright2 from "../images/sponsors/rightbottom2.png";
+// import bottomright2 from "../images/sponsors/rightbottom2.png";
 import Navbar from "../components/navbar";
 
 const Sponsors = () => {
@@ -24,7 +28,7 @@ const Sponsors = () => {
       <Navbar isExpanded={isExpanded} toggleExpansion={toggleExpansion} />
 
       <div className="overflow-x-hidden object-fill">
-        <div className="z-10 mt-4 sm:mt-10 max-sm:pb-20">
+        <div className="z-10 mt-4 sm:mt-10 max-sm:pb-20 max-sm:pt-5">
           {/* <div className="w-full flex justify-center">
                     <div className="flex">
                     <img className="object-scale-down w-44 sm:w-52 md:w-64 lg:w-80 xl:w-96 h-24" src={combo} alt="lines"/> 
@@ -76,7 +80,7 @@ const Sponsors = () => {
         </div>
 
         {/* <div className=""> */}
-        <div className="z-50 iphone6:mt-44 xs:mt-20 sm:mt-32 md:mt-24 md:pr-6 pr-4 text-center place-items-center align-items-center justify-items-center xs:gap-2 gap-6 sm:gap-4 grid grid-cols-1  grid-rows-6 xs:grid-cols-2 xs:grid-rows-3 md:grid-cols-3  md:grid-rows-2 ">
+        <div className="z-50 pb-10 iphone6:mt-44 xs:mt-20 sm:mt-32 md:mt-24 md:pr-6 pr-4 text-center place-items-center align-items-center justify-items-center xs:gap-2 gap-6 sm:gap-4 grid grid-cols-2  grid-rows-6 xs:grid-cols-2 xs:grid-rows-3 md:grid-cols-4  md:grid-rows-2 ">
           <div className="">
             <img
               className="mx-auto z-40 object-scale-down w-20 h-20 iphone6:w-20 iphone6:h-20 md:w-40 md:h-40 sm:w-28 sm:h-28"
@@ -91,7 +95,9 @@ const Sponsors = () => {
               src={gfg}
               alt=""
             />
-            <p className="text-l sm:text-xl text-center">Geek for Geeks</p>
+            <p className="md:text-lg max-sm:text-sm text-center">
+              Geeks for Geeks
+            </p>
           </div>
           <div className="">
             <img
@@ -124,6 +130,42 @@ const Sponsors = () => {
               alt=""
             />
             <p className="text-l sm:text-xl text-center">Portis</p>
+          </div>
+          <div className="">
+            <img
+              className="mx-auto z-40 object-scale-down w-20 h-20 iphone6:w-20 iphone6:h-20 md:w-40 md:h-40 sm:w-28 sm:h-28"
+              src={tezos}
+              alt=""
+            />
+            <p className="text-l sm:text-xl text-center">Tezos</p>
+          </div>
+          <div className="">
+            <img
+              className="mx-auto z-40 object-scale-down w-20 h-20 iphone6:w-20 iphone6:h-20 md:w-40 md:h-40 sm:w-28 sm:h-28"
+              src={taskade}
+              alt=""
+            />
+            <p className="text-l sm:text-xl text-center">Taskade</p>
+          </div>
+          <div className="">
+            <img
+              className="mx-auto z-40 object-scale-down w-20 h-20 iphone6:w-20 iphone6:h-20 md:w-40 md:h-40 sm:w-28 sm:h-28"
+              src={hackintl}
+              alt=""
+            />
+            <p className="md:text-lg max-sm:text-xs text-center">
+              Hackathons International
+            </p>
+          </div>
+          <div className="">
+            <img
+              className="mx-auto z-40 object-scale-down w-20 h-20 iphone6:w-20 iphone6:h-20 md:w-40 md:h-40 sm:w-28 sm:h-28"
+              src={cb}
+              alt=""
+            />
+            <p className="md:text-lg max-sm:text-sm text-center">
+              Coding Blocks
+            </p>
           </div>
         </div>
         {/* </div> */}
@@ -162,11 +204,11 @@ const Sponsors = () => {
               />
             </div>
             <div className=" -mr-32 md:translate-y-36 md:-translate-x-64 sm:-translate-x-40 sm:translate-y-24 iphone6:translate-y-24 iphone6:-translate-x-24 xs:translate-y-24 xs:-translate-x-24 transform xs:group-hover:scale-125 sm:group-hover:-translate-x-36 md:group-hover:scale-125 md:group-hover:-translate-x-56 transition ease-in-out duration-500">
-              <img
+              {/* <img
                 className="object-scale-down w-32 h-32 md:w-48 md:h-48 sm:w-40 sm:h-40 xs:w-28 xs:h-28 iphone6:w-32 iphone6:h-32"
                 src={bottomright2}
                 alt=""
-              />
+              /> */}
             </div>
           </div>
         </div>
