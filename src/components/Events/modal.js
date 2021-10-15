@@ -15,11 +15,11 @@ const Modal = ({show,title,caption,handleClose}) => {
           <p className="text-lg title">{title}</p>
         </div>
         <div className="modal-body">
-      <div className="text-base text-left">{caption}
+      <div className="text-base text-justify">{caption}
       </div>
       </div>
       <div className="modal-footer">
-        <button className="closebtn text-lg" onClick={handleClose} >
+        <button className="closebtn text-lg mr-1" onClick={handleClose} >
 
           Close
         </button>

@@ -151,7 +151,7 @@ class Item extends React.Component {
             onClick={this.showModal}
             className="knowmore md:text-base  md:py-1 md:px-4 px-6 md:mt-2 py-0 mt-4 text-sm "
           >
-            know more
+            Know More
           </button>
 
           <Modal show={this.state.show} title={this.state.title} caption={this.state.caption} handleClose={this.hideModal} />

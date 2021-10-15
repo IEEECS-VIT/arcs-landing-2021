@@ -1,87 +1,82 @@
 @keyframes fade {
-  0%{ opacity: 0 }
-  50% { opacity: 1 }
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
 }
 
 .modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 1000;
+}
+.modal-outer {
+  background: linear-gradient(270deg, #9a54ad, #ef757c, #f9af61);
 
-    position: fixed;
-    top: 0;
-    left: 0;
-    width:100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.6);
-    z-index: 1000;
-   
-  }
- .modal-outer{
-  background: linear-gradient(270deg,#9a54ad,#ef757c,#f9af61);
-  
   position: relative;
 
   height: auto;
-  top:50%;
-  left:50%;
-  transform: translate(-50%,-50%);
-  border-radius: .3rem;
-  padding:0.5rem;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 0.3rem;
+  padding: 0.5rem;
   opacity: 1;
-  animation: fade 1s linear;
- 
- 
- }
- 
+  animation: fade 0.2s linear;
+}
+
 .modal-main {
-    position: relative;
+  position: relative;
   background: white;
-  border-radius: .3rem;
-  }
-  .modal-header{
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-    padding: 1rem 1rem;
-    
+  border-radius: 0.3rem;
+}
+.modal-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 1rem 1rem;
+}
+.modal-body {
+  padding: 1rem 1rem;
+}
+.modal-footer {
+  display: flex;
 
-  }
-  .modal-body{
-    padding: 1rem 1rem;
-  }
-  .modal-footer{
-    display: flex;
-  
-    flex-wrap: wrap;
-   
-    align-items: center;
-  
-    justify-content: flex-end;
-    padding: .75rem;
+  flex-wrap: wrap;
 
-  }
-  
-  .closebtn{
+  align-items: center;
 
-   line-height:1rem;
-   display: flex;
- 
-   color:black;
-   background: transparent;
-   border-radius: 6px;
-   border: solid 1px #df9318;
-   padding:0.5rem;
-   transition-duration: 0.4s;
- 
-  }
-  .closebtn:hover{
-    background-color:#df9318; 
-    color:white;
-   
-  }
-  .display-block {
-    display: block;
-  }
-  
-  .display-none {
-    display: none;
-  }
+  justify-content: flex-end;
+  padding: 0.75rem;
+}
 
+.closebtn {
+  transition: all 0.2s ease-in-out;
+  line-height: 1rem;
+  display: flex;
+
+  color: black;
+  background: transparent;
+  border-radius: 6px;
+  border: solid 1px #df9318;
+  padding: 0.5rem;
+  //  transition-duration: 0.2s;
+}
+.closebtn:hover {
+  transition: all 0.2s ease-in-out;
+  background-color: #df9318;
+  color: white;
+}
+.display-block {
+  display: block;
+}
+
+.display-none {
+  display: none;
+}

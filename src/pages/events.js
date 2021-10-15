@@ -20,13 +20,13 @@ const EventPage = () => {
     {
 
 
-      title:"HACKBATTLE",
+      title:"HACKBATTLE '21",
       img:"event1",
       text:" HackBattle, our premier event - where participants show us what they're made of - powered by creativity, determination, and of course, coffee. Working on avenues of cutting edge technology - whether it be Machine Learning, Cloud Computing, Blockchain, IoT, AR/VR, or any other new tech - we've covered them all. "
        
     },
     {
-      title:"CICADA",
+      title:"CICADA 3302",
       img:"ux",
       text:"Based on the famous enigmatic online puzzles known as Cicada 3301, this event is IEEE – CS’s take on the unsolved mystery. Participants and their teammates will have to use skills of logic, cryptography and deduction to progress through different levels of brain-boggling conundrums."
     },
@@ -37,13 +37,13 @@ const EventPage = () => {
     },
     {
 
-      title:"HACKBATTLE",
+      title:"HACKBATTLE '21",
       img:"event1",
       text:" HackBattle, our premier event - where participants show us what they're made of - powered by creativity, determination, and of course, coffee. Working on avenues of cutting edge technology - whether it be Machine Learning, Cloud Computing, Blockchain, IoT, AR/VR, or any other new tech - we've covered them all."
        
     },
     {
-      title:"CICADA",
+      title:"CICADA 3302",
       img:"ux",
       text:"Based on the famous enigmatic online puzzles known as Cicada 3301, this event is IEEE – CS’s take on the unsolved mystery. Participants and their teammates will have to use skills of logic, cryptography and deduction to progress through different levels of brain-boggling conundrums."
     },
