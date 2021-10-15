@@ -7,6 +7,7 @@
     height: 100%;
     background: rgba(0, 0, 0, 0.6);
     z-index: 1000;
+    
   }
  .modal-outer{
   background: linear-gradient(270deg,#9a54ad,#ef757c,#f9af61);
@@ -19,6 +20,7 @@
   transform: translate(-50%,-50%);
   border-radius: .3rem;
   padding:0.5rem;
+  
  }
  
 .modal-main {
@@ -59,7 +61,12 @@
    border-radius: 6px;
    border: solid 1px #df9318;
    padding:0.5rem;
+   transition-duration: 0.4s;
  
+  }
+  .closebtn:hover{
+    background-color:#df9318; 
+    color:white;
   }
   .display-block {
     display: block;
