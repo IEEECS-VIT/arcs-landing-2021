@@ -8,7 +8,6 @@ import {
 } from "react-icons/io";
 import "../../Events.scss";
 
-
 export default class Carousel extends React.Component {
   constructor(props) {
     super(props);
@@ -24,7 +23,6 @@ export default class Carousel extends React.Component {
   generateItems() {
     var items = [];
     var level;
-    console.log(this.state.active);
     for (var i = this.state.active - 1; i < this.state.active + 2; i++) {
       var index = i;
       if (i < 0) {
@@ -121,11 +119,9 @@ class Item extends React.Component {
   }
   showModal = () => {
     this.setState({ show: true });
-  
   };
   hideModal = () => {
     this.setState({ show: false });
-   
   };
 
   render() {
@@ -154,13 +150,16 @@ class Item extends React.Component {
             Know More
           </button>
 
-          <Modal show={this.state.show} title={this.state.title} caption={this.state.caption} handleClose={this.hideModal} />
-          </div>
-         
-        );
-      }
-       else  return(
-
+          <Modal
+            show={this.state.show}
+            title={this.state.title}
+            caption={this.state.caption}
+            handleClose={this.hideModal}
+          />
+        </div>
+      );
+    } else
+      return (
         <div className={outer}>
           <div className={innerclass}>
             <h1 className="md:text-lg text-base pt-10 eventhead iphone5:text-sm ">

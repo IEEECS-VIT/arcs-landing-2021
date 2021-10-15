@@ -371,10 +371,14 @@ $innerlevel1-width: 185px;
   #carousel {
     height: 100%;
     width: 100%;
-   
   }
 }
 
+@media all and (max-width: 390px) {
+  #carousel {
+    margin-right: 0.8rem;
+  }
+}
 @media all and (max-width: 375px) {
   .level0 {
     height: 16rem;
@@ -391,8 +395,16 @@ $innerlevel1-width: 185px;
   .arrow-right {
     left: 16rem;
   }
+  #carousel {
+    margin-right: 0.2rem !important;
+  }
 }
 
+@media all and (max-width: 360px) {
+  #carousel {
+    margin-right: 0.4rem !important;
+  }
+}
 @media all and (max-width: 320px) {
   .level0 {
     left: 4.25rem;

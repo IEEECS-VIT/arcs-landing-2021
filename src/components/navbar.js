@@ -20,7 +20,7 @@ const Navbar = (props) => {
       style={{
         boxShadow: visible ? "0px  2px 2px #aaa" : "",
         backgroundColor: visible ? "#FFF" : "",
-        zIndex: "1000",
+        zIndex: "498",
         // position: visible ? "fixed" : "fixed",
       }}
     >
@@ -33,7 +33,7 @@ const Navbar = (props) => {
       </Link>
       <button
         className="fixed z-40 flex flex-col  right-5  btn "
-        style={{ zIndex: "1001" }}
+        style={{ zIndex: "499" }}
         onClick={() => props.toggleExpansion(!props.isExpanded)}
       >
         <div className={openClose}></div>

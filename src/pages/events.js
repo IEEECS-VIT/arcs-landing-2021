@@ -18,42 +18,36 @@ const EventPage = () => {
   const [isExpanded, toggleExpansion] = useState(false);
   const items = [
     {
-
-
-      title:"HACKBATTLE '21",
-      img:"event1",
-      text:" HackBattle, our premier event - where participants show us what they're made of - powered by creativity, determination, and of course, coffee. Working on avenues of cutting edge technology - whether it be Machine Learning, Cloud Computing, Blockchain, IoT, AR/VR, or any other new tech - we've covered them all. "
-       
+      title: "HACKBATTLE '21",
+      img: "event1",
+      text: " HackBattle, our premier event - where participants show us what they're made of - powered by creativity, determination, and of course, coffee. Working on avenues of cutting edge technology - whether it be Machine Learning, Cloud Computing, Blockchain, IoT, AR/VR, or any other new tech - we've covered them all. ",
     },
     {
-      title:"CICADA 3302",
-      img:"ux",
-      text:"Based on the famous enigmatic online puzzles known as Cicada 3301, this event is IEEE – CS’s take on the unsolved mystery. Participants and their teammates will have to use skills of logic, cryptography and deduction to progress through different levels of brain-boggling conundrums."
+      title: "CICADA 3302",
+      img: "ux",
+      text: "Based on the famous enigmatic online puzzles known as Cicada 3301, this event is IEEE – CS’s take on the unsolved mystery. Participants and their teammates will have to use skills of logic, cryptography and deduction to progress through different levels of brain-boggling conundrums.",
     },
     {
-      title:"CONVOKE",
-      img:"event1",
-      text:"Discover a world of technology and innovation that you never dreamt existed. Through CONVOKE, IEEE-CS is here to help you envision the opportunities in the tech world. Here we bring an opportunity for you to get involved with the heroes of the tech industry. Our speakers range from executives, entrepreneurs and eminent personalities from the biggest tech firms like Google, Amazon, Infosys etc."
+      title: "CONVOKE",
+      img: "event1",
+      text: "Discover a world of technology and innovation that you never dreamt existed. Through CONVOKE, IEEE-CS is here to help you envision the opportunities in the tech world. Here we bring an opportunity for you to get involved with the heroes of the tech industry. Our speakers range from executives, entrepreneurs and eminent personalities from the biggest tech firms like Google, Amazon, Infosys etc.",
     },
     {
-
-      title:"HACKBATTLE '21",
-      img:"event1",
-      text:" HackBattle, our premier event - where participants show us what they're made of - powered by creativity, determination, and of course, coffee. Working on avenues of cutting edge technology - whether it be Machine Learning, Cloud Computing, Blockchain, IoT, AR/VR, or any other new tech - we've covered them all."
-       
+      title: "HACKBATTLE '21",
+      img: "event1",
+      text: " HackBattle, our premier event - where participants show us what they're made of - powered by creativity, determination, and of course, coffee. Working on avenues of cutting edge technology - whether it be Machine Learning, Cloud Computing, Blockchain, IoT, AR/VR, or any other new tech - we've covered them all.",
     },
     {
-      title:"CICADA 3302",
-      img:"ux",
-      text:"Based on the famous enigmatic online puzzles known as Cicada 3301, this event is IEEE – CS’s take on the unsolved mystery. Participants and their teammates will have to use skills of logic, cryptography and deduction to progress through different levels of brain-boggling conundrums."
+      title: "CICADA 3302",
+      img: "ux",
+      text: "Based on the famous enigmatic online puzzles known as Cicada 3301, this event is IEEE – CS’s take on the unsolved mystery. Participants and their teammates will have to use skills of logic, cryptography and deduction to progress through different levels of brain-boggling conundrums.",
     },
     {
-      title:"CONVOKE",
-      img:"event1",
-      text:"Discover a world of technology and innovation that you never dreamt existed. Through CONVOKE, IEEE-CS is here to help you envision the opportunities in the tech world. Here we bring an opportunity for you to get involved with the heroes of the tech industry. Our speakers range from executives, entrepreneurs and eminent personalities from the biggest tech firms like Google, Amazon, Infosys etc."
-    }
-  ]
-
+      title: "CONVOKE",
+      img: "event1",
+      text: "Discover a world of technology and innovation that you never dreamt existed. Through CONVOKE, IEEE-CS is here to help you envision the opportunities in the tech world. Here we bring an opportunity for you to get involved with the heroes of the tech industry. Our speakers range from executives, entrepreneurs and eminent personalities from the biggest tech firms like Google, Amazon, Infosys etc.",
+    },
+  ];
 
   return (
     <div>
