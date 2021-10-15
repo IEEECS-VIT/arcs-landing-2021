@@ -117,13 +117,25 @@ const IndexPage = () => {
           className="max-xs:h-3/5 sm:mt-20 sm:pt-10 md:pt-20 md:mt-80 flex font-mont mx-auto lg:mx-20 flex-wrap justify-around "
         >
           <Link to="/events">
-            <Card />
+            <Card
+              title="Cicada 3302"
+              desc="Delve into the mysterious world of cryptography and test your abilities through a series of increasingly complex challenges"
+              img_name="cicada"
+            />
           </Link>
           <Link to="/events">
-            <Card />
+            <Card
+              title="Hackbattle '21"
+              desc="A 36-hour hackathon starring the best and the brightest. Innovation is your goal, and code is your weapon."
+              img_name="hb"
+            />
           </Link>
           <Link to="/events">
-            <Card />
+            <Card
+              title="Convoke"
+              desc="Interact with leaders and professionals from multiple industries, and see who makes the world tick."
+              img_name="convoke"
+            />
           </Link>
         </div>
       </div>
