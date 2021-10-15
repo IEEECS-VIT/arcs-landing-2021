@@ -5,11 +5,11 @@ import "../../Modal.scss";
 
 const Modal = ({show,title,caption,handleClose}) => {
   
-  const main = show ? " modal display-block" : "modal display-none";
+  const main = show ? " modal  display-block" : "modal  display-none";
 
   return (
     <div className={main}>
-   <div className="modal-outer w-80 md:w-96">
+   <div className="modal-outer w-80 md:w-96 ">
       <div className="modal-main grid grid-cols-1 divide-y divide-black-500  ">
         <div className="modal-header ">
           <p className="text-lg title">{title}</p>

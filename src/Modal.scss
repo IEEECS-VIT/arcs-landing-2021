@@ -1,3 +1,8 @@
+@keyframes fade {
+  0%{ opacity: 0 }
+  50% { opacity: 1 }
+}
+
 .modal {
 
     position: fixed;
@@ -7,7 +12,7 @@
     height: 100%;
     background: rgba(0, 0, 0, 0.6);
     z-index: 1000;
-    
+   
   }
  .modal-outer{
   background: linear-gradient(270deg,#9a54ad,#ef757c,#f9af61);
@@ -20,7 +25,10 @@
   transform: translate(-50%,-50%);
   border-radius: .3rem;
   padding:0.5rem;
-  
+  opacity: 1;
+  animation: fade 1s linear;
+ 
+ 
  }
  
 .modal-main {
@@ -67,6 +75,7 @@
   .closebtn:hover{
     background-color:#df9318; 
     color:white;
+   
   }
   .display-block {
     display: block;

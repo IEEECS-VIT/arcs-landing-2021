@@ -8,6 +8,7 @@ import {
 } from "react-icons/io";
 import "../../Events.scss";
 
+
 export default class Carousel extends React.Component {
   constructor(props) {
     super(props);
@@ -120,9 +121,11 @@ class Item extends React.Component {
   }
   showModal = () => {
     this.setState({ show: true });
+  
   };
   hideModal = () => {
     this.setState({ show: false });
+   
   };
 
   render() {
