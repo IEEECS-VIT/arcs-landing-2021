@@ -12,6 +12,9 @@ module.exports = {
       "max-sm": { max: "640px" },
       "max-xs": { max: "500px" },
     },
+    zIndex: {
+      '-1': '-1',
+     },
     backgroundColor: (theme) => ({
       ...theme("colors"),
       nav: "#FDA445",

@@ -98,7 +98,8 @@
   font-size: 30px;
   line-height: 30px;
   margin-top: 150px;
-  z-index: 1000;
+
+  z-index: -1;
 }
 
 .arrow-right {
@@ -358,6 +359,7 @@ $innerlevel1-width: 185px;
     height: 13.5rem;
     width: 13.5rem;
   }
+
   .arrow {
     margin-top: 20rem;
     margin-left: 7rem;
@@ -369,6 +371,7 @@ $innerlevel1-width: 185px;
   #carousel {
     height: 100%;
     width: 100%;
+   
   }
 }
 

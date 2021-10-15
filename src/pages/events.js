@@ -18,36 +18,52 @@ const EventPage = () => {
   const [isExpanded, toggleExpansion] = useState(false);
   const items = [
     {
-      title: "CYBER SECURITY",
-      img: "event1",
+
+
+      title:"HACKBATTLE '21",
+      img:"event1",
+      text:" HackBattle, our premier event - where participants show us what they're made of - powered by creativity, determination, and of course, coffee. Working on avenues of cutting edge technology - whether it be Machine Learning, Cloud Computing, Blockchain, IoT, AR/VR, or any other new tech - we've covered them all. "
+       
     },
     {
-      title: "UI/UX",
-      img: "ux",
+      title:"CICADA 3302",
+      img:"ux",
+      text:"Based on the famous enigmatic online puzzles known as Cicada 3301, this event is IEEE – CS’s take on the unsolved mystery. Participants and their teammates will have to use skills of logic, cryptography and deduction to progress through different levels of brain-boggling conundrums."
     },
     {
-      title: "AI",
-      img: "event1",
+      title:"CONVOKE",
+      img:"event1",
+      text:"Discover a world of technology and innovation that you never dreamt existed. Through CONVOKE, IEEE-CS is here to help you envision the opportunities in the tech world. Here we bring an opportunity for you to get involved with the heroes of the tech industry. Our speakers range from executives, entrepreneurs and eminent personalities from the biggest tech firms like Google, Amazon, Infosys etc."
     },
     {
-      title: "WEB DEV",
-      img: "event1",
+
+      title:"HACKBATTLE '21",
+      img:"event1",
+      text:" HackBattle, our premier event - where participants show us what they're made of - powered by creativity, determination, and of course, coffee. Working on avenues of cutting edge technology - whether it be Machine Learning, Cloud Computing, Blockchain, IoT, AR/VR, or any other new tech - we've covered them all."
+       
     },
     {
-      title: "DESIGN",
-      img: "event1",
+      title:"CICADA 3302",
+      img:"ux",
+      text:"Based on the famous enigmatic online puzzles known as Cicada 3301, this event is IEEE – CS’s take on the unsolved mystery. Participants and their teammates will have to use skills of logic, cryptography and deduction to progress through different levels of brain-boggling conundrums."
     },
-  ];
+    {
+      title:"CONVOKE",
+      img:"event1",
+      text:"Discover a world of technology and innovation that you never dreamt existed. Through CONVOKE, IEEE-CS is here to help you envision the opportunities in the tech world. Here we bring an opportunity for you to get involved with the heroes of the tech industry. Our speakers range from executives, entrepreneurs and eminent personalities from the biggest tech firms like Google, Amazon, Infosys etc."
+    }
+  ]
+
 
   return (
     <div>
       <Navbar isExpanded={isExpanded} toggleExpansion={toggleExpansion} />
 
-      <div className="md:mt-23 mt-16">
+      <div className="md:mt-23 mt-16 -z-1">
         <div className="fixed md:left-0 md:visible invisible">
           <img src={rec1} alt="noo" className="h-44"></img>
         </div>
-        <div className="fixed md:right-48 -right-14 top-32 ">
+        <div className="fixed md:right-48 -right-14 top-32 -z-1">
           <img src={c1} alt="noo" className="iphone5:h-24 h-32" />
         </div>
         {/* <div className="w-full flex justify-center">
@@ -83,21 +99,21 @@ const EventPage = () => {
 
         <Carousel items={items} active={0} />
 
-        <div className="fixed md:top-80 left-0 -top-11 md:visible  invisible ">
+        <div className="fixed md:top-80 left-0 -top-11 md:visible  invisible -z-1 ">
           <img src={c2} alt="noo" />
         </div>
 
-        <div className="fixed md:left-60 md:bottom-0 md:visible invisible">
+        <div className="fixed md:left-60 md:bottom-0 md:visible invisible -z-1">
           <img src={c3} alt="noo" />
         </div>
-        <div className="fixed md:right-96 md:bottom-2 md:left-auto bottom-6 left-8 ">
+        <div className="fixed md:right-96 md:bottom-2 md:left-auto bottom-6 left-8 -z-1 ">
           <img src={c4} alt="noo" className="h-auto iphone5:h-12" />
         </div>
-        <div className="fixed md:right-0 md:bottom-0 md:visible invisible ">
+        <div className="fixed md:right-0 md:bottom-0 md:visible invisible -z-1 ">
           <img src={rec2} alt="noo" className="h-44 "></img>
         </div>
 
-        <div className="fixed right-0 bottom-0 md:invisible visible ">
+        <div className="fixed right-0 bottom-0 md:invisible visible -z-1 ">
           <img src={smrec2} alt="noo" className="h-32 iphone5:h-24"></img>
         </div>
       </div>
