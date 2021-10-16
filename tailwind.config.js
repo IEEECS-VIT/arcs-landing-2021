@@ -4,7 +4,11 @@ module.exports = {
   purge: ["./src/**/*.html", "./src/**/*.js"],
   darkMode: false, // or 'media' or 'class'
   theme: {
-    extend: {},
+    extend: {
+      margin:{
+        '68': '17rem',
+      }
+    },
     screens: {
       iphone5: { max: "320px" },
       ...defaultTheme.screens,

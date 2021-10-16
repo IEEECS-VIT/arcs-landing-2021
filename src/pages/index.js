@@ -51,19 +51,19 @@ const IndexPage = () => {
           src={Rect}
           alt="box"
           style={Rectangle}
-          className="rect z-10 absolute  md:ml-28 lg:ml-60  md:h-64 md:w-72 lg:mt-4"
+          className="rect z-20 absolute max-sm:h-52 md:ml-28 lg:ml-60  md:h-64 md:w-72 lg:mt-4"
         />
 
-        <animated.img
+        {/* <animated.img
           src={Box}
           alt="box"
-          className="box  z-5 absolute    md:ml-32 lg:ml-64  md:h-64 md:w-72 "
+          className="box  z-0 absolute    md:ml-32 lg:ml-64  md:h-64 md:w-72 "
           style={box}
-        />
+        /> */}
         <animated.img
           src={ArcsHome}
           alt="box"
-          className="arcs md:ml-44   absolute mt-4 lg:ml-72 md:h-48 md:w-auto"
+          className="arcs max-sm:p-3 max-sm:mt-6 md:ml-36 absolute md:-mt-6 lg:-mt-4 lg:ml-68 md:p-8 md:h-64 md:w-auto"
           style={arcs}
         />
         <animated.img
