@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Link } from "gatsby";
 import Navbar from "./../components/navbar";
 import Rect from "./../images/arcsRect.png";
-import Box from "./../images/arcsBox.png";
+// import Box from "./../images/arcsBox.png";
 import ArcsHome from "./../images/arcsHome.png";
 import Circle from "./../images/circle.png";
 import Card from "./../components/landingCard";
