@@ -81,12 +81,12 @@ const Navbar = (props) => {
         >
           PRIZES
         </Link> */}
-        <Link
+        {/* <Link
           className="py-4 px-16  text-center hover:bg-light-orange rounded-3xl "
           to="/sponsors"
         >
           SPONSORS
-        </Link>
+        </Link> */}
         <Link
           className="py-4 px-16  text-center hover:bg-light-orange rounded-3xl"
           to="/contact"
