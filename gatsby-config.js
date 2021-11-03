@@ -10,6 +10,8 @@ module.exports = {
         implementation: require("node-sass"),
       },
     },
+    "gatsby-plugin-postcss",
+    "gatsby-plugin-react-helmet",
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
@@ -23,10 +25,16 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-plugin-postcss`,
-    },
-    {
-      resolve: `gatsby-plugin-react-helmet`,
+      resolve: `gatsby-plugin-google-gtag`,
+      options: {
+        trackingIds: [
+          "G-S90KSQ84K2", // Google Analytics / GA
+        ],
+
+        pluginConfig: {
+          head: true,
+        },
+      },
     },
   ],
 };
