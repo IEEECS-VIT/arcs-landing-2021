@@ -3,7 +3,6 @@ module.exports = {
     siteUrl: "https://www.yourdomain.tld",
     title: "Arcs 2021",
   },
-  plugins: ["gatsby-plugin-postcss"],
   plugins: [
     {
       resolve: `gatsby-plugin-sass`,
@@ -22,6 +21,12 @@ module.exports = {
         display: "standalone",
         icon: "src/images/arcs_favicon.png",
       },
+    },
+    {
+      resolve: `gatsby-plugin-postcss`,
+    },
+    {
+      resolve: `gatsby-plugin-react-helmet`,
     },
   ],
 };

@@ -1,8 +1,9 @@
 import React, { useState } from "react";
 import { Link } from "gatsby";
+import favicon from "../images/arcs_favicon.png";
 import Navbar from "./../components/navbar";
 import Rect from "./../images/arcsRect.png";
-// import Box from "./../images/arcsBox.png";
+import { Helmet } from "react-helmet";
 import ArcsHome from "./../images/arcsHome.png";
 import Circle from "./../images/circle.png";
 import Card from "./../components/landingCard";
@@ -22,13 +23,6 @@ const IndexPage = () => {
     loop: false,
   });
 
-  const box = useSpring({
-    from: { transform: "translate(0,-90%)" },
-    to: { transform: "translate(0,1.5%)" },
-    config: { duration: 500 },
-    loop: false,
-  });
-
   const arcs = useSpring({
     from: { transform: "translate(0,-90%)" },
     to: { transform: "translate(0,1.5%)" },
@@ -44,6 +38,30 @@ const IndexPage = () => {
   var Blur = isExpanded ? "change-opacity" : "none";
   return (
     <div className="pt-16">
+      <Helmet
+        htmlAttributes={{
+          lang: "en",
+        }}
+      >
+        <title>ARCS '21 | By IEEECS-VIT</title>
+        <link rel="icon" type="image/png" href={favicon} sizes="16x16" />
+        <meta charset="UTF-8" />
+        <meta property="og:title" content="ARCS '21" />
+        <meta property="og:image" content="src/images/arcs_favicon.png" />
+        <meta property="og:url" content="http://arcs.ieeecsvit.com" />
+        <meta
+          property="og:description"
+          content="ARCS '21 is a technical symposium comprising of talks, competitions and a 36-hour hackathon. Brought to you by IEEE Computer Society VIT."
+        />
+        <meta
+          property="description"
+          content="ARCS '21 is a technical symposium comprising of talks, competitions and a 36-hour hackathon. Brought to you by IEEE Computer Society VIT."
+        />
+        <meta
+          name="keywords"
+          content="ARCS, ARCS '21, Arcs, Arcs '21, ARCS 2021, Arcs 2021, arcs '21, arcs, arcs 2021, IEEECS, IEEE CS, ieee cs, IEEE, IEEE Computer Society, IEEE Computer Society VIT, IEEE-CS VIT, VIT, vit, HackBattle, hackbattle ,HackBattle '20, Hackbattle '21 , ieeecsvit, ieeecs"
+        />
+      </Helmet>
       <Navbar isExpanded={isExpanded} toggleExpansion={toggleExpansion} />
       <Rectangles />
       <div className={`absolute w-full z-5 ${Blur}`}>
