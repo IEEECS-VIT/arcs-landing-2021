@@ -47,8 +47,9 @@ const IndexPage = () => {
         <link rel="icon" type="image/png" href={favicon} sizes="16x16" />
         <meta charset="UTF-8" />
         <meta property="og:title" content="ARCS '21" />
-        <meta property="og:image" content="src/images/arcs_favicon.png" />
-        <meta property="og:url" content="http://arcs.ieeecsvit.com" />
+        <meta property="og:image" content="./src/images/arcs_favicon.png" />
+        <meta property="og:image:type" content="image/png" />
+        <meta property="og:url" content="https://arcs.ieeecsvit.com" />
         <meta
           property="og:description"
           content="ARCS '21 is a technical symposium comprising of talks, competitions and a 36-hour hackathon. Brought to you by IEEE Computer Society VIT."
