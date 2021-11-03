@@ -1,4 +1,4 @@
-const path = require("path")
+const path = require("path");
 
 module.exports = {
   onCreateWebpackConfig: ({ stage, loaders, actions }) => {
@@ -12,7 +12,7 @@ module.exports = {
             },
           ],
         },
-      })
+      });
     }
   },
-}
+};

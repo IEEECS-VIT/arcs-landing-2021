@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "gatsby";
 import arcs from "./../images/arcs.png";
+
 import useWindowScrollPosition from "@rehooks/window-scroll-position";
 
 const Navbar = (props) => {
@@ -15,21 +16,24 @@ const Navbar = (props) => {
   }
   return (
     <div
-      className=" top-0 w-full px-3 py-9 fixed z-50 duration-200 flex items-center justify-between flex-wrap"
+      className=" top-0 w-full px-3 py-9 fixed duration-200 flex items-center justify-between flex-wrap"
       style={{
         boxShadow: visible ? "0px  2px 2px #aaa" : "",
-        backgroundColor: visible ? "#FFF":"",
+        backgroundColor: visible ? "#FFF" : "",
+        zIndex: "498",
         // position: visible ? "fixed" : "fixed",
       }}
     >
-      <img
-        src={arcs}
-        className="fixed w-auto h-11  flex items-center"
-        alt="arcs"
-      />
-
+      <Link to="/">
+        <img
+          src={arcs}
+          className="fixed w-auto h-11 -mt-5 flex items-center"
+          alt="arcs"
+        />
+      </Link>
       <button
         className="fixed z-40 flex flex-col  right-5  btn "
+        style={{ zIndex: "499" }}
         onClick={() => props.toggleExpansion(!props.isExpanded)}
       >
         <div className={openClose}></div>
@@ -55,34 +59,28 @@ const Navbar = (props) => {
         </Link>
         {/* <Link
           className="py-4 px-16  text-center hover:bg-light-orange rounded-3xl"
-          to="/about"
-        >
-          ABOUT
-        </Link> */}
-        <Link
-          className="py-4 px-16  text-center hover:bg-light-orange rounded-3xl"
           to="/speakers"
         >
           SPEAKERS
-        </Link>
-        <Link
+        </Link> */}
+        {/* <Link
           className="py-4 px-16  text-center hover:bg-light-orange rounded-3xl"
           to="/timeline"
         >
           TIMELINE
-        </Link>
+        </Link> */}
         <Link
           className="py-4 px-16  text-center hover:bg-light-orange rounded-3xl"
           to="/events"
         >
           EVENTS
         </Link>
-        <Link
+        {/* <Link
           className="py-4 px-16  text-center hover:bg-light-orange rounded-3xl"
           to="/prizes"
         >
           PRIZES
-        </Link>
+        </Link> */}
         <Link
           className="py-4 px-16  text-center hover:bg-light-orange rounded-3xl "
           to="/sponsors"
