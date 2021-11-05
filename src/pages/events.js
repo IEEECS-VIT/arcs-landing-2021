@@ -48,12 +48,12 @@ const EventPage = () => {
       text: "Discover a world of technology and innovation that you never dreamt existed. Through CONVOKE, IEEE-CS is here to help you envision the opportunities in the tech world. Here we bring an opportunity for you to get involved with the heroes of the tech industry. Our speakers range from executives, entrepreneurs and eminent personalities from the biggest tech firms like Google, Amazon, Infosys etc.",
     },
   ];
-
+  var Blur = isExpanded ? "change-opacity" : "none";
   return (
     <div>
       <Navbar isExpanded={isExpanded} toggleExpansion={toggleExpansion} />
 
-      <div className="md:mt-23 mt-16 -z-1">
+      <div className={`md:mt-23 mt-16 -z-1 ${Blur}`}>
         <div className="fixed md:left-0 md:visible invisible">
           <img src={rec1} alt="noo" className="h-44"></img>
         </div>
