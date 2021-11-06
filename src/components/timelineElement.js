@@ -7,17 +7,15 @@ const TimelineElement = (props) => {
   const [Width, setWidth] = useState(
     typeof window !== "undefined" ? window.innerWidth : 0
   );
+
   useEffect(() => {
+    setWidth(window.innerWidth);
     const handleWindowResize = () => setWidth(window.innerWidth);
     window.addEventListener("resize", handleWindowResize);
 
     return () => window.removeEventListener("resize", handleWindowResize);
   }, []);
 
-  useEffect(() => {
-    setWidth(window.innerWidth);
-  }, []);
-  
   return (
     <VerticalTimelineElement
       className="vertical-timeline-element--work "
