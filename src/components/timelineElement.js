@@ -12,7 +12,7 @@ const TimelineElement = (props) => {
     window.addEventListener("resize", handleWindowResize);
 
     return () => window.removeEventListener("resize", handleWindowResize);
-  }, [window.innerWidth]);
+  }, []);
   return (
     <VerticalTimelineElement
       className="vertical-timeline-element--work "
