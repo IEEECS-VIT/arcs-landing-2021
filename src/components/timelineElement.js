@@ -4,15 +4,18 @@ import "react-vertical-timeline-component/style.min.css";
 import circles from "./../images/EventCard.png";
 
 const TimelineElement = (props) => {
-  const [Width, setWidth] = useState(
-    typeof window !== "undefined" ? window.innerWidth : 0
-  );
+  if (typeof window === "undefined") {
+    return <></>;
+  }
+  const [Width, setWidth] = useState(window.innerWidth);
+
   useEffect(() => {
     const handleWindowResize = () => setWidth(window.innerWidth);
     window.addEventListener("resize", handleWindowResize);
 
     return () => window.removeEventListener("resize", handleWindowResize);
-  });
+  }, []);
+
   return (
     <VerticalTimelineElement
       className="vertical-timeline-element--work "
@@ -20,7 +23,7 @@ const TimelineElement = (props) => {
         opacity: Width < 1023 || props.show ? "1" : "0",
         backgroundImage: `url(${circles})`,
         zIndex: Width < 1023 || props.show ? "1" : "0",
-        backgroundSize: Width > 1023 ? "contain" : "contain",
+        backgroundSize: "contain",
         backgroundRepeat: "no-repeat",
         color: "white",
         transform:
@@ -62,16 +65,9 @@ const TimelineElement = (props) => {
           transform: props.num >= 3 && Width > 1023 ? "scaleX(-1)" : "",
         }}
       >
-        <h3 className="">EVENT NAME</h3>
-        <h4 className="">03/08/2021</h4>
-        <p className="text-xs">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Molestie at
-          egestas justo quis nibh. Turpis diam lectus viverra a velit quis. In
-          volutpat nisl, sed libero malesuada nunc convallis tellus dignissim.
-          Sed aliquet eu morbi aliquam dolor. Libero, non et orci, laoreet vitae
-          amet, facilisis. Dolor id mattis ut massa scelerisque mattis. Tortor
-          vulputate urna venenatis eu.
-        </p>
+        <h3 className="">{props.eventName}</h3>
+        <h4 className="">{props.date}</h4>
+        <p className="text-xs">{props.text}</p>
       </div>
     </VerticalTimelineElement>
   );

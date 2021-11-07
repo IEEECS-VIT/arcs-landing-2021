@@ -70,24 +70,28 @@ const Navbar = (props) => {
           TIMELINE
         </Link> */}
         <Link
+          onClick={() => props.toggleExpansion(!props.isExpanded)}
           className="py-4 px-16  text-center hover:bg-light-orange rounded-3xl"
           to="/events"
         >
           EVENTS
         </Link>
         {/* <Link
+         onClick={() => props.toggleExpansion(!props.isExpanded)}
           className="py-4 px-16  text-center hover:bg-light-orange rounded-3xl"
           to="/prizes"
         >
           PRIZES
         </Link> */}
         {/* <Link
+         onClick={() => props.toggleExpansion(!props.isExpanded)}
           className="py-4 px-16  text-center hover:bg-light-orange rounded-3xl "
           to="/sponsors"
         >
           SPONSORS
         </Link> */}
         <Link
+          onClick={() => props.toggleExpansion(!props.isExpanded)}
           className="py-4 px-16  text-center hover:bg-light-orange rounded-3xl"
           to="/contact"
         >

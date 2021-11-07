@@ -8,13 +8,13 @@ import "../Events.scss";
 // import border from "../images/border.png";
 const ContactPage = () => {
   const [isExpanded, toggleExpansion] = useState(false);
-
+  var Blur = isExpanded ? "change-opacity" : "none";
   return (
     <div className="pt-3">
       <Navbar isExpanded={isExpanded} toggleExpansion={toggleExpansion} />
       <Rectangles />
 
-      <div className="container lg:mt-14 mt-5 mx-auto">
+      <div className={`container lg:mt-14 mt-5 mx-auto  ${Blur}`}>
         <center>
           {/* <div className="w-full flex justify-center">
             <div className="flex">

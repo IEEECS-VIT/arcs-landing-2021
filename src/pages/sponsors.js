@@ -23,11 +23,13 @@ import Navbar from "../components/navbar";
 
 const Sponsors = () => {
   const [isExpanded, toggleExpansion] = useState(false);
+  var Blur = isExpanded ? "change-opacity" : "none";
+
   return (
     <div className="mt-8">
       <Navbar isExpanded={isExpanded} toggleExpansion={toggleExpansion} />
 
-      <div className="overflow-x-hidden object-fill">
+      <div className={`overflow-x-hidden object-fill ${Blur}`}>
         <div className="z-10 mt-4 sm:mt-10 max-sm:pb-20 max-sm:pt-5">
           {/* <div className="w-full flex justify-center">
                     <div className="flex">

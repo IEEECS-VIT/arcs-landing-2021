@@ -4,13 +4,16 @@ import Carousel from "../components/Caroussel/Caroussel";
 import Navbar from "../components/navbar";
 const Speakers = () => {
   const [isExpanded, toggleExpansion] = useState(false);
+  var Blur = isExpanded ? "change-opacity" : "none";
   return (
     <div>
       <div className="sm:mb-20 lg:mb-20">
         <Navbar isExpanded={isExpanded} toggleExpansion={toggleExpansion} />
       </div>
-      <CoverSpeaker title="Speakers" />
-      <Carousel />
+      <div className={Blur}>
+        <CoverSpeaker title="Speakers" />
+        <Carousel />
+      </div>
     </div>
   );
 };
