@@ -50,7 +50,7 @@ const EventPage = () => {
   ];
   var Blur = isExpanded ? "change-opacity" : "none";
   return (
-    <div>
+    <div className="select-none">
       <Navbar isExpanded={isExpanded} toggleExpansion={toggleExpansion} />
       <div>
         <div className={`md:mt-23 mt-16 -z-1 ${Blur} `}>

@@ -5,7 +5,7 @@ const Prizes = () => {
   const [isExpanded, toggleExpansion] = useState(false);
   var Blur = isExpanded ? "change-opacity" : "none";
   return (
-    <div className="">
+    <div className="select-none">
       <Navbar isExpanded={isExpanded} toggleExpansion={toggleExpansion} />
       <div className={Blur}>
         <img

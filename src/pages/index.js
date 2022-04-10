@@ -37,7 +37,7 @@ const IndexPage = () => {
   });
   var Blur = isExpanded ? "change-opacity" : "none";
   return (
-    <div className="pt-16">
+    <div className="pt-16 select-none">
       <Helmet
         htmlAttributes={{
           lang: "en",
@@ -70,7 +70,8 @@ const IndexPage = () => {
           src={Rect}
           alt="box"
           style={Rectangle}
-          className="rect z-20 absolute max-sm:h-52 md:ml-28 lg:ml-60  md:h-64 md:w-72 lg:mt-4"
+          draggable="false"
+          className="rect z-20 absolute max-sm:h-52 md:ml-28 lg:ml-60  md:h-64 md:w-72 lg:mt-4 select-none"
         />
 
         {/* <animated.img
@@ -82,18 +83,21 @@ const IndexPage = () => {
         <animated.img
           src={ArcsHome}
           alt="box"
-          className="arcs max-sm:p-3 max-sm:mt-6 md:ml-36 absolute md:-mt-6 lg:-mt-4 lg:ml-68 md:p-8 md:h-64 md:w-auto"
+          draggable="false"
+          className="arcs max-sm:p-3 max-sm:mt-6 md:ml-36 absolute md:-mt-6 lg:-mt-4 lg:ml-68 md:p-8 md:h-64 md:w-auto select-none"
           style={arcs}
         />
         <animated.img
           alt="circle"
           src={Circle}
-          className="circle  absolute  md:mt-60 lg:mt-64  md:ml-36 lg:ml-72 "
+          draggable="false"
+          className="circle  absolute  md:mt-60 lg:mt-64  md:ml-36 lg:ml-72 select-none"
           style={Rectangle}
         />
         <animated.div
           style={social}
-          className="icons absolute w-5 ml-14 md:ml-20 lg:ml-48 mt-36 space-y-3 flex flex-col"
+          draggable="false"
+          className="icons absolute w-5 ml-14 md:ml-20 lg:ml-48 mt-36 space-y-3 flex flex-col select-none"
         >
           <a href="https://twitter.com/ieeecsvit">
             <FaTwitter size={20} className=" block" />
@@ -107,7 +111,7 @@ const IndexPage = () => {
           </a>
         </animated.div>
 
-        <div className="max-xs:h-3/5 max-xs:pb-12 sm:mb-48 md:mb-2 caption-div block mt-80 ml-auto mr-auto w-1/2 md:mt-auto md:w-auto md:mr-12 lg:mr-44 md:float-right ">
+        <div className="max-xs:h-3/5 max-xs:pb-12 sm:mb-48 md:mb-2 caption-div block mt-80 ml-auto mr-auto w-1/2 md:mt-auto md:w-auto md:mr-12 lg:mr-44 md:float-right select-none">
           <p className=" leading-tight w-min font-mont line font-semibold text-justify text-4xl md:text-5xl  md:leading-tight caption">
             Your Next <br />
             Interactive <br />
@@ -133,7 +137,7 @@ const IndexPage = () => {
 
         <div
           id="cards"
-          className="max-xs:h-3/5 sm:mt-20 sm:pt-10 md:pt-20 md:mt-80 flex font-mont mx-auto lg:mx-20 flex-wrap justify-around "
+          className="max-xs:h-3/5 sm:mt-20 sm:pt-10 md:pt-20 md:mt-80 flex font-mont mx-auto lg:mx-20 flex-wrap justify-around select-none"
         >
           <Link to="/events">
             <Card

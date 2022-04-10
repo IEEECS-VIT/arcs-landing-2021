@@ -26,7 +26,7 @@ const Sponsors = () => {
   var Blur = isExpanded ? "change-opacity" : "none";
 
   return (
-    <div className="mt-8">
+    <div className="mt-8 select-none">
       <Navbar isExpanded={isExpanded} toggleExpansion={toggleExpansion} />
 
       <div className={`overflow-x-hidden object-fill ${Blur}`}>

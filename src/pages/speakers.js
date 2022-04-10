@@ -6,7 +6,7 @@ const Speakers = () => {
   const [isExpanded, toggleExpansion] = useState(false);
   var Blur = isExpanded ? "change-opacity" : "none";
   return (
-    <div>
+    <div className="select-none">
       <div className="sm:mb-20 lg:mb-20">
         <Navbar isExpanded={isExpanded} toggleExpansion={toggleExpansion} />
       </div>

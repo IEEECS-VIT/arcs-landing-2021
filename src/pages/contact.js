@@ -10,7 +10,7 @@ const ContactPage = () => {
   const [isExpanded, toggleExpansion] = useState(false);
   var Blur = isExpanded ? "change-opacity" : "none";
   return (
-    <div className="pt-3">
+    <div className="pt-3 select-none">
       <Navbar isExpanded={isExpanded} toggleExpansion={toggleExpansion} />
       <Rectangles />
 
