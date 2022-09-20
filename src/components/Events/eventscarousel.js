@@ -64,9 +64,9 @@ export default class Carousel extends React.Component {
 
   render() {
     return (
-      <div id="carousel">
+      <div id="carousel" className="">
         <div
-          className="arrow arrow-left "
+          className="arrow arrow-left"
           onClick={this.leftClick}
           onKeyPress={this.leftClick}
           aria-label="Save"

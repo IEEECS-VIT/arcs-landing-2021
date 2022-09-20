@@ -8,7 +8,38 @@ import "../Events.scss";
 // import border from "../images/border.png";
 const ContactPage = () => {
   const [isExpanded, toggleExpansion] = useState(false);
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
+
   var Blur = isExpanded ? "change-opacity" : "none";
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    console.log("Name: ", name);
+    console.log("Email: ", email);
+    console.log("Message: ", message);
+
+    const response = fetch(
+      "https://arcs-backend-c3x0ipokb-vidipt-khetriwal.vercel.app/" +
+        "/message",
+      {
+        mode: "no-cors",
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          email: email,
+          name: name,
+          message: message,
+        }),
+      }
+    );
+    // const content = response.json();
+    console.log(response);
+  };
   return (
     <div className="pt-3 select-none">
       <Navbar isExpanded={isExpanded} toggleExpansion={toggleExpansion} />
@@ -16,21 +47,6 @@ const ContactPage = () => {
 
       <div className={`container lg:mt-14 mt-5 mx-auto  ${Blur}`}>
         <center>
-          {/* <div className="w-full flex justify-center">
-            <div className="flex">
-              <img
-                className="object-scale-down w-44 sm:w-52 md:w-64 lg:w-80 xl:w-96 h-24"
-                src={border}
-                alt="lines"
-              />
-              <p
-                style={{ fontFamily: "Poppins" }}
-                className="text-center text-2xl absolute sm:text-5xl md:text-2xl lg:text-3xl ml-8 mt-4 md:ml-16 mb-0 lg:ml-24 xl:ml-32 "
-              >
-                Contact Us
-              </p>
-            </div>
-          </div> */}
           <p
             style={{ fontFamily: "Montserrat" }}
             className="text-center w-full font-medium md:-mt-4 text-4xl mb-10 sm:text-5xl md:text-6xl lg:text-7xl xl:text-7xl"
@@ -91,11 +107,20 @@ const ContactPage = () => {
           </div>
 
           <div className="place-self-center ">
-            <form>
+            <form
+              onSubmit={(e) => {
+                handleSubmit(e);
+              }}
+            >
               <input
                 className=" flex justify-center bginput bg-gray-100 rounded p-3 md:p-4 md:w-96 md:mx-auto lg:leading-4 text-gray-400 w-72  leading-3 lg:text-l text-sm"
                 type="name"
                 placeholder="NAME"
+                required
+                value={name}
+                onChange={(e) => {
+                  setName(e.target.value);
+                }}
               ></input>
               <br></br>
 
@@ -103,6 +128,11 @@ const ContactPage = () => {
                 className="flex justify-center bginput bg-gray-100 rounded p-3 md:p-4 md:w-96 md:mx-auto lg:leading-4 text-gray-400 w-72 leading-3 lg:text-l text-sm"
                 type="email"
                 placeholder="EMAIL"
+                required
+                value={email}
+                onChange={(e) => {
+                  setEmail(e.target.value);
+                }}
               ></input>
               <br></br>
 
@@ -110,11 +140,16 @@ const ContactPage = () => {
                 className=" flex justify-center bginput bg-gray-100 rounded p-3 md:p-4 md:w-96 md:mx-auto lg:leading-4 text-gray-400 w-72  leading-3 lg:text-l text-sm"
                 placeholder="MESSAGE"
                 rows="4"
+                required
+                value={message}
+                onChange={(e) => {
+                  setMessage(e.target.value);
+                }}
               ></textarea>
               <br></br>
 
               <button
-                type="button"
+                type="submit"
                 className="submitButton relative leading-3 mx-0 my-0 h-8 md:w-96 rounded-3xl text-center w-72"
               >
                 SUBMIT
