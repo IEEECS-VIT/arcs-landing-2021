@@ -4,17 +4,27 @@ import 'react-vertical-timeline-component/style.min.css';
 import circles from './../images/EventCard.png';
 
 const TimelineElement = (props) => {
-  const [Width, setWidth] = useState(window.innerWidth);
+  const [Width, setWidth] = useState(() => {
+    if (typeof window !== 'undefined') {
+      return window.innerWidth;
+    }
+    return 0; // Default value if window is not available
+  });
 
   useEffect(() => {
-    const handleWindowResize = () => setWidth(window.innerWidth);
-    window.addEventListener('resize', handleWindowResize);
+    const handleWindowResize = () => {
+      if (typeof window !== 'undefined') {
+        setWidth(window.innerWidth);
+      }
+    };
 
-    return () => window.removeEventListener('resize', handleWindowResize);
+    if (typeof window !== 'undefined') {
+      window.addEventListener('resize', handleWindowResize);
+      return () => {
+        window.removeEventListener('resize', handleWindowResize);
+      };
+    }
   }, []);
-  if (typeof window === 'undefined') {
-    return <></>;
-  }
 
   return (
     <VerticalTimelineElement
