@@ -52,11 +52,11 @@ const IndexPage = () => {
         <meta property='og:url' content='https://arcs.ieeecsvit.com' />
         <meta
           property='og:description'
-          content="ARCS '23 is23 a technical symposium comprising of talks, competitions and a 36-hour hackathon. Brought to you by IEEE Computer Society VIT."
+          content="ARCS '23 is a technical symposium comprising of talks, competitions and a 36-hour hackathon. Brought to you by IEEE Computer Society VIT."
         />
         <meta
           property='description'
-          content="ARCS '23 is23 a technical symposium comprising of talks, competitions and a 36-hour hackathon. Brought to you by IEEE Computer Society VIT."
+          content="ARCS '23 is a technical symposium comprising of talks, competitions and a 36-hour hackathon. Brought to you by IEEE Computer Society VIT."
         />
         <meta
           name='keywords'
